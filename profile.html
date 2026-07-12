@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Creator Profile</title>
+
+<link rel="stylesheet" href="variable.css">
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="profile.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<a href="index.html">
+
+← Home
+
+</a>
+
+
+<img
+
+id="myAvatar"
+
+src="assets/default-avatar.png"
+
+class="topAvatar">
+
+</header>
+
+<main class="profilePage">
+    
+    <section class="coverSection">
+
+<img
+
+id="coverPhoto"
+
+class="coverPhoto"
+
+src="assets/default-cover.jpg">
+
+<div class="profileHeader">
+
+<img
+
+id="profilePhoto"
+
+class="profilePhoto"
+
+src="assets/default-avatar.png">
+
+<div class="profileInfo">
+
+<h1 class="profileTitle">
+
+<span id="profileName">
+
+Loading...
+
+</span>
+
+<span
+id="verifiedBadge"
+class="verifiedBadge"
+style="display:none;">
+
+✔
+
+</span>
+
+</h1>
+
+<p id="profileBio">
+
+No bio yet.
+
+</p>
+
+<div class="profileStatus">
+
+<span
+id="onlineIndicator"
+class="offlineDot">
+
+</span>
+
+<span id="onlineText">
+
+Offline
+
+</span>
+
+</div>
+
+<p
+id="lastSeen"
+class="lastSeen">
+
+Last seen: --
+
+</p>
+
+<p
+id="joinedDate"
+class="joinedDate">
+
+Joined: --
+
+</p>
+
+<div class="profileButtons">
+
+<button id="followBtn">
+
+Follow
+
+</button>
+
+<button id="messageBtn">
+
+Message
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="profileStats">
+
+<div id="followersCard" class="statCard">
+
+<h2 id="totalFollowers">0</h2>
+
+<p>Followers</p>
+
+</div>
+
+<div id="followingCard" class="statCard">
+
+<h2 id="totalFollowing">0</h2>
+
+<p>Following</p>
+
+</div>
+
+<div class="statCard">
+
+<h2 id="totalPosts">0</h2>
+
+<p>Posts</p>
+
+</div>
+
+<div class="statCard">
+
+<h2 id="totalViews">0</h2>
+
+<p>Views</p>
+
+</div>
+
+<div class="statCard">
+
+<h2 id="totalIncome">$0.00</h2>
+
+<p>Income</p>
+
+</div>
+
+</section>
+
+
+<section class="profileTabs">
+
+<div class="tabButtons">
+
+<button
+class="tabBtn active"
+data-tab="posts">
+
+Posts
+
+</button>
+
+<button
+class="tabBtn"
+data-tab="reels">
+
+Reels
+
+</button>
+
+<button
+class="tabBtn"
+data-tab="saved">
+
+Saved
+
+</button>
+
+<button
+class="tabBtn"
+data-tab="tagged">
+
+Tagged
+
+</button>
+
+</div>
+
+<div
+id="postsTab"
+class="tabContent active">
+
+<div id="creatorPosts"></div>
+
+</div>
+
+<div
+id="reelsTab"
+class="tabContent">
+
+<div id="creatorReels"></div>
+
+</div>
+
+<div
+id="savedTab"
+class="tabContent">
+
+<div id="savedPosts"></div>
+
+</div>
+
+<div
+id="taggedTab"
+class="tabContent">
+
+<div id="taggedPosts">
+
+<p>No tagged posts yet.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="profileHighlights">
+
+<h2>Highlights</h2>
+
+<div id="highlightsContainer"></div>
+
+</section>
+
+
+
+<div class="profileActions">
+
+<button id="logoutBtn">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</button>
+
+</div>
+
+
+
+<div id="followModal" class="hidden">
+
+<div class="followBox">
+
+<div class="followHeader">
+
+<h2 id="followTitle">Followers</h2>
+
+<button id="closeFollowModal">✕</button>
+
+</div>
+
+<input
+type="search"
+id="followSearch"
+placeholder="Search users...">
+
+<div id="followList">
+
+<!-- Users load here -->
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</main>
+
+<script
+
+type="module"
+
+src="profile.js">
+
+</script>
+
+<script
+type="module"
+src="social.js">
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Edit Post</title>
+
+<link rel="stylesheet" href="variable.css">
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="upload.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<a href="dashboard.html">
+
+← Dashboard
+
+</a>
+
+<h2>Edit Post</h2>
+
+<img
+
+id="userAvatar"
+
+src="assets/default-avatar.png"
+
+class="topAvatar">
+
+</header>
+
+<main class="uploadPage">
+
+<div class="uploadCard">
+
+<h1>Edit Your Post</h1>
+
+<form id="editForm">
+
+<div class="formGroup">
+
+<label>Title</label>
+
+<input
+
+type="text"
+
+id="title"
+
+required>
+
+</div>
+
+<div class="formGroup">
+
+<label>Description</label>
+
+<textarea
+
+id="description"
+
+rows="6"
+
+required>
+
+</textarea>
+
+</div>
+
+<div class="formGroup">
+
+<label>Category</label>
+
+<select id="category">
+
+<option>Technology</option>
+
+<option>Business</option>
+
+<option>Health</option>
+
+<option>Education</option>
+
+<option>Sports</option>
+
+<option>Entertainment</option>
+
+<option>Lifestyle</option>
+
+<option>News</option>
+
+</select>
+
+</div>
+
+<div class="formGroup">
+
+<label>Hashtags</label>
+
+<input
+
+type="text"
+
+id="hashtags">
+
+</div>
+
+<div class="formGroup">
+
+<label>Replace Image / Video (Optional)</label>
+
+<input
+
+type="file"
+
+id="media"
+
+accept="image/*,video/*">
+
+</div>
+
+<div id="previewContainer">
+
+</div>
+
+<div class="formGroup">
+
+<label>Visibility</label>
+
+<select id="visibility">
+
+<option value="public">Public</option>
+
+<option value="followers">Followers Only</option>
+
+<option value="private">Private</option>
+
+</select>
+
+</div>
+
+<button
+
+type="submit"
+
+id="saveBtn">
+
+Save Changes
+
+</button>
+
+</form>
+
+</div>
+
+</main>
+
+<script
+
+type="module"
+
+src="edit-post.js">
+<script
+type="module"
+src="social.js">
+
+</script>
+
+</script>
+
+</body>
+
+</html>

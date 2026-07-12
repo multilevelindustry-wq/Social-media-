@@ -1,0 +1,27 @@
+:root{
+
+--primary:#0B5CFF;
+
+--primary-dark:#0045d6;
+
+--background:#F5F7FB;
+
+--card:#FFFFFF;
+
+--text:#202124;
+
+--text-light:#6B7280;
+
+--border:#E5E7EB;
+
+--danger:#EF4444;
+
+--success:#10B981;
+
+--warning:#F59E0B;
+
+--radius:16px;
+
+--shadow:0 10px 30px rgba(0,0,0,.08);
+
+}

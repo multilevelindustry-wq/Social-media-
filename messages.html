@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>Messenger</title>
+
+<link rel="stylesheet"
+href="variable.css">
+
+<link rel="stylesheet"
+href="app.css">
+
+<link rel="stylesheet"
+href="messages.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<a href="index.html">
+
+← Home
+
+</a>
+
+<h2>
+
+Messages
+
+</h2>
+
+<img
+
+id="myAvatar"
+
+src="assets/default-avatar.png"
+
+class="topAvatar">
+
+</header>
+
+<main class="messenger">
+    
+    
+    <aside class="chatSidebar">
+
+<div class="chatSearch">
+
+<input
+
+type="search"
+
+id="searchUser"
+
+placeholder="Search users...">
+
+</div>
+
+<div
+
+id="conversationList">
+
+<!-- Conversations -->
+
+</div>
+
+</aside>
+
+
+<section class="chatWindow">
+
+<div class="chatHeader">
+
+<img
+
+id="chatAvatar"
+
+src="assets/default-avatar.png">
+
+<div>
+
+<h2 id="chatName">
+
+Select a chat
+
+</h2>
+
+<p id="chatStatus">
+
+Offline
+
+</p>
+
+</div>
+
+</div>
+
+
+<div
+
+id="messagesContainer">
+
+<!-- Messages -->
+
+</div>
+
+<form
+
+id="messageForm">
+
+<input
+
+type="text"
+
+id="messageInput"
+
+placeholder="Type a message..."
+
+required>
+
+<input
+
+type="file"
+
+id="messageMedia"
+
+accept="image/*,video/*">
+
+<button>
+
+Send
+
+</button>
+
+</form>
+
+</section>
+
+
+</main>
+
+<script
+
+type="module"
+
+src="messages.js">
+
+</script>
+
+</body>
+
+</html>

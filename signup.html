@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Create Account | CreatorHub</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="signup-container">
+
+<div class="signup-card">
+
+<div class="logo">
+
+<h1>CreatorHub</h1>
+
+<p>Create your creator account</p>
+
+</div>
+
+<form id="signupForm">
+
+<div class="imageBox">
+
+<img
+id="previewImage"
+src="assets/default-avatar.png"
+alt="Profile">
+
+<label class="uploadBtn">
+
+Choose Picture
+
+<input
+type="file"
+id="profileImage"
+accept="image/*"
+hidden>
+
+</label>
+
+</div>
+
+<div class="inputBox">
+
+<label>Full Name</label>
+
+<input
+type="text"
+id="fullName"
+placeholder="Enter Full Name"
+required>
+
+</div>
+
+<div class="inputBox">
+
+<label>Username</label>
+
+<input
+type="text"
+id="username"
+placeholder="Choose Username"
+required>
+
+</div>
+
+<div class="inputBox">
+
+<label>Email</label>
+
+<input
+type="email"
+id="email"
+placeholder="Enter Email"
+required>
+
+</div>
+
+<div class="inputBox">
+
+<label>Password</label>
+
+<input
+type="password"
+id="password"
+placeholder="Enter Password"
+required>
+
+</div>
+
+<button
+type="submit"
+class="signupButton">
+
+Create Account
+
+</button>
+
+<p class="loginLink">
+
+Already have an account?
+
+<a href="login.html">
+
+Login
+
+</a>
+
+</p>
+
+</form>
+
+</div>
+
+</div>
+<script type="module" src="signup.js"></script>
+
+</body>
+
+</html>

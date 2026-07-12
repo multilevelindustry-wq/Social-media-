@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>Stories</title>
+
+<link rel="stylesheet"
+href="variable.css">
+
+<link rel="stylesheet"
+href="app.css">
+
+<link rel="stylesheet"
+href="stories.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<a href="index.html">
+
+← Home
+
+</a>
+
+<h2>
+
+Stories
+
+</h2>
+
+<img
+
+id="userAvatar"
+
+src="assets/default-avatar.png"
+
+class="topAvatar">
+
+</header>
+
+<main class="storiesPage">
+    
+    
+    <section class="storyCreator">
+
+<div class="storyCard createStory">
+...
+</div>
+
+<div id="storiesContainer" class="storiesRow">
+</div>
+
+</section>
+    
+    
+    <section class="storyCreator">
+
+<div class="storyCard createStory">
+
+<label for="storyMedia">
+
++
+
+</label>
+
+<input
+
+type="file"
+
+id="storyMedia"
+
+accept="image/*,video/*"
+
+hidden>
+
+<p>
+
+Create Story
+
+</p>
+
+</div>
+
+<div
+
+id="storiesContainer">
+
+<!-- Stories -->
+
+</div>
+
+</section>
+
+
+<div
+
+id="storyViewer"
+
+class="hidden">
+
+<div class="viewerContent">
+
+<button id="closeStory">
+
+✕
+
+</button>
+
+<div id="storyProgress">
+
+</div>
+
+<div id="storyMediaContainer">
+
+</div>
+
+<div class="storyFooter">
+
+<img
+
+id="storyUserPhoto"
+
+src="assets/default-avatar.png">
+
+<div>
+
+<h3 id="storyUsername">
+
+</h3>
+
+<p id="storyTime">
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+</main>
+
+<script
+
+type="module"
+
+src="stories.js">
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+.uploadPage{
+max-width:900px;
+margin:30px auto;
+padding:20px;
+}
+
+.uploadCard{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:var(--shadow);
+}
+
+.uploadCard h1{
+font-size:32px;
+margin-bottom:30px;
+color:var(--primary);
+}
+
+#uploadForm{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+
+.formGroup{
+display:flex;
+flex-direction:column;
+gap:8px;
+}
+
+.formGroup label{
+font-size:15px;
+font-weight:600;
+color:#444;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select{
+width:100%;
+padding:15px;
+border:1px solid #ddd;
+border-radius:12px;
+font-size:15px;
+outline:none;
+transition:.3s;
+background:#fff;
+}
+
+.formGroup textarea{
+resize:vertical;
+min-height:150px;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus,
+.formGroup select:focus{
+border-color:var(--primary);
+box-shadow:0 0 0 3px rgba(11,92,255,.12);
+}
+
+
+#media{
+padding:20px;
+border:2px dashed var(--primary);
+background:#f8fbff;
+cursor:pointer;
+}
+
+#previewContainer{
+margin-top:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:220px;
+border:2px dashed #ddd;
+border-radius:15px;
+overflow:hidden;
+background:#fafafa;
+}
+
+#previewContainer img,
+#previewContainer video{
+width:100%;
+max-height:500px;
+object-fit:contain;
+border-radius:12px;
+}
+
+
+#publishBtn{
+height:55px;
+border:none;
+border-radius:12px;
+background:var(--primary);
+color:#fff;
+font-size:17px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+#publishBtn:hover{
+background:var(--primary-dark);
+}
+
+#publishBtn:disabled{
+background:#999;
+cursor:not-allowed;
+}
+
+.progressBox{
+display:none;
+margin-top:20px;
+}
+
+.progressBar{
+width:100%;
+height:12px;
+background:#eee;
+border-radius:20px;
+overflow:hidden;
+}
+
+.progressFill{
+height:100%;
+width:0%;
+background:var(--primary);
+transition:.3s;
+}
+
+.progressText{
+margin-top:10px;
+text-align:center;
+font-weight:600;
+color:#555;
+}
+
+
+
+.loadingOverlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:none;
+justify-content:center;
+align-items:center;
+background:rgba(255,255,255,.85);
+z-index:9999;
+}
+
+.loader{
+width:60px;
+height:60px;
+border:6px solid #eee;
+border-top:6px solid var(--primary);
+border-radius:50%;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+
+@media(max-width:768px){
+
+.uploadPage{
+padding:15px;
+}
+
+.uploadCard{
+padding:20px;
+}
+
+.uploadCard h1{
+font-size:28px;
+}
+
+#publishBtn{
+width:100%;
+}
+
+}
+
+@media(max-width:500px){
+
+.uploadCard{
+padding:15px;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select{
+padding:13px;
+font-size:14px;
+}
+
+}
+
+
+
+.topAvatar{
+width:45px;
+height:45px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid var(--primary);
+flex-shrink:0;
+}

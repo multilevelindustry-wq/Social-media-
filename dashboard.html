@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>Creator Dashboard</title>
+
+<link rel="stylesheet" href="variable.css">
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="dashboard.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<a href="index.html">
+
+← Home
+
+</a>
+
+<h2>
+
+Creator Dashboard
+
+</h2>
+
+<img
+
+id="myAvatar"
+
+src="IMG-20260703-WA3052.jpg"
+
+class="topAvatar">
+
+</header>
+
+<main class="dashboard">
+    
+    <section class="welcomeCard">
+
+<div>
+
+<h1>
+
+Welcome Back 👋
+
+</h1>
+
+<p id="creatorName">
+
+Loading...
+
+</p>
+
+</div>
+
+<button
+
+id="uploadPost">
+
++ New Post
+
+</button>
+
+</section>
+
+
+<section class="statsGrid">
+
+<div class="statCard">
+
+<h2 id="postsCount">
+
+0
+
+</h2>
+
+<p>
+
+Posts
+
+</p>
+
+</div>
+
+<div class="statCard">
+
+<h2 id="viewsCount">
+
+0
+
+</h2>
+
+<p>
+
+Views
+
+</p>
+
+</div>
+
+<div class="statCard">
+
+<h2 id="likesCount">
+
+0
+
+</h2>
+
+<p>
+
+Likes
+
+</p>
+
+</div>
+
+<div class="statCard">
+
+<h2 id="commentsCount">
+
+0
+
+</h2>
+
+<p>
+
+Comments
+
+</p>
+
+</div>
+
+<div class="statCard">
+
+<h2 id="earningsCount">
+
+$0.00
+
+</h2>
+
+<p>
+
+Earnings
+
+</p>
+
+</div>
+
+</section>
+
+
+<section class="dashboardPosts">
+
+<div class="dashboardHeader">
+
+<h2>
+
+My Posts
+
+</h2>
+
+<input
+
+type="search"
+
+id="searchPost"
+
+placeholder="Search my posts...">
+
+</div>
+
+<div
+
+id="myPosts">
+
+<!-- User posts appear here -->
+
+</div>
+
+</section>
+
+<section class="analytics">
+
+<h2>
+
+Analytics
+
+</h2>
+
+<canvas
+
+id="viewsChart"
+
+height="120">
+
+</canvas>
+
+</section>
+
+</main>
+
+<script
+src="https://cdn.jsdelivr.net/npm/chart.js">
+
+</script>
+
+<script
+type="module"
+src="dashboard.js">
+
+</script>
+<script
+type="module"
+src="social.js">
+
+</script>
+
+</body>
+
+</html>

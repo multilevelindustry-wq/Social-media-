@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>CreatorHub</title>
+
+<link rel="stylesheet" href="variable.css">
+
+<link rel="stylesheet" href="app.css">
+
+<link rel="stylesheet" href="layouts.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="logo">
+
+<span>Claunecks</span>
+
+</div>
+
+<div class="searchBox">
+
+<input
+
+type="search"
+
+placeholder="Search CreatorHub"
+
+id="searchInput">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</div>
+
+<div class="topIcons">
+
+    <button id="createBtn">
+        <i class="fa-solid fa-plus"></i>
+    </button>
+    
+    <button id="messageBtn">
+        <i class="fa-solid fa-comments"></i>
+    </button>
+
+  <a href="notifications.html" class="notificationIcon">
+        <i class="fa-solid fa-bell"></i>
+        <span id="notificationBadge">0</span>
+    </a>
+    
+    
+    <img
+        id="topProfile"
+        class="topAvatar"
+        src="IMG-20260703-WA3052.jpg"
+        alt="Profile">
+
+</div>
+</header>
+
+
+
+<div class="container">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+
+        <ul>
+
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </li>
+
+            <li>
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </li>
+
+            <li>
+                <i class="fa-solid fa-chart-line"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-users"></i>
+                Groups
+            </li>
+
+            <li>
+                <i class="fa-solid fa-video"></i>
+                Live
+            </li>
+
+            <li>
+                <i class="fa-solid fa-comments"></i>
+                Messages
+            </li>
+
+            <li>
+                <i class="fa-solid fa-bookmark"></i>
+                Saved
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+
+    <!-- FEED -->
+    <main class="feed">
+
+
+        <!-- STORIES -->
+        <section class="homeStories">
+
+            <div class="createStory">
+
+                <label for="storyMedia">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </label>
+
+                <span></span>
+
+                <input
+                    type="file"
+                    id="storyMedia"
+                    accept="image/*,video/*"
+                    hidden>
+
+            </div>
+
+
+            <div id="homeStoriesContainer">
+
+                <!-- Stories load here -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CREATE POST -->
+        
+        <div class="createPost" id="createPostBox">
+
+    <div class="createTop">
+
+        <img
+            id="createAvatar"
+            src="assets/default-avatar.png">
+
+        <input
+            type="text"
+            placeholder="What's on your mind?"
+            readonly>
+
+    </div>
+
+    <div class="createBottom">
+
+        <button type="button">
+            <i class="fa-solid fa-image"></i>
+            Photo
+        </button>
+
+        <button type="button">
+            <i class="fa-solid fa-video"></i>
+            Video
+        </button>
+
+        <button type="button">
+            <i class="fa-solid fa-file-lines"></i>
+            Article
+        </button>
+
+    </div>
+
+</div>
+        
+        
+
+        <!-- POSTS -->
+        <div id="postsContainer">
+
+            <!-- Posts load here -->
+
+        </div>
+
+    </main>
+    
+    
+<aside class="rightbar">
+
+<div class="card">
+
+<h3>Trending</h3>
+
+<div id="trendingPosts"></div>
+
+</div>
+
+<div class="card">
+
+<h3>Suggested Creators</h3>
+
+<div id="suggestedUsers"></div>
+
+</div>
+
+<div class="card">
+
+<h3>Trending Tags</h3>
+
+<div id="hashtags"></div>
+
+</div>
+
+</aside>
+
+</div>
+
+<nav class="mobileNav">
+
+<button id="host-liveBtn">
+<i class="fa-solid fa-tower-broadcast"></i>
+</button>
+
+<button id="groupsBtn">
+<i class="fa-solid fa-users"></i>
+</button>
+
+<button id="reelsBtn" class="centerBtn">
+<i class="fa-solid fa-plus"></i>
+</button>
+
+<button id="dashboardBtn">
+<i class="fa-solid fa-chart-line"></i>
+</button>
+
+<button id="settingsBtn">
+<i class="fa-solid fa-gear"></i>
+</button>
+
+</nav>
+
+
+
+<!-- Paste the Story Viewer here -->
+<div id="storyViewer" class="hidden">
+
+<div class="viewerContent">
+
+<div id="storyProgress"></div>
+
+<div class="storyHeader">
+
+<img id="storyUserPhoto">
+
+<div>
+<h4 id="storyUsername"></h4>
+<p id="storyTime"></p>
+</div>
+
+<button id="closeStory">✕</button>
+
+</div>
+
+<div class="storyNavigation">
+
+<div id="prevStory" class="storySide"></div>
+
+<div id="nextStory" class="storySide"></div>
+
+</div>
+
+<div id="storyMediaContainer"></div>
+
+<div class="storyActions">
+
+<div class="storyReactions">
+
+<button class="reactionBtn" data-reaction="❤️">❤️</button>
+
+<button class="reactionBtn" data-reaction="👍">👍</button>
+
+<button class="reactionBtn" data-reaction="😂">😂</button>
+
+<button class="reactionBtn" data-reaction="😮">😮</button>
+
+<button class="reactionBtn" data-reaction="😢">😢</button>
+
+<button class="reactionBtn" data-reaction="🔥">🔥</button>
+
+</div>
+
+<div class="storyReply">
+
+<input
+type="text"
+id="storyReplyInput"
+placeholder="Reply privately...">
+
+<button id="sendStoryReply">
+
+Send
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+<div id="storyAnalytics" class="storyAnalytics hidden">
+
+<div class="analyticsRow">
+👁 <span id="storyViews">0</span> Views
+</div>
+
+<div class="analyticsRow">
+😀 <span id="storyReactionCount">0</span> Reactions
+</div>
+
+<div class="analyticsRow">
+💬 <span id="storyReplyCount">0</span> Replies
+</div>
+
+<div class="analyticsRow">
+⏳ <span id="storyTimeLeft">24h left</span>
+</div>
+
+<button id="showViewers">
+
+View Viewers
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<button id="addToHighlight" class="highlightBtn">
+
+⭐ Add to Highlight
+
+</button>
+
+
+
+<div id="viewersModal" class="hidden">
+
+<div class="viewersBox">
+
+<h3>Story Viewers</h3>
+
+<div id="viewersList"></div>
+
+<button id="closeViewers">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div id="highlightModal" class="hidden">
+
+<div class="highlightBox">
+
+<h3>Create Highlight</h3>
+
+<input
+type="text"
+id="highlightTitle"
+placeholder="Highlight title">
+
+<button id="saveHighlight">
+
+Save
+
+</button>
+
+<button id="cancelHighlight">
+
+Cancel
+
+</button>
+
+</div>
+
+</div>
+
+<script type="module" src="app.js"></script>
+
+<script type="module" src="homes.js"></script>
+
+<script type="module" src="stories.js"></script>
+
+</body>
+
+</html>

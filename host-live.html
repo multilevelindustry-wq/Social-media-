@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>CreatorHub Host Live</title>
+
+<link
+rel="stylesheet"
+href="variable.css">
+
+<link
+rel="stylesheet"
+href="host-live.css">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+    
+    <header class="hostHeader">
+
+<button id="backBtn">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</button>
+
+<h2>
+
+Go LIVE
+
+</h2>
+
+<button id="settingsBtn">
+
+<i class="fa-solid fa-gear"></i>
+
+</button>
+
+</header>
+
+
+<div class="previewContainer">
+
+<video
+
+id="previewVideo"
+
+autoplay
+
+playsinline
+
+muted>
+
+</video>
+
+<div class="previewOverlay">
+
+<div id="liveStatus">
+
+⚫ NOT LIVE
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="streamSetup">
+
+<input
+
+type="text"
+
+id="liveTitle"
+
+maxlength="120"
+
+placeholder="What's your live about?">
+
+<select id="liveCategory">
+
+<option>Just Chatting</option>
+
+<option>Gaming</option>
+
+<option>Music</option>
+
+<option>Education</option>
+
+<option>Entertainment</option>
+
+<option>Sports</option>
+
+<option>Technology</option>
+
+</select>
+
+</div>
+
+<div class="hostControls">
+
+<button id="cameraBtn">
+
+<i class="fa-solid fa-video"></i>
+
+Camera
+
+</button>
+
+<button id="micBtn">
+
+<i class="fa-solid fa-microphone"></i>
+
+Microphone
+
+</button>
+
+<button id="flipBtn">
+
+<i class="fa-solid fa-camera-rotate"></i>
+
+Flip
+
+</button>
+
+<button id="screenBtn">
+
+<i class="fa-solid fa-display"></i>
+
+Screen
+
+</button>
+
+<button id="qualityBtn">
+
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+
+720P
+
+</button>
+
+</div>
+
+<button id="goLiveBtn">
+
+🔴 GO LIVE
+
+</button>
+
+<script type="module"
+src="host-live.js"></script>
+
+</body>
+
+</html>

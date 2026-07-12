@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Upload Reel</title>
+
+<link rel="stylesheet" href="variable.css">
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="upload-reel.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<a href="reels.html">
+
+← Back
+
+</a>
+
+<h2>Upload Reel</h2>
+
+</header>
+
+<main class="uploadPage">
+
+<div class="uploadCard">
+
+<video
+id="previewVideo"
+controls
+style="display:none;">
+</video>
+
+<input
+type="file"
+id="videoFile"
+accept="video/*">
+
+<textarea
+id="caption"
+placeholder="Write a caption..."></textarea>
+
+<button id="uploadBtn">
+
+Upload Reel
+
+</button>
+
+</div>
+
+</main>
+
+<script type="module" src="upload-reel.js"></script>
+
+</body>
+
+</html>
