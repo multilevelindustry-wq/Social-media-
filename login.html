@@ -23,11 +23,26 @@ crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
 rel="stylesheet">
 
+<!-- Browser address bar color -->
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- PWA Manifest -->
   <link rel="manifest" href="manifest.json">
 
-<meta name="theme-color" content="#ff3b30">
+  <!-- App icons -->
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="Icon-192.png">
 
-<link rel="apple-touch-icon" href="Icon-192.png">
+  <!-- Register Service Worker -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/sw.js")
+          .then(() => console.log("Service Worker Registered"))
+          .catch(err => console.error("Service Worker Error:", err));
+      });
+    }
+  </script>
   
 </head>
 
