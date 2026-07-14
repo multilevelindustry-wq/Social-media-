@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Group Post</title>
+
+<link rel="stylesheet" href="group-post.css">
+
+</head>
+
+<body>
+
+<!-- Loading -->
+<div id="loadingOverlay" class="loading">
+Loading...
+</div>
+
+<!-- Header -->
+<header class="postHeader">
+
+<button id="backBtn">
+←
+</button>
+
+<h2>
+Group Post
+</h2>
+
+<button id="postMenu">
+⋮
+</button>
+
+</header>
+
+<!-- Post -->
+<div id="postContainer"></div>
+
+<!-- Comments -->
+
+<div class="commentsSection">
+
+<h3>
+Comments
+</h3>
+
+<div id="commentsList"></div>
+
+</div>
+
+<!-- Comment Box -->
+
+<div class="commentInput">
+
+<img
+id="commentAvatar"
+src="assets/default-avatar.png">
+
+<input
+id="commentText"
+placeholder="Write a comment...">
+
+<button
+id="sendComment">
+
+Send
+
+</button>
+
+</div>
+
+<script
+type="module"
+src="group-post.js">
+</script>
+
+</body>
+</html>
+
+
