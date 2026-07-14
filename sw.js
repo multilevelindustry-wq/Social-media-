@@ -1,34 +1,58 @@
-const CACHE = "creatorhub-v1";
+const CACHE_NAME = "creatorhub-v2";
 
 const CORE_FILES = [
-    "./",
-    "./index.html"
+  "/",
+  "/index.html",
+  "/manifest.json",
+  "/Icon-192.png",
+  "/Icon-512.png",
+  "/favicon.png"
 ];
 
 self.addEventListener("install", event => {
-    event.waitUntil(
-        caches.open(CACHE).then(cache => cache.addAll(CORE_FILES))
-    );
+  self.skipWaiting();
+
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(cache => {
+      return cache.addAll(CORE_FILES);
+    })
+  );
+});
+
+self.addEventListener("activate", event => {
+  event.waitUntil(
+    caches.keys().then(keys => {
+      return Promise.all(
+        keys.map(key => {
+          if (key !== CACHE_NAME) {
+            return caches.delete(key);
+          }
+        })
+      );
+    }).then(() => self.clients.claim())
+  );
 });
 
 self.addEventListener("fetch", event => {
-    event.respondWith(
-        caches.match(event.request).then(cached => {
-            if (cached) return cached;
+  if (event.request.method !== "GET") return;
 
-            return fetch(event.request).then(response => {
-                if (
-                    event.request.method === "GET" &&
-                    response.status === 200
-                ) {
-                    const copy = response.clone();
-                    caches.open(CACHE).then(cache => {
-                        cache.put(event.request, copy);
-                    });
-                }
+  event.respondWith(
+    caches.match(event.request).then(cached => {
+      if (cached) return cached;
 
-                return response;
-            });
-        })
-    );
+      return fetch(event.request).then(response => {
+        if (!response || response.status !== 200) {
+          return response;
+        }
+
+        const copy = response.clone();
+
+        caches.open(CACHE_NAME).then(cache => {
+          cache.put(event.request, copy);
+        });
+
+        return response;
+      });
+    })
+  );
 });
