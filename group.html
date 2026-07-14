@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>CreatorHub Group</title>
+
+
+<link rel="stylesheet" href="group.css">
+
+<link
+rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link
+rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- TOP HEADER -->
+<!-- ========================= -->
+
+<header class="groupTopBar">
+
+<div class="topLeft">
+
+<a href="groups.html">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</a>
+
+<h2>
+
+CreatorHub Groups
+
+</h2>
+
+</div>
+
+<div class="topRight">
+
+<input
+
+type="search"
+
+id="searchGroupPosts"
+
+placeholder="Search this group...">
+
+<img
+
+id="userAvatar"
+
+class="topAvatar"
+
+src="assets/default-avatar.png">
+
+</div>
+
+</header>
+
+<!-- ========================= -->
+<!-- MAIN -->
+<!-- ========================= -->
+
+<main class="groupContainer">
+
+<!-- ========================= -->
+<!-- GROUP COVER -->
+<!-- ========================= -->
+
+<section class="groupHero">
+
+<img
+
+id="groupCover"
+
+class="groupCover"
+
+src="assets/default-cover.jpg"
+
+alt="Cover">
+
+<button
+
+id="changeCoverBtn"
+
+class="coverEditBtn hidden">
+
+<i class="fa-solid fa-camera"></i>
+
+Change Cover
+
+</button>
+
+<input
+
+type="file"
+
+id="coverInput"
+
+accept="image/*"
+
+hidden>
+
+</section>
+
+<!-- ========================= -->
+<!-- GROUP INFO -->
+<!-- ========================= -->
+
+<section class="groupInfoCard">
+
+<div class="groupLeft">
+
+<div class="avatarWrapper">
+
+<img
+
+id="groupAvatar"
+
+class="groupAvatar"
+
+src="assets/default-group.png">
+
+<button
+
+id="changeAvatarBtn"
+
+class="avatarEditBtn hidden">
+
+<i class="fa-solid fa-camera"></i>
+
+</button>
+
+<input
+
+type="file"
+
+id="avatarInput"
+
+accept="image/*"
+
+hidden>
+
+</div>
+
+<div class="groupDetails">
+
+<h1 id="groupName">
+
+Loading...
+
+</h1>
+
+<p id="groupDescription">
+
+Loading group description...
+
+</p>
+
+<div class="groupStats">
+
+<span id="privacyType">
+
+🌍 Public Group
+
+</span>
+
+<span>•</span>
+
+<span id="memberCount">
+
+0 Members
+
+</span>
+
+<span>•</span>
+
+<span id="postCount">
+
+0 Posts
+
+</span>
+
+</div>
+
+<p id="groupCreated">
+
+Created Recently
+
+</p>
+
+<div
+
+id="memberPreview"
+
+class="memberPreview">
+
+</div>
+
+</div>
+
+</div>
+
+<div class="groupRight">
+
+<button
+
+id="joinBtn"
+
+class="primaryBtn">
+
+Join Group
+
+</button>
+
+<button
+
+id="inviteBtn"
+
+class="secondaryBtn">
+
+<i class="fa-solid fa-user-plus"></i>
+
+Invite
+
+</button>
+
+<button
+
+id="shareGroupBtn"
+
+class="secondaryBtn">
+
+<i class="fa-solid fa-share"></i>
+
+Share
+
+</button>
+
+<button
+
+id="editGroupBtn"
+
+class="secondaryBtn hidden">
+
+<i class="fa-solid fa-pen"></i>
+
+Edit Group
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- FACEBOOK TABS -->
+<!-- ========================= -->
+
+<nav class="groupTabs">
+
+<button
+class="groupTab active"
+data-tab="discussion">
+
+<i class="fa-solid fa-comments"></i>
+
+Discussion
+
+</button>
+
+<button
+class="groupTab"
+data-tab="featured">
+
+<i class="fa-solid fa-thumbtack"></i>
+
+Featured
+
+</button>
+
+<button
+class="groupTab"
+data-tab="members">
+
+<i class="fa-solid fa-users"></i>
+
+Members
+
+</button>
+
+<button
+class="groupTab"
+data-tab="photos">
+
+<i class="fa-solid fa-images"></i>
+
+Photos
+
+</button>
+
+<button
+class="groupTab"
+data-tab="videos">
+
+<i class="fa-solid fa-video"></i>
+
+Videos
+
+</button>
+
+<button
+class="groupTab"
+data-tab="about">
+
+<i class="fa-solid fa-circle-info"></i>
+
+About
+
+</button>
+
+</nav>
+
+
+<div class="groupMain">
+
+<!-- ========================= -->
+<!-- CREATE POST -->
+<!-- ========================= -->
+
+<section class="createGroupPost">
+
+<div class="createTop">
+
+<img
+id="createAvatar"
+class="createAvatar"
+src="assets/default-avatar.png">
+
+<input
+
+id="openPostComposer"
+
+type="text"
+
+placeholder="Write something to the group..."
+
+readonly>
+
+</div>
+
+<div class="createActions">
+
+<button id="photoPostBtn">
+
+<i class="fa-solid fa-image"></i>
+
+Photo
+
+</button>
+
+<button id="videoPostBtn">
+
+<i class="fa-solid fa-video"></i>
+
+Video
+
+</button>
+
+<button id="pollPostBtn">
+
+<i class="fa-solid fa-square-poll-horizontal"></i>
+
+Poll
+
+</button>
+
+<button id="feelingPostBtn">
+
+😊 Feeling
+
+</button>
+
+<button id="livePostBtn">
+
+🔴 Live
+
+</button>
+
+</div>
+</section>
+
+
+
+<!-- ========================= -->
+<!-- CREATE POST MODAL -->
+<!-- ========================= -->
+
+<div
+id="postComposerModal"
+class="modal hidden">
+
+<div class="modalContent">
+
+<div class="modalHeader">
+
+<h2>
+
+Create Group Post
+
+</h2>
+
+<button id="closeComposer">
+
+×
+
+</button>
+
+</div>
+
+<form id="groupPostForm">
+
+<input
+
+id="postTitle"
+
+type="text"
+
+placeholder="Title">
+
+<textarea
+
+id="postDescription"
+
+placeholder="What's happening?">
+
+</textarea>
+
+<input
+
+id="postMedia"
+
+type="file"
+
+accept="image/*,video/*">
+
+<div class="composerOptions">
+
+<label>
+
+<input
+type="checkbox"
+id="anonymousPost">
+
+Post anonymously
+
+</label>
+
+<label>
+
+<input
+type="checkbox"
+id="disableComments">
+
+Turn off comments
+
+</label>
+
+</div>
+
+<button
+type="submit"
+class="publishBtn">
+
+Publish Post
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- PINNED POST -->
+<!-- ========================= -->
+
+<section
+id="announcementCard"
+class="announcementCard hidden">
+
+<div class="announcementHeader">
+
+📌
+
+Pinned Announcement
+
+</div>
+
+<h3 id="announcementTitle">
+
+</h3>
+
+<p id="announcementBody">
+
+</p>
+
+</section>
+
+<!-- ========================= -->
+<!-- POSTS -->
+<!-- ========================= -->
+
+<section class="groupFeed">
+
+<h2>
+
+Latest Posts
+
+</h2>
+
+<div id="groupPosts">
+
+<!-- Firebase Posts -->
+
+</div>
+
+</section>
+
+</div>
+
+
+
+
+<!-- ========================= -->
+<!-- MAIN GRID -->
+<!-- ========================= -->
+
+<div class="groupLayout">
+
+<!-- ========================= -->
+<!-- LEFT COLUMN -->
+<!-- ========================= -->
+
+
+
+
+
+<!-- ========================= -->
+<!-- RIGHT SIDEBAR -->
+<!-- ========================= -->
+
+<aside class="groupSidebar">
+
+<!-- ========================= -->
+<!-- ABOUT GROUP -->
+<!-- ========================= -->
+
+<section class="sidebarCard">
+
+<h3>
+
+About Group
+
+</h3>
+
+<p id="aboutGroup">
+
+Loading group description...
+
+</p>
+
+<div class="aboutItem">
+
+<i class="fa-solid fa-earth-africa"></i>
+
+<span id="aboutPrivacy">
+
+Public Group
+
+</span>
+
+</div>
+
+<div class="aboutItem">
+
+<i class="fa-solid fa-calendar"></i>
+
+<span id="aboutCreated">
+
+Recently Created
+
+</span>
+
+</div>
+
+<div class="aboutItem">
+
+<i class="fa-solid fa-user-group"></i>
+
+<span id="aboutMembers">
+
+0 Members
+
+</span>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- MEMBER PREVIEW -->
+<!-- ========================= -->
+
+<section class="sidebarCard">
+
+<div class="sidebarHeader">
+
+<h3>
+
+Members
+
+</h3>
+
+<a href="#" id="viewAllMembers">
+
+See All
+
+</a>
+
+</div>
+
+<div id="membersList">
+
+<!-- Members -->
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- GROUP RULES -->
+<!-- ========================= -->
+
+<section class="sidebarCard">
+
+<div class="sidebarHeader">
+
+<h3>
+
+Group Rules
+
+</h3>
+
+<button
+
+id="editRulesBtn"
+
+class="hidden">
+
+Edit
+
+</button>
+
+</div>
+
+<ol id="rulesList">
+
+<li>
+
+Be respectful.
+
+</li>
+
+<li>
+
+No spam.
+
+</li>
+
+<li>
+
+Stay on topic.
+
+</li>
+
+</ol>
+
+</section>
+
+<!-- ========================= -->
+<!-- FEATURED PHOTOS -->
+<!-- ========================= -->
+
+<section class="sidebarCard">
+
+<div class="sidebarHeader">
+
+<h3>
+
+Photos
+
+</h3>
+
+<a href="#">
+
+See All
+
+</a>
+
+</div>
+
+<div
+id="photoGrid"
+class="photoGrid">
+
+<!-- Photos -->
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FEATURED VIDEOS -->
+<!-- ========================= -->
+
+<section class="sidebarCard">
+
+<div class="sidebarHeader">
+
+<h3>
+
+Videos
+
+</h3>
+
+<a href="#">
+
+See All
+
+</a>
+
+</div>
+
+<div
+id="videoGrid"
+class="videoGrid">
+
+<!-- Videos -->
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- ADMINS -->
+<!-- ========================= -->
+
+<section class="sidebarCard">
+
+<div class="sidebarHeader">
+
+<h3>
+
+Admins & Moderators
+
+</h3>
+
+</div>
+
+<div
+id="adminsList">
+
+<!-- Admins -->
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- INVITE FRIENDS -->
+<!-- ========================= -->
+
+<section class="sidebarCard">
+
+<h3>
+
+Invite Friends
+
+</h3>
+
+<input
+
+id="inviteSearch"
+
+type="text"
+
+placeholder="Search friends...">
+
+<div
+id="inviteResults">
+
+<!-- Friends -->
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- GROUP ACTIVITY -->
+<!-- ========================= -->
+
+<section class="sidebarCard">
+
+<h3>
+
+Recent Activity
+
+</h3>
+
+<div id="activityFeed">
+
+<div class="activityItem">
+
+No activity yet.
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- TRENDING POSTS -->
+<!-- ========================= -->
+
+<section class="sidebarCard">
+
+<h3>
+
+Trending Posts
+
+</h3>
+
+<div id="trendingPosts">
+
+<!-- Trending -->
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- GROUP ANALYTICS -->
+<!-- OWNER ONLY -->
+<!-- ========================= -->
+
+<section
+id="analyticsCard"
+class="sidebarCard hidden">
+
+<h3>
+
+Group Analytics
+
+</h3>
+
+<div class="analyticsRow">
+
+<span>Total Members</span>
+
+<strong id="analyticsMembers">
+
+0
+
+</strong>
+
+</div>
+
+<div class="analyticsRow">
+
+<span>Total Posts</span>
+
+<strong id="analyticsPosts">
+
+0
+
+</strong>
+
+</div>
+
+<div class="analyticsRow">
+
+<span>Total Photos</span>
+
+<strong id="analyticsPhotos">
+
+0
+
+</strong>
+
+</div>
+
+<div class="analyticsRow">
+
+<span>Total Videos</span>
+
+<strong id="analyticsVideos">
+
+0
+
+</strong>
+
+</div>
+
+<div class="analyticsRow">
+
+<span>Active Today</span>
+
+<strong id="analyticsActive">
+
+0
+
+</strong>
+
+</div>
+
+</section>
+
+</aside>
+
+</div>
+
+<!-- END GROUP LAYOUT -->
+
+
+<!-- ========================================= -->
+<!-- EDIT GROUP MODAL -->
+<!-- ========================================= -->
+
+<div id="editGroupModal" class="modal hidden">
+
+    <div class="modalContent">
+
+        <div class="modalHeader">
+
+            <h2>Edit Group</h2>
+
+            <button id="closeEditGroup">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <form id="editGroupForm">
+
+            <label>Group Name</label>
+
+            <input
+                type="text"
+                id="editGroupName">
+
+            <label>Description</label>
+
+            <textarea
+                id="editGroupDescription"
+                rows="5"></textarea>
+
+            <label>Privacy</label>
+
+            <select id="editGroupPrivacy">
+
+                <option value="Public">
+
+                    Public
+
+                </option>
+
+                <option value="Private">
+
+                    Private
+
+                </option>
+
+            </select>
+
+            <button
+                type="submit"
+                class="primaryBtn">
+
+                Save Changes
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- INVITE MEMBERS MODAL -->
+<!-- ========================================= -->
+
+<div id="inviteModal" class="modal hidden">
+
+    <div class="modalContent">
+
+        <div class="modalHeader">
+
+            <h2>
+
+                Invite Members
+
+            </h2>
+
+            <button id="closeInviteModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <input
+            type="text"
+            id="inviteSearchInput"
+            placeholder="Search users...">
+
+        <div id="inviteUsersList">
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- GROUP RULES MODAL -->
+<!-- ========================================= -->
+
+<div id="rulesModal" class="modal hidden">
+
+    <div class="modalContent">
+
+        <div class="modalHeader">
+
+            <h2>
+
+                Group Rules
+
+            </h2>
+
+            <button id="closeRulesModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <textarea
+
+            id="rulesEditor"
+
+            rows="10"
+
+            placeholder="Enter one rule per line...">
+
+        </textarea>
+
+        <button
+
+            id="saveRulesBtn"
+
+            class="primaryBtn">
+
+            Save Rules
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- MEMBER MANAGEMENT -->
+<!-- ========================================= -->
+
+<div id="memberModal" class="modal hidden">
+
+    <div class="modalContent">
+
+        <div class="modalHeader">
+
+            <h2>
+
+                Members
+
+            </h2>
+
+            <button id="closeMemberModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <div id="memberManagementList">
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- LOADING -->
+<!-- ========================================= -->
+
+<div
+id="loadingOverlay"
+class="loadingOverlay hidden">
+
+<div class="loader"></div>
+
+<p>
+
+Loading...
+
+</p>
+
+</div>
+
+<!-- ========================================= -->
+<!-- TOAST -->
+<!-- ========================================= -->
+
+<div id="toast" class="toast">
+
+Done Successfully
+
+</div>
+
+</main>
+
+<script
+type="module"
+src="groupp.js">
+
+</script>
+
+</body>
+
+</html>
