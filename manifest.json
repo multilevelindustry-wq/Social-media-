@@ -1,14 +1,17 @@
 {
+  "id": "/",
   "name": "CreatorHub",
   "short_name": "CreatorHub",
   "description": "CreatorHub Social Platform",
-  "id": "/",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ff3b30",
+  "display_override": [
+    "standalone"
+  ],
   "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "/Icon-192.png",
