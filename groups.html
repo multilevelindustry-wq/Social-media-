@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>Groups</title>
+
+<link rel="stylesheet"
+href="variable.css">
+
+<link rel="stylesheet"
+href="app.css">
+
+<link rel="stylesheet"
+href="groups.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<a href="index.html">
+
+← Home
+
+</a>
+
+<h2>
+
+CreatorHub Groups
+
+</h2>
+
+<img
+
+id="userAvatar"
+
+src="assets/default-avatar.png"
+
+class="topAvatar">
+
+</header>
+
+<main class="groupsPage">
+
+<div class="groupsHeader">
+
+<h1>Discover Groups</h1>
+
+<button id="createGroupBtn">
+
++ Create Group
+
+</button>
+
+</div>
+
+<div class="searchBox">
+
+<input
+
+type="search"
+
+id="searchGroup"
+
+placeholder="Search groups...">
+
+</div>
+
+<div id="groupsContainer">
+
+<!-- Groups appear here -->
+
+</div>
+
+<div
+
+id="createGroupModal"
+
+class="modal hidden">
+
+<div class="modalContent">
+
+<h2>Create Group</h2>
+
+<form id="groupForm">
+
+<input
+
+type="text"
+
+id="groupName"
+
+placeholder="Group Name"
+
+required>
+
+<textarea
+
+id="groupDescription"
+
+placeholder="Group Description"
+
+required>
+
+</textarea>
+
+<input
+
+type="file"
+
+id="groupCover"
+
+accept="image/*">
+
+<select id="groupPrivacy">
+
+<option value="public">
+
+Public Group
+
+</option>
+
+<option value="private">
+
+Private Group
+
+</option>
+
+</select>
+
+<button type="submit">
+
+Create Group
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+</main>
+
+<script
+
+type="module"
+
+src="groups.js">
+
+</script>
+
+</body>
+
+</html>
