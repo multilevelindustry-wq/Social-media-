@@ -196,9 +196,9 @@ async function createPostCard(post) {
         ` : ""}
 
         ${post.description ? `
-            <p class="postDescription">
-                ${post.description}
-            </p>
+              <p class="postPreview">
+    ${post.description}
+</p>
         ` : ""}
 
         ${renderMedia(post)}
