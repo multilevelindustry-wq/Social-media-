@@ -38,7 +38,7 @@ console.log(error);
 
 }
 
-window.location.href="dashboard.html";
+window.location.href="index.html";
 
 }
 
@@ -120,7 +120,7 @@ console.log(error);
 
 alert("Login Successful!");
 
-window.location.href="dashboard.html";
+window.location.href="index.html";
 
 }catch(error){
 
