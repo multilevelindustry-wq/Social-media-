@@ -1043,8 +1043,12 @@ async function createPostCard(post) {
         ` : ""}
 
         ${post.description ? `
-        <p class="postPreview">
+        <p
+    class="postPreview"
+    onclick="openPost('post.html?id=${post.postId}')">
+
     ${post.description}
+
 </p>
         ` : ""}
 
@@ -1117,9 +1121,9 @@ function renderMedia(post) {
         <div class="postMedia">
 
             <img
-                loading="lazy"
                 src="${post.mediaUrl}"
-                alt="Post Image">
+                class="postImage"
+                onclick="openPost('post.html?id=${post.postId}')">
 
         </div>
 
@@ -1133,7 +1137,8 @@ function renderMedia(post) {
 
         <video
             controls
-            preload="metadata">
+            preload="metadata"
+            onclick="openPost('post.html?id=${post.postId}')">
 
             <source src="${post.mediaUrl}">
 
@@ -1145,6 +1150,20 @@ function renderMedia(post) {
 
 }
 
+
+window.openPost = function(url){
+
+    if(typeof shouldOpenDirectLink === "function" &&
+       shouldOpenDirectLink()){
+
+        openDirectLink();
+
+    }
+
+    location.href = url;
+
+};
+    
 
 
 
