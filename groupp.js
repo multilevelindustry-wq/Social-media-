@@ -54,6 +54,838 @@ let currentGroup=null;
 let groupPosts=[];
 
 
+
+/*==================================================
+HOME FEED ADS ENGINE
+PART 1 - CONFIG
+==================================================*/
+
+
+//==================================================
+// SETTINGS
+//==================================================
+
+const ADS_CONFIG={
+
+    // Load 10 posts at a time
+    postBatch:10,
+
+    // Show first ad after first post
+    firstAdAfter:1,
+
+    // Then every 2 posts
+    adFrequency:1,
+
+    // Direct Link
+    directMin:1,
+    directMax:2
+
+};
+
+
+//==================================================
+// ROTATION STATE
+//==================================================
+
+const ADS_STATE={
+
+    // Adsterra rotation
+    adsterraIndex:0,
+
+    // Manual rotation
+    manualIndex:0,
+
+    // Counts how many Adsterra ads
+    // have been shown
+    adsterraShown:0,
+
+    // 0 = first manual
+    // 1 = second manual
+    manualPair:0
+
+};
+
+
+//==================================================
+// ADSTERRA TYPES
+//==================================================
+
+const ADSTERRA_TYPES=[
+
+"300",
+
+"320",
+
+"native"
+
+];
+
+
+//==================================================
+// MANUAL ADS
+//==================================================
+const MANUAL_ADS=[
+
+{
+
+advertiser:"LoveNest Essentials",
+
+avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHKkCQmdKXdvSJQAMh2qoknsxEeG8pBTFI8XiJgOIcIw&s=10",
+
+image:"https://www.image2url.com/r2/default/images/1784537355611-3d54056e-5de5-40cb-bfa1-aad2fc5fefff.png",
+
+description:"Exclusive deals available today! Shop our top-rated intimate products and enjoy private, hassle-free delivery.",
+
+button:"Buy Now",
+
+url:"https://bluntutilities.com/t0vst1kf?key=e91199f29dc0671d0d4668b2b5d6acdf"
+
+},
+
+{
+
+advertiser:"Sensual Secrets",
+
+avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2YoZAo8soyiYZ4jwFGcNQYYhLJg2yOk0HkPHu2ufy6A&s=10",
+
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCdKPK8gyMKpK_X3thhTU85K5TOyh3Yi21UvKGE6mYZg&s=10",
+
+description:"Surprise your partner with thoughtful intimate gifts that help create memorable moments together.",
+
+button:"Learn More",
+
+url:"https://omg10.com/4/10748984"
+
+},
+
+{
+
+advertiser:"Desire Boutique",
+
+avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfA_pbPG48EEPBCRfowOiTHfsfjSeUih76prBINq01rQ&s=10",
+
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHKkCQmdKXdvSJQAMh2qoknsxEeG8pBTFI8XiJgOIcIw&s=10",
+
+description:"Upgrade your personal wellness routine with premium products designed for pleasure, comfort, and satisfaction.",
+
+button:"Learn More",
+
+url:"https://omg10.com/4/10748986"
+
+},
+
+{
+
+advertiser:"Luxe Intimates",
+
+avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Wjj0aRzTbY1WTvAPUoxK5HhK1juWaswErpC-v-pMiw&s",
+
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Wjj0aRzTbY1WTvAPUoxK5HhK1juWaswErpC-v-pMiw&s",
+
+description:"Find everything you need for a more exciting and fulfilling relationship—all in one trusted store.",
+
+button:"Learn More",
+
+url:"https://bluntutilities.com/t0vst1kf?key=e91199f29dc0671d0d4668b2b5d6acdf"
+
+},
+
+{
+
+advertiser:"Velvet Touch Store",
+
+avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCdKPK8gyMKpK_X3thhTU85K5TOyh3Yi21UvKGE6mYZg&s=10",
+
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCdKPK8gyMKpK_X3thhTU85K5TOyh3Yi21UvKGE6mYZg&s=10",
+
+description:"Elevate your romantic moments with carefully selected intimate essentials for comfort, confidence, and connection.",
+
+button:"Learn More",
+
+url:"https://omg10.com/4/7901758"
+
+},
+
+{
+
+advertiser:"Velvet Desire",
+
+avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShJhbgAI9LEU6mRk3NFjwlSzNWne_06jw_MGjIGaXtww&s=10",
+
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShJhbgAI9LEU6mRk3NFjwlSzNWne_06jw_MGjIGaXtww&s=10",
+
+description:"Discover bestselling adult wellness products trusted by thousands. Private shopping and secure checkout guaranteed.",
+
+button:"Learn More",
+
+url:"https://omg10.com/4/7897686"
+
+},
+
+{
+
+advertiser:"Intimate Bliss",
+
+avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjBYpGjfBYWO5oHpcz2LNeFQtsyOnWhjZFSLGB3oJl_w&s=10",
+
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjBYpGjfBYWO5oHpcz2LNeFQtsyOnWhjZFSLGB3oJl_w&s=10",
+
+description:"Looking to spice up date night? Explore our exclusive collection of quality intimate accessories at amazing prices.",
+
+button:"Learn More",
+
+url:"https://bluntutilities.com/t0vst1kf?key=e91199f29dc0671d0d4668b2b5d6acdf"
+
+},
+
+{
+
+advertiser:"Passion Palace",
+
+avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIiv7d57coKMY7N2Pvvn9cJPZDObTCHzDhyt2URzGFaw&s=10",
+
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIiv7d57coKMY7N2Pvvn9cJPZDObTCHzDhyt2URzGFaw&s=10",
+
+description:"Your privacy comes first. Shop premium intimacy products with discreet packaging and reliable nationwide delivery.",
+
+button:"Learn More",
+
+url:"https://omg10.com/4/10748986"
+
+},
+
+{
+
+advertiser:"Midnight Pleasures",
+
+avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHKkCQmdKXdvSJQAMh2qoknsxEeG8pBTFI8XiJgOIcIw&s=10",
+
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHKkCQmdKXdvSJQAMh2qoknsxEeG8pBTFI8XiJgOIcIw&s=10",
+
+description:"Experience comfort, quality, and confidence with our carefully curated range of adult wellness essentials.",
+
+button:"Learn More",
+
+url:"https://omg10.com/4/10748984"
+
+},
+
+{
+
+advertiser:"Secret Seduction",
+
+avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Wjj0aRzTbY1WTvAPUoxK5HhK1juWaswErpC-v-pMiw&s",
+
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Wjj0aRzTbY1WTvAPUoxK5HhK1juWaswErpC-v-pMiw&s",
+
+description:"Rediscover intimacy with premium products designed to bring couples closer. Shop discreetly with fast delivery.",
+
+button:"Learn More",
+
+url:"https://omg10.com/4/7897686"
+
+}
+
+];
+
+
+//==================================================
+// DIRECT LINKS
+//==================================================
+
+const DIRECT_LINKS=[
+
+"https://omg10.com/4/10748986",
+
+"https://bluntutilities.com/t0vst1kf?key=e91199f29dc0671d0d4668b2b5d6acdf",
+
+"https://omg10.com/4/7897686",
+
+"https://omg10.com/4/10748984",
+
+"https://omg10.com/4/7901758",
+
+"https://bluntutilities.com/t0vst1kf?key=e91199f29dc0671d0d4668b2b5d6acdf",
+
+"https://omg10.com/4/7901758",
+
+"https://omg10.com/4/10748986",
+
+"https://omg10.com/4/10748984",
+
+"https://bluntutilities.com/t0vst1kf?key=e91199f29dc0671d0d4668b2b5d6acdf"
+
+];
+
+
+//==================================================
+// HELPERS
+//==================================================
+
+function random(min,max){
+
+    return Math.floor(
+
+        Math.random()*
+
+        (max-min+1)
+
+    )+min;
+
+}
+
+
+//==================================================
+// SHOULD INSERT AD
+//==================================================
+
+function shouldInsertAd(postNumber){
+
+    if(postNumber===ADS_CONFIG.firstAdAfter){
+
+        return true;
+
+    }
+
+    if(
+
+        postNumber>
+
+        ADS_CONFIG.firstAdAfter
+
+    ){
+
+        return (
+
+            (postNumber-
+
+            ADS_CONFIG.firstAdAfter)
+
+            %
+
+            ADS_CONFIG.adFrequency
+
+        )===0;
+
+    }
+
+    return false;
+
+}
+
+
+
+/*==================================================
+HOME FEED ADS ENGINE
+PART 2 - ADSTERRA
+==================================================*/
+
+
+//==================================================
+// NEXT ADSTERRA TYPE
+//==================================================
+
+function getNextAdsterraType(){
+
+    const type=
+
+    ADSTERRA_TYPES[
+
+        ADS_STATE.adsterraIndex
+
+    ];
+
+    ADS_STATE.adsterraIndex++;
+
+    if(
+
+        ADS_STATE.adsterraIndex>=
+
+        ADSTERRA_TYPES.length
+
+    ){
+
+        ADS_STATE.adsterraIndex=0;
+
+    }
+
+    ADS_STATE.adsterraShown++;
+
+    return type;
+
+}
+
+
+
+//==================================================
+// SHOW ADSTERRA
+//==================================================
+
+function showAdsterra(container){
+
+    if(!container) return;
+
+    container.innerHTML="";
+
+    const type=
+
+    getNextAdsterraType();
+
+    //--------------------------------------------------
+    // 300x250
+    //--------------------------------------------------
+
+    if(type==="300"){
+
+        const option=document.createElement("script");
+
+        option.text=`
+
+        atOptions={
+
+        key:'0be1e382fd37fb22ea434d15f4bb3687',
+
+        format:'iframe',
+
+        height:250,
+
+        width:300,
+
+        params:{}
+
+        };
+
+        `;
+
+        const invoke=document.createElement("script");
+
+        invoke.src=
+
+        "https://www.highperformanceformat.com/0be1e382fd37fb22ea434d15f4bb3687/invoke.js";
+
+        invoke.async=true;
+
+        container.appendChild(option);
+
+        container.appendChild(invoke);
+
+        return;
+
+    }
+
+    //--------------------------------------------------
+    // 320x50
+    //--------------------------------------------------
+
+    if(type==="320"){
+
+        const option=document.createElement("script");
+
+        option.text=`
+
+        atOptions={
+
+        key:'c9418dd83a86f8a95d152ae74675f102',
+
+        format:'iframe',
+
+        height:50,
+
+        width:320,
+
+        params:{}
+
+        };
+
+        `;
+
+        const invoke=document.createElement("script");
+
+        invoke.src=
+
+        "https://www.highperformanceformat.com/c9418dd83a86f8a95d152ae74675f102/invoke.js";
+
+        invoke.async=true;
+
+        container.appendChild(option);
+
+        container.appendChild(invoke);
+
+        return;
+
+}
+      //--------------------------------------------------
+    // NATIVE
+    //--------------------------------------------------
+    const script=document.createElement("script");
+
+    script.async=true;
+
+    script.dataset.cfasync="false";
+
+    script.src=
+
+    "https://pl29811018.effectivecpmnetwork.com/1d99478d06f0c78b684ba8b345f25fc5/invoke.js";
+
+    const div=document.createElement("div");
+
+    div.id=
+
+    "container-1d99478d06f0c78b684ba8b345f25fc5_"+
+
+    Date.now();
+
+    container.appendChild(script);
+
+    container.appendChild(div);
+
+}
+
+
+
+/*==================================================
+HOME FEED ADS ENGINE
+PART 3 - MANUAL ADS
+==================================================*/
+
+
+//==================================================
+// NEXT MANUAL
+//==================================================
+
+function getNextManualAd(){
+
+    const ad=
+
+    MANUAL_ADS[
+
+        ADS_STATE.manualIndex
+
+    ];
+
+    ADS_STATE.manualIndex++;
+
+    if(
+
+        ADS_STATE.manualIndex>=
+
+        MANUAL_ADS.length
+
+    ){
+
+        ADS_STATE.manualIndex=0;
+
+    }
+
+    return ad;
+
+}
+
+
+
+//==================================================
+// SHOW MANUAL
+//==================================================
+
+function showManualAd(container){
+
+    if(!container) return;
+
+    const ad=
+
+    getNextManualAd();
+    
+    
+    container.innerHTML = `
+
+<div class="manualAdCard">
+
+    <div class="manualHeader">
+
+        <img
+        src="${ad.avatar}"
+        class="manualAvatar">
+
+        <div class="manualInfo">
+
+            <div class="manualName">
+
+                ${ad.advertiser}
+
+            </div>
+
+            <div class="manualSponsored">
+
+                📢 Sponsored
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="${ad.url}" target="_blank">
+
+        <img
+        src="${ad.image}"
+        class="manualImage">
+
+    </a>
+
+    <div class="manualDescription">
+
+        ${ad.description}
+
+    </div>
+
+    <a
+    href="${ad.url}"
+    target="_blank"
+    class="manualLearnBtn">
+
+        Learn More
+
+    </a>
+
+</div>
+
+`;
+
+}
+
+
+
+//==================================================
+// NEXT FEED AD
+//==================================================
+
+function showNextFeedAd(container){
+
+    //------------------------------------------
+    // 3 Adsterra
+    //------------------------------------------
+
+    if(
+
+        ADS_STATE.adsterraShown<3
+
+    ){
+
+        showAdsterra(container);
+
+        return;
+
+    }
+
+    //------------------------------------------
+    // Manual 1
+    //------------------------------------------
+
+    if(
+
+        ADS_STATE.manualPair===0
+
+    ){
+
+        showManualAd(container);
+
+        ADS_STATE.manualPair++;
+
+        return;
+
+    }
+
+    //------------------------------------------
+    // Manual 2
+    //------------------------------------------
+
+    if(
+
+        ADS_STATE.manualPair===1
+
+    ){
+
+        showManualAd(container);
+
+        ADS_STATE.manualPair=0;
+
+        ADS_STATE.adsterraShown=0;
+
+        return;
+
+    }
+
+}
+
+
+
+/*==================================================
+HOME FEED ADS ENGINE
+PART 4 - FEED INSERTION
+==================================================*/
+
+
+//==================================================
+// CREATE AD CONTAINER
+//==================================================
+
+function createAdContainer(){
+
+    const box=document.createElement("div");
+
+    box.className="homeFeedAd";
+
+    return box;
+
+}
+
+
+
+//==================================================
+// INSERT AD
+//==================================================
+
+function insertFeedAd(parent){
+
+    if(!parent) return;
+
+    const box=createAdContainer();
+
+    parent.appendChild(box);
+
+    showNextFeedAd(box);
+
+}
+
+
+
+//==================================================
+// RENDER POSTS WITH ADS
+//==================================================
+
+function renderFeed(posts){
+
+    posts.forEach((post,index)=>{
+
+        //------------------------------------------
+        // Render normal post
+        //------------------------------------------
+
+        createPostCard(post);
+
+        //------------------------------------------
+        // First post then every 2 posts
+        //------------------------------------------
+
+        const postNumber=index+1;
+
+        if(
+
+            shouldInsertAd(postNumber)
+
+        ){
+
+            insertFeedAd(postsContainer);
+
+        }
+
+    });
+
+}
+
+
+
+/*==================================================
+HOME FEED ADS ENGINE
+PART 5 - INFINITE FEED
+==================================================*/
+
+
+//==================================================
+// FEED STATE
+//==================================================
+
+let ALL_POSTS=[];
+
+let CURRENT_INDEX=0;
+
+let LOADING_MORE=false;
+
+
+//==================================================
+// LOAD NEXT 10 POSTS
+//==================================================
+
+function loadNextPosts(){
+
+    if(LOADING_MORE) return;
+
+    LOADING_MORE=true;
+
+    const batch=
+
+    ALL_POSTS.slice(
+
+        CURRENT_INDEX,
+
+        CURRENT_INDEX+
+
+        ADS_CONFIG.postBatch
+
+    );
+
+    if(batch.length===0){
+
+        LOADING_MORE=false;
+
+        return;
+
+    }
+
+    renderFeed(batch);
+
+    CURRENT_INDEX+=batch.length;
+
+    LOADING_MORE=false;
+
+}
+
+
+
+//==================================================
+// WATCH SCROLL
+//==================================================
+
+function watchFeed(){
+
+    window.addEventListener(
+
+        "scroll",
+
+        ()=>{
+
+            const nearBottom=
+
+            window.innerHeight+
+
+            window.scrollY>=
+
+            document.body.offsetHeight-800;
+
+            if(nearBottom){
+
+                loadNextPosts();
+
+            }
+
+        }
+
+    );
+
+}
+
+
+
 //========================================
 // DOM
 //========================================
@@ -1347,15 +2179,23 @@ const snapshot=await getDocs(q);
 
 snapshot.forEach(docSnap=>{
 
-const post=docSnap.data();
+    const post = docSnap.data();
 
-groupPosts.push(post);
+    if(!post.postId){
 
-renderPost(post);
+        post.postId = docSnap.id;
+
+    }
+
+    groupPosts.push(post);
 
 });
 
+// Render posts with ads
+renderGroupFeed(groupPosts);
+
 }
+
 
 
 //========================================
@@ -1443,6 +2283,40 @@ location.href =
 `group-post.html?id=${postId}`;
 
 };
+
+
+
+window.openPost = function(postId){
+
+    const url = `group-post.html?id=${postId}`;
+
+    if(shouldOpenDirectLink()){
+
+        openDirectLink();
+
+    }
+
+    location.href = url;
+
+};
+
+
+function renderGroupFeed(posts){
+
+    posts.forEach((post,index)=>{
+
+        renderPost(post);
+
+        if(shouldInsertAd(index + 1)){
+
+            insertFeedAd(groupPostsContainer);
+
+        }
+
+    });
+
+}
+
 
 
 
