@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CreatorHub Blog | Trending Stories, Tips & Ways to Make Money Online</title>
+
+<meta name="description"
+content="Read trending stories, technology, lifestyle, business, entertainment and creator tips. Discover new ideas and learn how to earn by sharing content on CreatorHub.">
+
+<meta name="keywords"
+content="blog, CreatorHub, make money online, creators, blogging, trending stories, business, technology">
+
+<style>
+
+body{
+
+font-family:Arial,sans-serif;
+margin:0;
+background:#fafafa;
+color:#222;
+
+}
+
+header{
+
+background:#111;
+color:#fff;
+padding:60px 20px;
+text-align:center;
+
+}
+
+header h1{
+
+font-size:42px;
+margin:0;
+
+}
+
+header p{
+
+font-size:18px;
+opacity:.9;
+
+}
+
+main{
+
+max-width:900px;
+margin:30px auto;
+padding:20px;
+background:#fff;
+border-radius:10px;
+
+}
+
+.articleTitle{
+
+font-size:36px;
+margin-bottom:10px;
+
+}
+
+.articleMeta{
+
+color:#666;
+margin-bottom:25px;
+
+}
+
+.articleContent{
+
+font-size:18px;
+line-height:1.8;
+
+}
+
+.placeholder{
+
+min-height:700px;
+border:2px dashed #ddd;
+padding:25px;
+margin-top:20px;
+border-radius:10px;
+color:#777;
+
+}
+
+.popup{
+
+position:fixed;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);
+width:340px;
+background:#fff;
+border-radius:15px;
+padding:25px;
+box-shadow:0 20px 50px rgba(0,0,0,.3);
+display:none;
+z-index:9999;
+
+}
+
+.popup h2{
+
+margin-top:0;
+
+}
+
+.popup button{
+
+margin-top:15px;
+padding:12px 20px;
+border:none;
+background:#0066ff;
+color:#fff;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+.popup .close{
+
+background:#999;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>CreatorHub Blog</h1>
+
+<p>Trending stories, expert tips, business ideas and creator inspiration.</p>
+
+</header>
+
+<main>
+
+<h2 class="articleTitle">
+
+Your Blog Title Goes Here
+
+</h2>
+
+<div class="articleMeta">
+
+Published • CreatorHub Team
+
+</div>
+
+<div class="articleContent">
+
+<div class="placeholder">
+
+Write your complete article here...
+
+</div>
+
+</div>
+
+</main>
+
+<div class="popup" id="creatorPopup">
+
+<h2>💰 Turn Your Ideas Into Income</h2>
+
+<p>
+
+Thousands of creators are sharing stories, videos and ideas on <strong>CreatorHub</strong>.
+
+Start building an audience and earn from your content.
+
+</p>
+
+<button onclick="location.href='signup.html'">
+
+Join CreatorHub
+
+</button>
+
+<button class="close"
+
+onclick="closePopup()">
+
+Maybe Later
+
+</button>
+
+</div>
+
+<script>
+
+const popup=document.getElementById("creatorPopup");
+
+function showPopup(){
+
+popup.style.display="block";
+
+}
+
+function closePopup(){
+
+popup.style.display="none";
+
+}
+
+showPopup();
+
+setInterval(()=>{
+
+showPopup();
+
+},140000);
+
+</script>
+
+</body>
+</html>
