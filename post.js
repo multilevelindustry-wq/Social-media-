@@ -471,51 +471,71 @@ if(commentForm){
 }
 
 
-
-
 async function loadRelated(){
 
-const q=query(
+    const q=query(
 
-collection(db,"posts"),
+        collection(db,"posts"),
 
-where("uid","==",postData.uid),
+        where("uid","==",postData.uid),
 
-limit(5)
+        limit(5)
 
-);
+    );
 
-const snapshot=await getDocs(q);
+    const snapshot=await getDocs(q);
 
-relatedPosts.innerHTML="";
+    relatedPosts.innerHTML="";
 
-snapshot.forEach(doc=>{
+    snapshot.forEach(doc=>{
 
-const p=doc.data();
+        const p=doc.data();
 
-if(p.postId===postId) return;
+        if(p.postId===postId) return;
 
-relatedPosts.innerHTML+=`
+        relatedPosts.innerHTML+=`
 
-<div class="relatedCard">
+        <div
 
-<img src="${p.mediaUrl}">
+            class="relatedCard"
 
-<div class="relatedInfo">
+            onclick="openRelatedPost('${p.postId}')">
 
-<h4>${p.title}</h4>
+            <img
 
-<p>${p.views} Views</p>
+                src="${p.mediaUrl}"
 
-</div>
+                class="relatedImage">
 
-</div>
+            <div class="relatedInfo">
 
-`;
+                <h4>${p.title}</h4>
 
-});
+                <p>${p.views || 0} Views</p>
+
+            </div>
+
+        </div>
+
+        `;
+
+    });
 
 }
+
+
+
+//==========================================
+// OPEN RELATED POST
+//==========================================
+
+window.openRelatedPost=function(postId){
+
+    location.href=`post.html?id=${postId}`;
+
+};
+
+
 
 function timeAgo(timestamp){
 
