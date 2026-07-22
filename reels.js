@@ -8,16 +8,6 @@ import "./reelads.js";
 import { createNotification } from "./notification-helper.js";
 
 import {
-
-    init,
-    insertAds,
-    watchFeed,
-    openPost
-
-} from "./ads.js";
-await init();
-
-import {
 onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 
