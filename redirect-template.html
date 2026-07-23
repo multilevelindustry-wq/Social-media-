@@ -10,19 +10,31 @@ content="width=device-width,initial-scale=1">
 
 <title>Redirecting...</title>
 
-<meta
-name="robots"
-content="index,follow">
+<meta name="robots" content="index,follow">
 
 <script>
 
-const PAGE_ID="POST_ID";
+(function(){
 
-window.location.replace(
+    // Example:
+    // /post/how-to-make-money-online-A8X92KD.html
 
-"/post.html?id="+PAGE_ID
+    const file = location.pathname.split("/").pop();
 
-);
+    // Remove ".html"
+    const name = file.replace(".html","");
+
+    // Get everything after the last "-"
+    const id = name.substring(name.lastIndexOf("-")+1);
+
+    // Redirect
+    location.replace(
+
+        "/post.html?id="+encodeURIComponent(id)
+
+    );
+
+})();
 
 </script>
 
@@ -30,11 +42,7 @@ window.location.replace(
 
 <body>
 
-<p>
-
-Redirecting...
-
-</p>
+<p>Redirecting...</p>
 
 </body>
 
