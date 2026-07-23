@@ -110,18 +110,186 @@ xml+=`
 
 `;
 
-
-// Post URLs
+//-------------------------------------
+// POSTS
+//-------------------------------------
 
 snapshot.forEach(docSnap=>{
 
-const post=docSnap.data();
+    const post=docSnap.data();
 
-const id=docSnap.id;
+    const id=docSnap.id;
 
-// We'll build the URL in Part 3
+    //---------------------------------
+    // TITLE
+    //---------------------------------
+
+    let title=(post.title || "post")
+
+    .toLowerCase()
+
+    .trim();
+
+    //---------------------------------
+    // REMOVE SPECIAL CHARACTERS
+    //---------------------------------
+
+    title=title
+
+    .replace(/[^\w\s-]/g,"")
+
+    .replace(/\s+/g,"-")
+
+    .replace(/-+/g,"-")
+
+    .substring(0,80);
+
+    //---------------------------------
+    // URL
+    //---------------------------------
+
+    const url=
+
+`${DOMAIN}/${title}-${id}.html`;
+
+    //---------------------------------
+    // LASTMOD
+    //---------------------------------
+
+    let lastmod="";
+
+    if(post.createdAt?.toDate){
+
+        lastmod=
+
+post.createdAt
+
+.toDate()
+
+.toISOString();
+
+    }
+
+    //---------------------------------
+    // ADD TO XML
+    //---------------------------------
+
+    xml += `
+
+<url>
+
+<loc>${url}</loc>
+
+<lastmod>${lastmod}</lastmod>
+
+<changefreq>${changefreq}</changefreq>
+
+<priority>${priority}</priority>
+
+</url>
+
+`;
 
 });
+
+//-------------------------------------
+// GROUP POSTS
+//-------------------------------------
+
+const groupQuery = query(
+
+    collection(db,"groupPosts"),
+
+    where("visibility","==","public"),
+
+    orderBy("createdAt","desc")
+
+);
+
+const groupSnapshot = await getDocs(groupQuery);
+
+status.innerHTML =
+
+`Generating ${snapshot.size} posts and ${groupSnapshot.size} group posts...`;
+
+groupSnapshot.forEach(docSnap=>{
+
+    const post = docSnap.data();
+
+    const id = docSnap.id;
+
+    //---------------------------------
+    // TITLE
+    //---------------------------------
+
+    let title = (post.title || "group-post")
+
+    .toLowerCase()
+
+    .trim();
+
+    //---------------------------------
+    // CLEAN TITLE
+    //---------------------------------
+
+    title = title
+
+    .replace(/[^\w\s-]/g,"")
+
+    .replace(/\s+/g,"-")
+
+    .replace(/-+/g,"-")
+
+    .substring(0,80);
+
+    //---------------------------------
+    // URL
+    //---------------------------------
+
+    const url =
+
+`${DOMAIN}/group-${title}-${id}.html`;
+
+    //---------------------------------
+    // LASTMOD
+    //---------------------------------
+
+    let lastmod="";
+
+    if(post.createdAt?.toDate){
+
+        lastmod =
+
+        post.createdAt
+
+        .toDate()
+
+        .toISOString();
+
+    }
+
+    //---------------------------------
+    // XML
+    //---------------------------------
+
+    xml += `
+
+<url>
+
+<loc>${url}</loc>
+
+<lastmod>${lastmod}</lastmod>
+
+<changefreq>${changefreq}</changefreq>
+
+<priority>${priority}</priority>
+
+</url>
+
+`;
+
+});
+  
 
 xml+=`\n</urlset>`;
 
@@ -140,5 +308,60 @@ status.innerHTML=err.message;
 }
 
   }
+
+
+//---------------------------------
+// PRIORITY
+//---------------------------------
+
+let priority="0.6";
+
+const views=post.views || 0;
+
+if(views>=100000){
+
+    priority="1.0";
+
+}
+
+else if(views>=10000){
+
+    priority="0.9";
+
+}
+
+else if(views>=1000){
+
+    priority="0.8";
+
+}
+
+else if(views>=100){
+
+    priority="0.7";
+
+}
+
+
+
+//---------------------------------
+// CHANGEFREQ
+//---------------------------------
+
+let changefreq="monthly";
+
+const comments=post.comments || 0;
+
+if(comments>=100){
+
+    changefreq="daily";
+
+}
+
+else if(comments>=20){
+
+    changefreq="weekly";
+
+}
 
 
