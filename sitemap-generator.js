@@ -1,17 +1,11 @@
-import { db } from "./firebase.js";
+    import { db } from "./firebase.js";
 
 import{
-
 collection,
-
 query,
-
 where,
-
 orderBy,
-
 getDocs
-
 }from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
 
@@ -20,15 +14,10 @@ getDocs
 //========================================
 
 const DOMAIN="https://claunecks.com";
-// Replace with your real domain
-
 
 const output=document.getElementById("output");
-
 const status=document.getElementById("status");
-
 const generateBtn=document.getElementById("generateBtn");
-
 const copyBtn=document.getElementById("copyBtn");
 
 
@@ -50,6 +39,29 @@ alert("Sitemap copied.");
 
 
 //========================================
+// CREATE SEO SLUG
+//========================================
+
+function createSlug(title){
+
+return(title||"post")
+
+.toLowerCase()
+
+.trim()
+
+.replace(/[^\w\s-]/g,"")
+
+.replace(/\s+/g,"-")
+
+.replace(/-+/g,"-")
+
+.substring(0,80);
+
+}
+
+
+//========================================
 // GENERATE SITEMAP
 //========================================
 
@@ -57,30 +69,18 @@ async function generateSitemap(){
 
 try{
 
-status.innerHTML="Loading posts...";
+status.innerHTML="Loading...";
 
 output.value="";
-
-const q=query(
-
-collection(db,"posts"),
-
-where("visibility","==","public"),
-
-orderBy("createdAt","desc")
-
-);
-
-const snapshot=await getDocs(q);
 
 let xml=`<?xml version="1.0" encoding="UTF-8"?>\n`;
 
 xml+=`<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
 
 
-//----------------------------------------
-// HOMEPAGE
-//----------------------------------------
+//========================================
+// HOME PAGE
+//========================================
 
 xml+=`
 
@@ -97,39 +97,31 @@ xml+=`
 `;
 
 
-//----------------------------------------
+//========================================
 // POSTS
-//----------------------------------------
+//========================================
 
-snapshot.forEach(docSnap=>{
+const postQuery=query(
 
-    const post = docSnap.data();
+collection(db,"posts"),
 
-    const id = docSnap.id;
+where("visibility","==","public"),
 
-    //----------------------------------------
-    // SEO TITLE
-    //----------------------------------------
+orderBy("createdAt","desc")
 
-    let slug = (post.title || "post")
+);
 
-    .toLowerCase()
+const postSnapshot=await getDocs(postQuery);
 
-    .trim()
+postSnapshot.forEach(docSnap=>{
 
-    .replace(/[^\w\s-]/g,"")
+const post=docSnap.data();
 
-    .replace(/\s+/g,"-")
+const id=docSnap.id;
 
-    .replace(/-+/g,"-")
+const slug=createSlug(post.title);
 
-    .substring(0,80);
-
-    //----------------------------------------
-    // XML
-    //----------------------------------------
-
-    xml += `
+xml+=`
 
 <url>
 
@@ -146,72 +138,31 @@ snapshot.forEach(docSnap=>{
 });
 
 
-    const groupQuery = query(
-    collection(db,"groupPosts"),
-    where("visibility","==","public"),
-    orderBy("createdAt","desc")
-);
-
-const groupSnapshot = await getDocs(groupQuery);
-
-groupSnapshot.forEach(docSnap=>{
-
-    const post = docSnap.data();
-
-    const id = docSnap.id;
-
-    let slug = (post.title || "group-post")
-        .toLowerCase()
-        .trim()
-        .replace(/[^\w\s-]/g,"")
-        .replace(/\s+/g,"-")
-        .replace(/-+/g,"-")
-        .substring(0,80);
-
-    xml += `
-
-<url>
-
-<loc>${DOMAIN}/grouppost/${slug}--${id}.html</loc>
-
-<changefreq>weekly</changefreq>
-
-<priority>0.8</priority>
-
-</url>
-
-`;
-
-});
-    
-
-    //----------------------------------------
+//========================================
 // GROUP POSTS
-//----------------------------------------
+//========================================
 
-const groupQuery = query(
-    collection(db,"groupPosts"),
-    where("visibility","==","public"),
-    orderBy("createdAt","desc")
+const groupQuery=query(
+
+collection(db,"groupPosts"),
+
+where("visibility","==","public"),
+
+orderBy("createdAt","desc")
+
 );
 
-const groupSnapshot = await getDocs(groupQuery);
+const groupSnapshot=await getDocs(groupQuery);
 
 groupSnapshot.forEach(docSnap=>{
 
-    const post = docSnap.data();
+const post=docSnap.data();
 
-    const id = docSnap.id;
+const id=docSnap.id;
 
-    let slug = (post.title || "group-post")
-    .toLowerCase()
-    .trim()
-    .replace(/[^\w\s-]/g,"")
-    .replace(/\s+/g,"-")
-    .replace(/-+/g,"-")
-    .substring(0,80);
+const slug=createSlug(post.title);
 
-    xml += `
+xml+=`
 
 <url>
 
@@ -226,17 +177,31 @@ groupSnapshot.forEach(docSnap=>{
 `;
 
 });
-    
 
-  
 
-xml+=`\n</urlset>`;
+//========================================
+// FINISH
+//========================================
+
+xml+=`
+
+</urlset>
+
+`;
 
 output.value=xml;
 
-status.innerHTML=
+status.innerHTML=`
 
-`Done. ${snapshot.size} posts found.`;
+Done!
+
+Posts: ${postSnapshot.size}
+
+Group Posts: ${groupSnapshot.size}
+
+Total URLs: ${postSnapshot.size+groupSnapshot.size+1}
+
+`;
 
 }
 
@@ -248,5 +213,4 @@ status.innerHTML=err.message;
 
 }
 
-}
-
+         }
