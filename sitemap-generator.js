@@ -142,16 +142,10 @@ xml+=`
 // GROUP POSTS
 //========================================
 
-const groupQuery=query(
-
-collection(db,"groupPosts"),
-
-where("visibility","==","public"),
-
-orderBy("createdAt","desc")
-
+const groupQuery = query(
+    collection(db, "groupPosts")
 );
-
+    
 const groupSnapshot=await getDocs(groupQuery);
 
 groupSnapshot.forEach(docSnap=>{
