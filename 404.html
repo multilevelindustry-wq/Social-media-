@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>Redirecting...</title>
+
+<meta name="robots"
+content="noindex">
+
+</head>
+
+<body>
+
+<p style="font-family:Arial;text-align:center;margin-top:50px;">
+
+Redirecting...
+
+</p>
+
+<script>
+
+(function(){
+
+const path = window.location.pathname;
+
+// Only handle SEO post URLs
+if(!path.startsWith("/post/")){
+
+    window.location.replace("/");
+
+    return;
+
+}
+
+// Example:
+// /post/check-out-the-flower-d607a40d-21e6-479e-a414-441e44c47bd2.html
+
+const filename = path.split("/").pop().replace(".html","");
+
+// UUID starts after the LAST "-"
+const lastDash = filename.lastIndexOf("-");
+
+if(lastDash === -1){
+
+    window.location.replace("/");
+
+    return;
+
+}
+
+const id = filename.substring(lastDash + 1);
+
+// Redirect to real page
+window.location.replace(
+
+"/post.html?id=" + encodeURIComponent(id)
+
+);
+
+})();
+
+</script>
+
+</body>
+
+</html>
