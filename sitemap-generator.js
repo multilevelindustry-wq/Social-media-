@@ -103,13 +103,49 @@ xml+=`
 
 snapshot.forEach(docSnap=>{
 
-const post=docSnap.data();
+    const post = docSnap.data();
 
-const id=docSnap.id;
+    const id = docSnap.id;
 
-// Part 3 will add each post URL here
+    //----------------------------------------
+    // SEO TITLE
+    //----------------------------------------
+
+    let slug = (post.title || "post")
+
+    .toLowerCase()
+
+    .trim()
+
+    .replace(/[^\w\s-]/g,"")
+
+    .replace(/\s+/g,"-")
+
+    .replace(/-+/g,"-")
+
+    .substring(0,80);
+
+    //----------------------------------------
+    // XML
+    //----------------------------------------
+
+    xml += `
+
+<url>
+
+<loc>${DOMAIN}/post/${slug}-${id}.html</loc>
+
+<changefreq>weekly</changefreq>
+
+<priority>0.8</priority>
+
+</url>
+
+`;
 
 });
+
+  
 
 xml+=`\n</urlset>`;
 
