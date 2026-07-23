@@ -133,7 +133,7 @@ snapshot.forEach(docSnap=>{
 
 <url>
 
-<loc>${DOMAIN}/post/${slug}-${id}.html</loc>
+<loc>${DOMAIN}/post/${slug}--${id}.html</loc>
 
 <changefreq>weekly</changefreq>
 
