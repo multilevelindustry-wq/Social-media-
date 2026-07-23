@@ -19,7 +19,7 @@ getDocs
 // SETTINGS
 //========================================
 
-const DOMAIN="https://creatorhub.com";
+const DOMAIN="https://claunecks.com";
 // Replace with your real domain
 
 
