@@ -145,6 +145,51 @@ snapshot.forEach(docSnap=>{
 
 });
 
+
+
+    //----------------------------------------
+// GROUP POSTS
+//----------------------------------------
+
+const groupQuery = query(
+    collection(db,"groupPosts"),
+    where("visibility","==","public"),
+    orderBy("createdAt","desc")
+);
+
+const groupSnapshot = await getDocs(groupQuery);
+
+groupSnapshot.forEach(docSnap=>{
+
+    const post = docSnap.data();
+
+    const id = docSnap.id;
+
+    let slug = (post.title || "group-post")
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g,"")
+    .replace(/\s+/g,"-")
+    .replace(/-+/g,"-")
+    .substring(0,80);
+
+    xml += `
+
+<url>
+
+<loc>${DOMAIN}/grouppost/${slug}--${id}.html</loc>
+
+<changefreq>weekly</changefreq>
+
+<priority>0.8</priority>
+
+</url>
+
+`;
+
+});
+    
+
   
 
 xml+=`\n</urlset>`;
