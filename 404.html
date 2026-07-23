@@ -24,46 +24,33 @@ Redirecting...
 </p>
 
 <script>
+    const path = location.pathname;
 
-(function(){
+if(path.startsWith("/post/")){
 
-const path = window.location.pathname;
+    const file = path.split("/").pop().replace(".html","");
 
-// Only handle SEO post URLs
-if(!path.startsWith("/post/")){
+    const id = file.split("--")[1];
 
-    location.replace("/");
-
-    return;
+    location.replace("/post.html?id="+id);
 
 }
 
-const filename = path
-    .split("/")
-    .pop()
-    .replace(".html","");
+else if(path.startsWith("/grouppost/")){
 
-// Split using "--"
-const parts = filename.split("--");
+    const file = path.split("/").pop().replace(".html","");
 
-if(parts.length !== 2){
+    const id = file.split("--")[1];
 
-    location.replace("/");
-
-    return;
+    location.replace("/group-post.html?id="+id);
 
 }
 
-const id = parts[1];
+else{
 
-location.replace(
+    location.replace("/");
 
-"/post.html?id=" + encodeURIComponent(id)
-
-);
-
-})();
-
+}
 </script>
 </body>
 
