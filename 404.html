@@ -23,8 +23,9 @@ Redirecting...
 
 </p>
 
-<script>
-    const path = location.pathname;
+    <script>
+
+const path = window.location.pathname;
 
 if(path.startsWith("/post/")){
 
@@ -32,7 +33,9 @@ if(path.startsWith("/post/")){
 
     const id = file.split("--")[1];
 
-    location.replace("/post.html?id="+id);
+    window.location.replace(
+        "/post.html?id=" + encodeURIComponent(id)
+    );
 
 }
 
@@ -42,16 +45,21 @@ else if(path.startsWith("/grouppost/")){
 
     const id = file.split("--")[1];
 
-    location.replace("/group-post.html?id="+id);
+    window.location.replace(
+        "/group-post.html?id=" + encodeURIComponent(id)
+    );
 
 }
 
 else{
 
-    location.replace("/");
+    window.location.replace("/");
 
 }
-</script>
+
+    </script>
+
+    
 </body>
 
 </html>
