@@ -30,8 +30,11 @@ content="width=device-width,initial-scale=1">
     
     // Redirect
 location.replace(
-"https://claunecks.com/post.html?id="+id
-);
+
+        "/post.html?id="+encodeURIComponent(id)
+
+    );
+    
     
     
 })();
