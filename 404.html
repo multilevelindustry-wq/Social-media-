@@ -32,32 +32,31 @@ const path = window.location.pathname;
 // Only handle SEO post URLs
 if(!path.startsWith("/post/")){
 
-    window.location.replace("/");
+    location.replace("/");
 
     return;
 
 }
 
-// Example:
-// /post/check-out-the-flower-d607a40d-21e6-479e-a414-441e44c47bd2.html
+const filename = path
+    .split("/")
+    .pop()
+    .replace(".html","");
 
-const filename = path.split("/").pop().replace(".html","");
+// Split using "--"
+const parts = filename.split("--");
 
-// UUID starts after the LAST "-"
-const lastDash = filename.lastIndexOf("-");
+if(parts.length !== 2){
 
-if(lastDash === -1){
-
-    window.location.replace("/");
+    location.replace("/");
 
     return;
 
 }
 
-const id = filename.substring(lastDash + 1);
+const id = parts[1];
 
-// Redirect to real page
-window.location.replace(
+location.replace(
 
 "/post.html?id=" + encodeURIComponent(id)
 
@@ -66,7 +65,6 @@ window.location.replace(
 })();
 
 </script>
-
 </body>
 
 </html>
