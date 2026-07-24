@@ -117,7 +117,10 @@ return;
 
 }
 
+
 postData=snap.data();
+
+console.log(postData);
 
 singlePost.innerHTML=`
 
@@ -158,6 +161,12 @@ ${postData.title}
 ${postData.description}
 
 </p>
+
+<div class="postContent">
+
+${formatContent(postData.content || "")}
+
+</div>
 
 ${renderMedia(postData)}
 
@@ -364,6 +373,7 @@ async function loadComments(){
 }
 
 
+
 //========================================
 // COMMENT FORM
 //========================================
@@ -423,8 +433,7 @@ if(commentForm){
                         photo:user.photo,
 
                         comment:text,
-
-                        createdAt:serverTimestamp()
+    createdAt:serverTimestamp()
 
                     }
 
@@ -469,6 +478,8 @@ if(commentForm){
     );
 
 }
+
+
 
 
 async function loadRelated(){
@@ -534,8 +545,6 @@ window.openRelatedPost=function(postId){
     location.href=`post.html?id=${postId}`;
 
 };
-
-
 
 function timeAgo(timestamp){
 
@@ -637,4 +646,33 @@ await sharePost(postId);
 }
 
 });
+
+
+
+
+function escapeHTML(text){
+
+return text
+
+.replace(/&/g,"&amp;")
+
+.replace(/</g,"&lt;")
+
+.replace(/>/g,"&gt;")
+
+.replace(/"/g,"&quot;")
+
+.replace(/'/g,"&#039;");
+
+}
+
+function formatContent(text){
+
+return escapeHTML(text)
+
+.replace(/\n/g,"<br>");
+
+                                        }
+
+
 
