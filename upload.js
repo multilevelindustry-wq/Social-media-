@@ -166,6 +166,9 @@ const title=document.getElementById("title").value.trim();
 
 const description=document.getElementById("description").value.trim();
 
+const content =
+document.getElementById("content").value.trim();
+
 const category=document.getElementById("category").value;
 
 const hashtags=document.getElementById("hashtags").value.trim();
@@ -189,6 +192,8 @@ userPhoto:user.photo,
 title,
 
 description,
+
+content,
 
 category,
 
@@ -220,4 +225,6 @@ earnings:0
 
 );
 
-}
+  }
+
+
