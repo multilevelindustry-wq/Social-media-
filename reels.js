@@ -1,298 +1,367 @@
+
 import { auth, db } from "./firebase.js";
+
+import { appendReelWithAds } from "./reelads.js";
+
+
+import "./reelads.js";
+
 import { createNotification } from "./notification-helper.js";
+
 
 import {
 onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 
-import {
+import{
 collection,
-doc,
-getDoc,
-addDoc,
-deleteDoc,
 query,
 orderBy,
-onSnapshot,
+getDocs,
+doc,
+getDoc,
 updateDoc,
 increment,
-serverTimestamp,
 arrayUnion,
-arrayRemove
-} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+arrayRemove,
+setDoc,
+deleteDoc,
+serverTimestamp
+}
+from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+
+const reelsContainer=document.getElementById("reelsContainer");
 
 const params = new URLSearchParams(location.search);
-const reelId = params.get("id");
-
-const commentsContainer = document.getElementById("commentsContainer");
-const commentForm = document.getElementById("commentForm");
-const commentInput = document.getElementById("commentInput");
+const targetReel = params.get("reel");
 
 let currentUser;
 let currentUserData;
-let reelData;
 
-onAuthStateChanged(auth, async (user)=>{
+onAuthStateChanged(auth,async(user)=>{
 
-    if(!user){
-        location.href="login.html";
-        return;
-    }
+if(!user){
 
-    currentUser=user;
+location.href="login.html";
+return;
 
-    const me=await getDoc(
-        doc(db,"users",user.uid)
-    );
+}
 
-    currentUserData=me.data();
+currentUser=user;
 
-    const reelSnap=await getDoc(
-        doc(db,"reels",reelId)
-    );
+const userSnap=await getDoc(
+doc(db,"users",user.uid)
+);
 
-    if(reelSnap.exists()){
-        reelData=reelSnap.data();
-    }
+currentUserData=userSnap.data();
 
-    listenComments();
+loadReels();
 
 });
 
-function listenComments(){
+
+
+
+async function loadReels(){
+
+    reelsContainer.innerHTML="";
 
     const q=query(
 
-        collection(
-            db,
-            "reels",
-            reelId,
-            "comments"
-        ),
+        collection(db,"reels"),
 
-        orderBy("createdAt","asc")
+        orderBy("createdAt","desc")
 
     );
 
-    onSnapshot(q,(snapshot)=>{
+    const snapshot=await getDocs(q);
 
-        commentsContainer.innerHTML="";
+    let reelIndex=0;
 
-        snapshot.forEach(docSnap=>{
+    for(const docSnap of snapshot.docs){
 
-            renderComment(
-                docSnap.data(),
-                docSnap.id
-            );
+        const reel=docSnap.data();
 
-        });
+        reel.reelId=docSnap.id;
 
-    });
+        //----------------------------------
+        // CREATE REEL
+        //----------------------------------
+
+        const reelCard=renderReel(reel);
+
+        //----------------------------------
+        // APPEND REEL + ADS
+        //----------------------------------
+
+        appendReelWithAds(
+
+            reelsContainer,
+
+            reelCard,
+
+            reelIndex
+
+        );
+
+        reelIndex++;
+
+    }
+
+    //----------------------------------
+    // ENABLE AUTOPLAY
+    //----------------------------------
+
+    enableAutoPlay();
+
+    //----------------------------------
+    // SCROLL TO TARGET REEL
+    //----------------------------------
+
+    if(targetReel){
+
+        const target=document.querySelector(
+
+            `[data-id="${targetReel}"]`
+
+        );
+
+        if(target){
+
+            target.scrollIntoView({
+
+                behavior:"instant",
+
+                block:"start"
+
+            });
+
+        }
+
+    }
 
 }
 
-function renderComment(comment,id){
+
+
+function renderReel(reel){
 
     const liked=
-        comment.likedBy &&
-        comment.likedBy.includes(currentUser.uid);
 
-    commentsContainer.innerHTML+=`
+        reel.likedBy &&
 
-<div class="commentCard">
+        reel.likedBy.includes(currentUser.uid);
+
+    const likeIcon=
+
+        liked ? "❤️" : "🤍";
+
+    const card=document.createElement("section");
+
+    card.className="reelCard";
+
+    card.dataset.id=reel.reelId;
+
+    card.innerHTML=`
+
+<video
+class="reelVideo"
+playsinline
+loop
+preload="metadata">
+
+<source src="${reel.videoUrl}">
+
+</video>
+
+<div class="reelInfo">
+
+<h3>@${reel.username}</h3>
+
+<p>${reel.caption}</p>
+
+</div>
+
+<div class="reelActions">
 
 <img
-class="commentAvatar"
-src="${comment.userPhoto}">
-
-<div class="commentBody">
-
-<h3>${comment.username}</h3>
-
-<p>${comment.comment}</p>
-
-<div class="commentActions">
+class="reelAvatar"
+src="${reel.userPhoto}">
 
 <button
-class="commentLikeBtn"
-data-id="${id}">
+class="likeBtn"
+data-id="${reel.reelId}">
 
-${liked ? "❤️" : "🤍"}
+${likeIcon}
 
 </button>
 
-<span>${comment.likes || 0}</span>
+<span class="likesCount">
+
+${reel.likes||0}
+
+</span>
 
 <button
-class="replyBtn"
-data-id="${id}">
+class="commentBtn"
+data-id="${reel.reelId}">
 
-Reply
+💬
 
 </button>
 
-${comment.uid===currentUser.uid ? `
+<span>
+
+${reel.comments||0}
+
+</span>
 
 <button
-class="deleteCommentBtn"
-data-id="${id}">
+class="shareBtn"
+data-id="${reel.reelId}">
 
-🗑
+🔁
 
 </button>
 
-` : ""}
+<span>
 
-</div>
+${reel.shares||0}
 
-<div
-class="replyBox"
-id="replyBox-${id}"
-style="display:none;">
-
-<input
-type="text"
-class="replyInput"
-placeholder="Write a reply...">
+</span>
 
 <button
-class="sendReplyBtn"
-data-id="${id}">
+class="saveBtn"
+data-id="${reel.reelId}">
 
-Send
+🔖
 
 </button>
-
-</div>
-
-<div
-class="replies"
-id="replies-${id}">
-
-</div>
-
-<div class="commentTime">
-
-${comment.createdAt?.toDate().toLocaleString() || ""}
-
-</div>
-
-</div>
 
 </div>
 
 `;
 
-    loadReplies(id);
-
-}
-
-function renderReply(reply,id,commentId){
-
-    const liked=
-        reply.likedBy &&
-        reply.likedBy.includes(currentUser.uid);
-
-    return `
-
-<div class="replyCard">
-
-<img
-class="replyAvatar"
-src="${reply.userPhoto}">
-
-<div class="replyBody">
-
-<h4>${reply.username}</h4>
-
-<p>${reply.reply}</p>
-
-<div class="replyActions">
-
-<button
-class="replyLikeBtn"
-data-comment="${commentId}"
-data-id="${id}">
-
-${liked ? "❤️" : "🤍"}
-
-</button>
-
-<span>${reply.likes || 0}</span>
-
-${reply.uid===currentUser.uid ? `
-
-<button
-class="deleteReplyBtn"
-data-comment="${commentId}"
-data-id="${id}">
-
-🗑
-
-</button>
-
-` : ""}
-
-</div>
-
-</div>
-
-</div>
-
-`;
+    return card;
 
 }
 
 
-commentForm.addEventListener("submit",async(e)=>{
 
-e.preventDefault();
 
-const text=commentInput.value.trim();
+function enableAutoPlay(){
 
-if(!text) return;
+const videos=document.querySelectorAll(".reelVideo");
 
-await addDoc(
+const observer=new IntersectionObserver(entries=>{
 
-collection(db,"reels",reelId,"comments"),
+entries.forEach(entry=>{
+
+const video=entry.target;
+
+if(entry.isIntersecting){
+
+video.play();
+
+}else{
+
+video.pause();
+
+}
+
+});
+
+},
 
 {
 
-uid:currentUser.uid,
+threshold:0.7
 
-username:currentUserData.username,
+});
 
-userPhoto:currentUserData.photo,
+videos.forEach(video=>{
 
-comment:text,
+observer.observe(video);
 
-likes:0,
-
-likedBy:[],
-
-createdAt:serverTimestamp()
+});
 
 }
 
-);
+document.getElementById("backBtn").onclick=()=>{
 
-await updateDoc(
+history.back();
 
-doc(db,"reels",reelId),
+};
 
-{
+document.getElementById("cameraBtn").onclick=()=>{
 
-comments:increment(1)
+location.href="upload-reel.html";
 
-}
+};
 
-);
 
-if(reelData.uid!==currentUser.uid){
+
+document.addEventListener("click",async(e)=>{
+
+// =======================
+// LIKE REEL
+// =======================
+
+const btn=e.target.closest(".likeBtn");
+
+if(btn){
+
+const likesCount=btn.nextElementSibling;
+
+const reelId=btn.dataset.id;
+
+const reelRef=doc(db,"reels",reelId);
+
+const snap=await getDoc(reelRef);
+
+if(!snap.exists()) return;
+
+const reel=snap.data();
+
+const liked=
+reel.likedBy &&
+reel.likedBy.includes(currentUser.uid);
+
+if(liked){
+
+await updateDoc(reelRef,{
+
+likedBy:arrayRemove(currentUser.uid),
+
+likes:increment(-1)
+
+});
+
+btn.innerHTML="🤍";
+
+likesCount.textContent=
+Number(likesCount.textContent)-1;
+
+}else{
+
+await updateDoc(reelRef,{
+
+likedBy:arrayUnion(currentUser.uid),
+
+likes:increment(1)
+
+});
+
+btn.innerHTML="❤️";
+
+likesCount.textContent=
+Number(likesCount.textContent)+1;
+
+if(reel.uid!==currentUser.uid){
 
 await createNotification({
 
-receiverUid:reelData.uid,
+receiverUid:reel.uid,
 
 senderUid:currentUser.uid,
 
@@ -300,9 +369,9 @@ senderName:currentUserData.username,
 
 senderPhoto:currentUserData.photo,
 
-title:"New Reel Comment",
+title:"New Reel Like",
 
-message:`${currentUserData.username} commented on your reel.`,
+message:`${currentUserData.username} liked your reel.`,
 
 type:"reel",
 
@@ -312,71 +381,73 @@ reelId:reelId
 
 }
 
-commentForm.reset();
+}
+
+return;
+
+}
+
+// =======================
+// OPEN COMMENTS
+// =======================
+
+const commentBtn=e.target.closest(".commentBtn");
+
+if(commentBtn){
+
+location.href=
+`reel-comments.html?id=${commentBtn.dataset.id}`;
+
+return;
+
+}
+
+// =======================
+// SHARE REEL
+// =======================
+
+const shareBtn=e.target.closest(".shareBtn");
+
+if(shareBtn){
+
+const reelId=shareBtn.dataset.id;
+
+const reelRef=doc(db,"reels",reelId);
+
+await updateDoc(reelRef,{
+
+shares:increment(1)
 
 });
 
-document.getElementById("backBtn").onclick=()=>{
+const shareCount=
+shareBtn.nextElementSibling;
 
-history.back();
+shareCount.textContent=
+Number(shareCount.textContent)+1;
 
-};
+const url=
+`${location.origin}/reel.html?id=${reelId}`;
 
-document.addEventListener("click",async(e)=>{
+if(navigator.share){
 
-// =======================
-// LIKE COMMENT
-// =======================
+try{
 
-const likeBtn=e.target.closest(".commentLikeBtn");
+await navigator.share({
 
-if(likeBtn){
+title:"Check out this reel",
 
-const ref=doc(
-
-db,
-
-"reels",
-
-reelId,
-
-"comments",
-
-likeBtn.dataset.id
-
-);
-
-const snap=await getDoc(ref);
-
-if(!snap.exists()) return;
-
-const comment=snap.data();
-
-const liked=
-
-comment.likedBy &&
-
-comment.likedBy.includes(currentUser.uid);
-
-if(liked){
-
-await updateDoc(ref,{
-
-likedBy:arrayRemove(currentUser.uid),
-
-likes:increment(-1)
+url
 
 });
+
+}catch(err){}
 
 }else{
 
-await updateDoc(ref,{
+await navigator.clipboard.writeText(url);
 
-likedBy:arrayUnion(currentUser.uid),
-
-likes:increment(1)
-
-});
+alert("Reel link copied!");
 
 }
 
@@ -384,72 +455,46 @@ return;
 
 }
 
-// =======================
-// SHOW REPLY BOX
-// =======================
 
-const replyBtn=e.target.closest(".replyBtn");
+const saveBtn=e.target.closest(".saveBtn");
 
-if(replyBtn){
+if(saveBtn){
 
-const box=document.getElementById(
+const reelId=saveBtn.dataset.id;
 
-`replyBox-${replyBtn.dataset.id}`
-
-);
-
-box.style.display=
-
-box.style.display==="none"
-
-?
-
-"block"
-
-:
-
-"none";
-
-return;
-
-}
-
-// =======================
-// SEND REPLY
-// =======================
-
-const sendBtn=e.target.closest(".sendReplyBtn");
-
-if(sendBtn){
-
-const commentId=sendBtn.dataset.id;
-
-const input=document.querySelector(
-
-`#replyBox-${commentId} .replyInput`
-
-);
-
-const text=input.value.trim();
-
-if(!text) return;
-
-await addDoc(
-
-collection(
-
+const saveRef=doc(
 db,
+"savedReels",
+`${currentUser.uid}_${reelId}`
+);
 
-"reels",
+const snap=await getDoc(saveRef);
+
+if(snap.exists()){
+
+await deleteDoc(saveRef);
+
+saveBtn.innerHTML="🔖";
+
+}else{
+
+await setDoc(saveRef,{
+
+uid:currentUser.uid,
 
 reelId,
 
-"comments",
+createdAt:serverTimestamp()
 
-commentId,
+});
 
-"replies"
+saveBtn.innerHTML="📌";
 
-),
+}
 
-{
+return;
+
+}
+
+});
+
