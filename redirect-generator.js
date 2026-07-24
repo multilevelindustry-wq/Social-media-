@@ -64,25 +64,47 @@ const slug=(post.title||"post")
 
 .substring(0,80);
 
-const html=`
-
-<!DOCTYPE html>
-
-<html>
+const html = `<!DOCTYPE html>
+<html lang="en">
 
 <head>
 
 <meta charset="UTF-8">
 
-<title>${post.title}</title>
+<title>${post.title} | CreatorHub</title>
+
+<meta name="robots"
+content="index,follow">
+
+<meta name="description"
+content="${post.description || post.title}">
+
+<link rel="canonical"
+href="https://claunecks.com/post.html?id=${id}">
+
+<meta property="og:title"
+content="${post.title}">
+
+<meta property="og:type"
+content="article">
+
+<meta property="og:url"
+content="https://claunecks.com/post.html?id=${id}">
+
+<meta property="og:site_name"
+content="CreatorHub">
+
+<meta name="twitter:card"
+content="summary_large_image">
 
 <meta http-equiv="refresh"
-
 content="0;url=/post.html?id=${id}">
 
 <script>
 
-location.replace("/post.html?id=${id}");
+const id="${id}";
+
+location.replace("/post.html?id="+id);
 
 </script>
 
@@ -94,9 +116,7 @@ Redirecting...
 
 </body>
 
-</html>
-
-`;
+</html>`;
 
 postFolder.file(
 
