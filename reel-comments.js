@@ -300,13 +300,13 @@ senderName:currentUserData.username,
 
 senderPhoto:currentUserData.photo,
 
-title:"New Comment",
+title:"New Reel Comment",
 
 message:`${currentUserData.username} commented on your reel.`,
 
-type:"comment",
+type:"reel",
 
-postId:reelId
+reelId:reelId
 
 });
 
@@ -504,13 +504,13 @@ senderName:currentUserData.username,
 
 senderPhoto:currentUserData.photo,
 
-title:"New Reply",
+title:"New Reel Reply",
 
-message:`${currentUserData.username} replied to your comment.`,
+message:`${currentUserData.username} replied to your reel comment.`,
 
-type:"reply",
+type:"reel",
 
-postId:reelId
+reelId:reelId
 
 });
 
