@@ -1,15 +1,11 @@
 import { db } from "./firebase.js";
 
-import {
+import{
 
 collection,
-
 query,
-
 where,
-
 orderBy,
-
 getDocs
 
 }
@@ -20,11 +16,39 @@ from
 
 const output=document.getElementById("output");
 
-document.getElementById("generateBtn").onclick=generate;
+const status=document.getElementById("status");
 
+document
 
+.getElementById("generateBtn")
+
+.onclick=generate;
+
+function slugify(title){
+
+return(title||"post")
+
+.toLowerCase()
+
+.trim()
+
+.replace(/[^\w\s-]/g,"")
+
+.replace(/\s+/g,"-")
+
+.replace(/-+/g,"-")
+
+.substring(0,80);
+
+}
 
 async function generate(){
+
+try{
+
+status.innerHTML="Loading posts...";
+
+output.value="";
 
 const q=query(
 
@@ -40,7 +64,7 @@ const snapshot=await getDocs(q);
 
 const zip=new JSZip();
 
-const postFolder=zip.folder("post");
+const folder=zip.folder("post");
 
 let total=0;
 
@@ -50,23 +74,10 @@ const post=docSnap.data();
 
 const id=docSnap.id;
 
-const slug=(post.title||"post")
+const slug=slugify(post.title);
 
-.toLowerCase()
-
-.trim()
-
-.replace(/[^\w\s-]/g,"")
-
-.replace(/\s+/g,"-")
-
-.replace(/-+/g,"-")
-
-.substring(0,80);
-
-const html = `<!DOCTYPE html>
+const html=`<!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -77,7 +88,7 @@ const html = `<!DOCTYPE html>
 content="index,follow">
 
 <meta name="description"
-content="${post.description || post.title}">
+content="${post.description||post.title}">
 
 <link rel="canonical"
 href="https://claunecks.com/post.html?id=${id}">
@@ -85,20 +96,20 @@ href="https://claunecks.com/post.html?id=${id}">
 <meta property="og:title"
 content="${post.title}">
 
+<meta property="og:description"
+content="${post.description||""}">
+
 <meta property="og:type"
 content="article">
 
 <meta property="og:url"
 content="https://claunecks.com/post.html?id=${id}">
 
-<meta property="og:site_name"
-content="CreatorHub">
+<meta property="og:image"
+content="${post.mediaUrl||""}">
 
 <meta name="twitter:card"
 content="summary_large_image">
-
-<meta http-equiv="refresh"
-content="0;url=/post.html?id=${id}">
 
 <script>
 
@@ -112,13 +123,11 @@ location.replace("/post.html?id="+id);
 
 <body>
 
-Redirecting...
-
 </body>
 
 </html>`;
 
-postFolder.file(
+folder.file(
 
 `${slug}--${id}.html`,
 
@@ -126,9 +135,13 @@ html
 
 );
 
+output.value+=`${slug}--${id}.html\n`;
+
 total++;
 
 });
+
+status.innerHTML="Creating ZIP...";
 
 const blob=await zip.generateAsync({
 
@@ -144,7 +157,24 @@ a.download="creatorhub-post-pages.zip";
 
 a.click();
 
-output.value=`${total} redirect pages generated.`;
+URL.revokeObjectURL(a.href);
+
+status.innerHTML=
+
+`Finished!
+
+${total} redirect pages generated.
+
+Download started.`;
 
 }
 
+catch(err){
+
+console.error(err);
+
+status.innerHTML=err.message;
+
+}
+
+  }
