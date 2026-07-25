@@ -1,8 +1,4 @@
-import { createNotification } from "./notification-helper.js";
-
-
 import { auth, db } from "./firebase.js";
-
 
 import {
 onAuthStateChanged
@@ -26,7 +22,6 @@ const markAllRead=document.getElementById("markAllRead");
 let currentUser;
 let currentUserData;
 
-
 onAuthStateChanged(auth,async(user)=>{
 
 if(!user){
@@ -39,23 +34,15 @@ return;
 
 currentUser=user;
 
-const snap=await getDoc(
-
-doc(db,"users",user.uid)
-
-);
+const snap=await getDoc(doc(db,"users",user.uid));
 
 currentUserData=snap.data();
 
-document.getElementById("userAvatar").src=
-
-currentUserData.photo;
+document.getElementById("userAvatar").src=currentUserData.photo;
 
 listenNotifications();
 
 });
-
-
 
 function listenNotifications(){
 
@@ -75,13 +62,7 @@ notificationsList.innerHTML="";
 
 snapshot.forEach(docSnap=>{
 
-renderNotification(
-
-docSnap.id,
-
-docSnap.data()
-
-);
+renderNotification(docSnap.id,docSnap.data());
 
 });
 
@@ -91,26 +72,22 @@ updateNotificationBadge();
 
 }
 
-
 function renderNotification(id,data){
 
-const time=data.createdAt?.toDate()
-
-.toLocaleString()||"";
+const time=data.createdAt?.toDate().toLocaleString()||"";
 
 notificationsList.innerHTML+=`
 
 <div
-
-class="notificationCard
-
-${data.isRead?"read":"unread"}"
+class="notificationCard ${data.isRead?"read":"unread"}"
 
 data-id="${id}"
 
-data-type="${data.type}"
+data-type="${data.type||""}"
 
 data-post="${data.postId||""}"
+
+data-reel="${data.reelId||""}"
 
 data-group="${data.groupId||""}"
 
@@ -119,24 +96,14 @@ data-chat="${data.chatId||""}"
 data-user="${data.senderUid||""}">
 
 <img
-
 class="notificationAvatar"
-
 src="${data.senderPhoto}">
 
 <div class="notificationContent">
 
-<h3>
+<h3>${data.title}</h3>
 
-${data.title}
-
-</h3>
-
-<p>
-
-${data.message}
-
-</p>
+<p>${data.message}</p>
 
 <div class="notificationTime">
 
@@ -158,8 +125,6 @@ ${data.type}
 
 }
 
-
-
 document.addEventListener("click",async(e)=>{
 
 const card=e.target.closest(".notificationCard");
@@ -178,47 +143,49 @@ isRead:true
 
 );
 
-switch(card.dataset.type){
+const type=card.dataset.type;
+
+switch(type){
 
 case "like":
 
 case "comment":
 
-location.href=
+location.href=`post.html?id=${card.dataset.post}`;
 
-`post.html?id=${card.dataset.post}`;
+break;
+
+case "reel":
+
+location.href=`reels.html?id=${card.dataset.reel}`;
 
 break;
 
 case "follow":
 
-location.href=
-
-`profile.html?uid=${card.dataset.user}`;
+location.href=`profile.html?uid=${card.dataset.user}`;
 
 break;
 
 case "message":
 
-location.href=
-
-`messages.html?uid=${card.dataset.user}`;
+location.href=`messages.html?uid=${card.dataset.user}`;
 
 break;
 
 case "group":
 
-location.href=
-
-`group.html?id=${card.dataset.group}`;
+location.href=`group.html?id=${card.dataset.group}`;
 
 break;
+
+default:
+
+console.log("Unknown notification type:",type);
 
 }
 
 });
-
-
 
 markAllRead.addEventListener("click",async()=>{
 
@@ -260,8 +227,6 @@ await Promise.all(promises);
 
 });
 
-
-
 function updateNotificationBadge(){
 
 const unread=document.querySelectorAll(".unread").length;
@@ -272,18 +237,6 @@ if(!badge) return;
 
 badge.textContent=unread;
 
-badge.style.display=
+badge.style.display=unread>0?"flex":"none";
 
-unread>0
-
-?
-
-"flex"
-
-:
-
-"none";
-
-}
-
-
+  }
