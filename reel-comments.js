@@ -452,9 +452,8 @@ commentId,
 
 ),
 
-{
-
-uid:currentUser.uid,
+           {
+    uid:currentUser.uid,
 
 username:currentUserData.username,
 
@@ -733,3 +732,4 @@ function loadReplies(commentId){
 }
 
 
+    
