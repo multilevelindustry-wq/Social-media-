@@ -78,7 +78,34 @@
 
 </url>
 
-  <url>
+<url>
+
+
+<url>
+
+<loc>https://claunecks.com/post/the-diagnosis-hidden-in-my-digestive-tract--09b029f5-40f9-41a6-a7b5-9080b78f7f57.html</loc>
+
+<changefreq>weekly</changefreq>
+
+<priority>0.8</priority>
+
+</url>
+
+
+
+<url>
+
+<loc>https://claunecks.com/post/food-network--de3c2c8a-d44f-4bee-9f19-8fb1ae2c6a54.html</loc>
+
+<changefreq>weekly</changefreq>
+
+<priority>0.8</priority>
+
+</url>
+
+
+
+<url>
 
 <loc>https://claunecks.com/post/brain-tumor--06d2e4b0-06dd-4336-802a-54d138319ea9.html</loc>
 
@@ -87,9 +114,10 @@
 <priority>0.8</priority>
 
 </url>
-  
 
-  <url>
+
+
+<url>
 
 <loc>https://claunecks.com/post/chana-masala--1faa21a2-ac6a-4ca9-9547-b3b184b11dbb.html</loc>
 
@@ -98,6 +126,8 @@
 <priority>0.8</priority>
 
 </url>
+
+
 
 <url>
 
@@ -109,16 +139,7 @@
 
 </url>
 
-  <url>
 
-<loc>https://claunecks.com/post/food-network--de3c2c8a-d44f-4bee-9f19-8fb1ae2c6a54.html</loc>
-
-<changefreq>weekly</changefreq>
-
-<priority>0.8</priority>
-
-</url>
-  
 
 <url>
 
@@ -326,6 +347,30 @@
 
 <url>
 
+<loc>https://claunecks.com/grouppost/hello-guys--c2bb06b0-0fbc-4eef-9fc7-9c3866e7d4e0.html</loc>
+
+<changefreq>weekly</changefreq>
+
+<priority>0.8</priority>
+
+</url>
+
+
+
+<url>
+
+<loc>https://claunecks.com/grouppost/for-sale--e9200383-3213-4578-9f67-ca0fb5701ecb.html</loc>
+
+<changefreq>weekly</changefreq>
+
+<priority>0.8</priority>
+
+</url>
+
+
+
+<url>
+
 <loc>https://claunecks.com/grouppost/i-am-new-here--f078770e-4e6a-436e-819d-a429210b7019.html</loc>
 
 <changefreq>weekly</changefreq>
@@ -338,4 +383,4 @@
 
 </urlset>
 
-  
+               
