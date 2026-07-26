@@ -152,6 +152,8 @@ const groupQuery = query(
     collection(db,"groupPosts")
 );
 
+    console.log("Group posts:", groupSnapshot.size);
+    
 const groupSnapshot = await getDocs(groupQuery);
 
 groupSnapshot.forEach(docSnap=>{
