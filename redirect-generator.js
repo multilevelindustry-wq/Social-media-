@@ -321,15 +321,25 @@ level:9
 
 const url=URL.createObjectURL(blob);
 
-const a=document.createElement("a");
+const blob = await zip.generateAsync({
+    type: "blob"
+});
 
-a.href=url;
+const url = URL.createObjectURL(blob);
 
-a.download="creatorhub-pages.zip";
+const link = document.createElement("a");
 
-document.body.appendChild(a);
+link.href = url;
+link.download = "creatorhub-pages.zip";
 
-a.click();
+document.body.appendChild(link);
+
+link.click();
+
+setTimeout(() => {
+    URL.revokeObjectURL(url);
+    link.remove();
+}, 1000);
 
 document.body.removeChild(a);
 
