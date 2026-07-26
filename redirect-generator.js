@@ -1,32 +1,27 @@
 import { db } from "./firebase.js";
 
-import{
-
-collection,
-query,
-where,
-orderBy,
-getDocs
-
+import {
+    collection,
+    query,
+    where,
+    orderBy,
+    getDocs
 }
-
-from
-
-"https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
 const output=document.getElementById("output");
 
 const status=document.getElementById("status");
 
-document
+const generateBtn=document.getElementById("generateBtn");
 
-.getElementById("generateBtn")
+generateBtn.onclick=generate;
 
-.onclick=generate;
 
-function slugify(title){
 
-return(title||"post")
+function createSlug(title){
+
+return (title || "post")
 
 .toLowerCase()
 
@@ -42,6 +37,8 @@ return(title||"post")
 
 }
 
+
+
 async function generate(){
 
 try{
@@ -50,7 +47,37 @@ status.innerHTML="Loading posts...";
 
 output.value="";
 
-const q=query(
+const zip=new JSZip();
+
+
+
+//============================
+// POST FOLDER
+//============================
+
+const postFolder=zip.folder("post");
+
+
+
+//============================
+// GROUP POST FOLDER
+//============================
+
+const groupFolder=zip.folder("grouppost");
+
+
+
+let postCount=0;
+
+let groupCount=0;
+
+
+
+//============================
+// NORMAL POSTS
+//============================
+
+const postQuery=query(
 
 collection(db,"posts"),
 
@@ -60,56 +87,63 @@ orderBy("createdAt","desc")
 
 );
 
-const snapshot=await getDocs(q);
+const postSnapshot=await getDocs(postQuery);
 
-const zip=new JSZip();
 
-const folder=zip.folder("post");
 
-let total=0;
-
-snapshot.forEach(docSnap=>{
+postSnapshot.forEach(docSnap=>{
 
 const post=docSnap.data();
 
 const id=docSnap.id;
 
-const slug=slugify(post.title);
+const slug=createSlug(post.title);
+
+
 
 const html=`<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 
-<title>${post.title} | CreatorHub</title>
+<title>${post.title || "CreatorHub"}</title>
 
-<meta name="robots"
-content="index,follow">
+<meta name="robots" content="index,follow">
 
 <meta name="description"
-content="${post.description||post.title}">
+
+content="${post.description || post.title || ""}">
 
 <link rel="canonical"
+
 href="https://claunecks.com/post.html?id=${id}">
 
 <meta property="og:title"
-content="${post.title}">
 
-<meta property="og:description"
-content="${post.description||""}">
+content="${post.title || ""}">
 
 <meta property="og:type"
+
 content="article">
 
 <meta property="og:url"
+
 content="https://claunecks.com/post.html?id=${id}">
 
-<meta property="og:image"
-content="${post.mediaUrl||""}">
+<meta property="og:site_name"
+
+content="CreatorHub">
 
 <meta name="twitter:card"
+
 content="summary_large_image">
+
+<meta http-equiv="refresh"
+
+content="0;url=/post.html?id=${id}">
 
 <script>
 
@@ -123,11 +157,15 @@ location.replace("/post.html?id="+id);
 
 <body>
 
+Redirecting...
+
 </body>
 
 </html>`;
 
-folder.file(
+
+
+postFolder.file(
 
 `${slug}--${id}.html`,
 
@@ -135,67 +173,102 @@ html
 
 );
 
-output.value+=`${slug}--${id}.html\n`;
-
-total++;
+postCount++;
 
 });
 
 
-//========================================
+
+//============================
 // GROUP POSTS
-//========================================
+//============================
 
-const groupFolder = zip.folder("grouppost");
+status.innerHTML="Loading group posts...";
 
-const groupQuery = query(
-    collection(db,"groupPosts")
+const groupQuery=query(
+
+collection(db,"groupPosts"),
+
+orderBy("createdAt","desc")
+
 );
-    
-const groupSnapshot = await getDocs(groupQuery);
 
-    console.log("Group posts:", groupSnapshot.size);
+const groupSnapshot=await getDocs(groupQuery);
+
+
+
+console.log(
+
+"Group posts found:",
+
+groupSnapshot.size
+
+);
+
+
 
 groupSnapshot.forEach(docSnap=>{
 
-    const post = docSnap.data();
+const group=docSnap.data();
 
-    const id = docSnap.id;
+const id=docSnap.id;
 
-    const slug = (post.title || "group-post")
-        .toLowerCase()
-        .trim()
-        .replace(/[^\w\s-]/g,"")
-        .replace(/\s+/g,"-")
-        .replace(/-+/g,"-")
-        .substring(0,80);
+const slug=createSlug(group.title);
 
-    const html = `<!DOCTYPE html>
+
+
+const html=`<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 
-<title>${post.title} | Claunecks</title>
+<title>${group.title || "Group Post"}</title>
 
-<meta name="robots" content="index,follow">
+<meta name="robots"
 
-<meta name="description" content="${post.description || post.title}">
+content="index,follow">
 
-<link rel="canonical" href="https://claunecks.com/group-post.html?id=${id}">
+<meta name="description"
 
-<meta property="og:title" content="${post.title}">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://claunecks.com/group-post.html?id=${id}">
-<meta property="og:site_name" content="Claunecks">
+content="${group.description || group.title || ""}">
 
-<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical"
 
-<meta http-equiv="refresh" content="0;url=/group-post.html?id=${id}">
+href="https://claunecks.com/group-post.html?id=${id}">
+
+<meta property="og:title"
+
+content="${group.title || ""}">
+
+<meta property="og:type"
+
+content="article">
+
+<meta property="og:url"
+
+content="https://claunecks.com/group-post.html?id=${id}">
+
+<meta property="og:site_name"
+
+content="CreatorHub">
+
+<meta name="twitter:card"
+
+content="summary_large_image">
+
+<meta http-equiv="refresh"
+
+content="0;url=/group-post.html?id=${id}">
 
 <script>
+
 const id="${id}";
+
 location.replace("/group-post.html?id="+id);
+
 </script>
 
 </head>
@@ -208,50 +281,102 @@ Redirecting...
 
 </html>`;
 
-    groupFolder.file(
-        `${slug}--${id}.html`,
-        html
-    );
 
-    total++;
+
+groupFolder.file(
+
+`${slug}--${id}.html`,
+
+html
+
+);
+
+groupCount++;
 
 });
-  
+
+//============================
+// CREATE ZIP
+//============================
 
 status.innerHTML="Creating ZIP...";
 
 const blob=await zip.generateAsync({
 
-type:"blob"
+type:"blob",
+
+compression:"DEFLATE",
+
+compressionOptions:{
+
+level:9
+
+}
 
 });
 
+//============================
+// DOWNLOAD ZIP
+//============================
+
+const url=URL.createObjectURL(blob);
+
 const a=document.createElement("a");
 
-a.href=URL.createObjectURL(blob);
+a.href=url;
 
-a.download="creatorhub-post-pages.zip";
+a.download="creatorhub-pages.zip";
+
+document.body.appendChild(a);
 
 a.click();
 
-URL.revokeObjectURL(a.href);
+document.body.removeChild(a);
 
-status.innerHTML=
+URL.revokeObjectURL(url);
 
-`Finished!
+//============================
+// SHOW RESULT
+//============================
 
-${total} redirect pages generated.
+status.innerHTML=`
+Finished!
 
-Download started.`;
+${postCount} Post pages generated.
 
-}
+${groupCount} Group pages generated.
 
-catch(err){
+Total: ${postCount+groupCount}
+`;
+
+output.value=`
+Posts Generated: ${postCount}
+
+Group Posts Generated: ${groupCount}
+
+Total Redirect Pages: ${postCount+groupCount}
+
+Folders Created:
+
+post/
+
+grouppost/
+
+ZIP File:
+
+creatorhub-pages.zip
+`;
+
+}catch(err){
 
 console.error(err);
 
-status.innerHTML=err.message;
+status.innerHTML="Error: "+err.message;
+
+output.value=err.stack;
 
 }
 
-  }
+}
+
+
