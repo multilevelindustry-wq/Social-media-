@@ -1611,7 +1611,7 @@ document.getElementById("changeAvatarBtn");
 const editavatarInput =
 document.getElementById("editavatarInput");
 
-
+const content=document.getElementById("postContent").value;
 
 //========================================
 // SHOW OWNER BUTTONS
@@ -2060,68 +2060,29 @@ mediaType=upload.resource_type;
 
 const postId=crypto.randomUUID();
 
+
 await setDoc(
-
 doc(db,"groupPosts",postId),
-
 {
+    postId,
+    groupId,
+    uid:currentUser.uid,
+    username:currentUserData.username,
+    userPhoto:currentUserData.photo,
 
-postId,
+    title:postTitle.value,
+    description:postDescription.value,
+    content:document.getElementById("postContent").value,
 
-groupId,
+    mediaUrl,
+    mediaType,
 
-uid:currentUser.uid,
+    likes:0,
+    comments:0,
+    views:0,
 
-username:
-
-anonymousPost.checked
-
-?
-
-"Anonymous"
-
-:
-
-currentUserData.username,
-
-userPhoto:
-
-anonymousPost.checked
-
-?
-
-"assets/default-avatar.png"
-
-:
-
-currentUserData.photo,
-
-title:postTitle.value.trim(),
-
-description:postDescription.value.trim(),
-
-mediaUrl,
-
-mediaType,
-
-allowComments:
-
-!disableComments.checked,
-
-likes:0,
-
-shares:0,
-
-views:0,
-
-comments:0,
-
-likedBy:[],
-
-createdAt:serverTimestamp()
-
+    createdAt:serverTimestamp()
 }
-
 );
 
 await updateDoc(
@@ -2227,9 +2188,13 @@ class="postAvatar">
 
 <h3>${post.title || ""}</h3>
 
-<p class="postPreview">
-${post.description}
+<p class="postDescription">
+    ${post.description||""}
 </p>
+
+<div class="postContent">
+    ${escapeHTML(post.content || "")}
+</div>
 
 ${renderMedia(post)}
 
@@ -2299,6 +2264,46 @@ window.openPost = function(postId){
     location.href = url;
 
 };
+
+
+function escapeHTML(text){
+
+return text
+
+.replace(/&/g,"&amp;")
+
+.replace(/</g,"&lt;")
+
+.replace(/>/g,"&gt;")
+
+.replace(/"/g,"&quot;")
+
+.replace(/'/g,"&#039;");
+
+}
+
+function shouldOpenDirectLink(){
+
+    // Show direct link once every 3 clicks
+    let clicks = Number(localStorage.getItem("directLinkClicks") || 0);
+
+    clicks++;
+
+    localStorage.setItem("directLinkClicks", clicks);
+
+    return clicks % 3 === 0;
+
+}
+
+function openDirectLink(){
+
+    window.open(
+        "YOUR_DIRECT_LINK_URL",
+        "_blank"
+    );
+
+}
+
 
 
 function renderGroupFeed(posts){
