@@ -141,6 +141,81 @@ total++;
 
 });
 
+
+//========================================
+// GROUP POSTS
+//========================================
+
+const groupFolder = zip.folder("grouppost");
+
+const groupQuery = query(
+    collection(db,"groupPosts")
+);
+
+const groupSnapshot = await getDocs(groupQuery);
+
+groupSnapshot.forEach(docSnap=>{
+
+    const post = docSnap.data();
+
+    const id = docSnap.id;
+
+    const slug = (post.title || "group-post")
+        .toLowerCase()
+        .trim()
+        .replace(/[^\w\s-]/g,"")
+        .replace(/\s+/g,"-")
+        .replace(/-+/g,"-")
+        .substring(0,80);
+
+    const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<title>${post.title} | Claunecks</title>
+
+<meta name="robots" content="index,follow">
+
+<meta name="description" content="${post.description || post.title}">
+
+<link rel="canonical" href="https://claunecks.com/group-post.html?id=${id}">
+
+<meta property="og:title" content="${post.title}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://claunecks.com/group-post.html?id=${id}">
+<meta property="og:site_name" content="Claunecks">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta http-equiv="refresh" content="0;url=/group-post.html?id=${id}">
+
+<script>
+const id="${id}";
+location.replace("/group-post.html?id="+id);
+</script>
+
+</head>
+
+<body>
+
+Redirecting...
+
+</body>
+
+</html>`;
+
+    groupFolder.file(
+        `${slug}--${id}.html`,
+        html
+    );
+
+    total++;
+
+});
+  
+
 status.innerHTML="Creating ZIP...";
 
 const blob=await zip.generateAsync({
