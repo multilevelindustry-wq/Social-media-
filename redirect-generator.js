@@ -151,10 +151,10 @@ const groupFolder = zip.folder("grouppost");
 const groupQuery = query(
     collection(db,"groupPosts")
 );
-
-    console.log("Group posts:", groupSnapshot.size);
     
 const groupSnapshot = await getDocs(groupQuery);
+
+    console.log("Group posts:", groupSnapshot.size);
 
 groupSnapshot.forEach(docSnap=>{
 
