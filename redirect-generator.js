@@ -316,74 +316,60 @@ level:9
 });
 
 //============================
-// DOWNLOAD ZIP
+// CREATE ZIP
 //============================
 
-const url=URL.createObjectURL(blob);
+status.innerHTML = "Creating ZIP...";
 
 const blob = await zip.generateAsync({
-    type: "blob"
+    type: "blob",
+    compression: "DEFLATE",
+    compressionOptions: {
+        level: 9
+    }
 });
+
+//============================
+// CREATE DOWNLOAD BUTTON
+//============================
 
 const url = URL.createObjectURL(blob);
 
-const link = document.createElement("a");
-
-link.href = url;
-link.download = "creatorhub-pages.zip";
-
-document.body.appendChild(link);
-
-link.click();
-
-setTimeout(() => {
-    URL.revokeObjectURL(url);
-    link.remove();
-}, 1000);
-
-document.body.removeChild(a);
-
-URL.revokeObjectURL(url);
-
-//============================
-// SHOW RESULT
-//============================
-
-status.innerHTML=`
+status.innerHTML = `
 Finished!
 
 ${postCount} Post pages generated.
 
 ${groupCount} Group pages generated.
 
-Total: ${postCount+groupCount}
+Total: ${postCount + groupCount}
 `;
 
-output.value=`
+output.value = `
 Posts Generated: ${postCount}
 
 Group Posts Generated: ${groupCount}
 
-Total Redirect Pages: ${postCount+groupCount}
+Total Redirect Pages: ${postCount + groupCount}
 
-Folders Created:
-
-post/
-
-grouppost/
-
-ZIP File:
-
-creatorhub-pages.zip
+Click the download button below.
 `;
 
-}catch(err){
+const oldButton = document.getElementById("downloadZip");
 
-console.error(err);
+if(oldButton){
+    oldButton.remove();
+}
 
-status.innerHTML="Error: "+err.message;
+const downloadButton = document.createElement("a");
 
-output.value=err.stack;
+downloadButton.id = "downloadZip";
+downloadButton.href = url;
+downloadButton.download = "creatorhub-pages.zip";
+downloadButton.textContent = "⬇ Download ZIP";
+downloadButton.className = "downloadBtn";
+
+document.body.appendChild(downloadButton);
 
 }
 
