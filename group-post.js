@@ -337,10 +337,12 @@ function renderPost(post){
         `:""}
 
         <p class="postDescription">
+    ${post.description||""}
+</p>
 
-            ${post.description||""}
-
-        </p>
+<div class="postContent">
+    ${escapeHTML(post.content || "")}
+</div>
 
         ${renderMedia(post)}
 
@@ -1653,6 +1655,23 @@ await deleteDoc(
 doc(db,"groupReplies",replyId)
 
 );
+
+}
+
+
+function escapeHTML(text){
+
+return text
+
+.replace(/&/g,"&amp;")
+
+.replace(/</g,"&lt;")
+
+.replace(/>/g,"&gt;")
+
+.replace(/"/g,"&quot;")
+
+.replace(/'/g,"&#039;");
 
 }
 
