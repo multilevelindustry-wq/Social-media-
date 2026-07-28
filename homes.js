@@ -1503,7 +1503,7 @@ if (searchInput) {
 
 const mobileRoutes = {
 
-    "host-liveBtn": "host-live.html",
+    "blogBtn": "blog.html",
 
     "groupsBtn": "groups.html",
 
