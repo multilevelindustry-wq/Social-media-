@@ -750,7 +750,7 @@ slug: "Clauneck-the-guardian-of-the-hidden-realm ",
 
   title: "Clauneck: The Guardian of the Hidden Realm",
 
-  image: "https://www.image2url.com/r2/default/images/1783097350013-6971651e-d50a-48cd-877e-1ad1d8ec203f.jpg",
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSUtFi6QokzdSE3NhYOnqw1ZI7FB3bvfUzlSr_fnLqxTsA05PhLzi7hmKE&s=10",
 
   excerpt: "Long before kingdoms carved their names into stone and before mankind learned to fear...",
 
@@ -778,7 +778,7 @@ slug: "Clauneck-the-guardian-of-the-hidden-realm ",
 
   title: "Clauneck: The Guardian of the Hidden Realm",
 
-  image: "https://www.image2url.com/r2/default/images/1783097350013-6971651e-d50a-48cd-877e-1ad1d8ec203f.jpg",
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSUtFi6QokzdSE3NhYOnqw1ZI7FB3bvfUzlSr_fnLqxTsA05PhLzi7hmKE&s=10",
 
   excerpt: "Long before kingdoms carved their names into stone and before mankind learned to fear...",
 
@@ -802,17 +802,466 @@ slug: "Clauneck-the-guardian-of-the-hidden-realm ",
   {
 slug: "Clauneck-the-guardian-of-the-hidden-realm ",
   
-  url:"Jackfruit.html",
+  url:"The Jealous Neighbor and the Fake Date.html",
 
-  title: "Clauneck: The Guardian of the Hidden Realm",
+  title: "Chapter 2: The Jealous Neighbor and the Fake Date",
 
-  image: "https://www.image2url.com/r2/default/images/1783097350013-6971651e-d50a-48cd-877e-1ad1d8ec203f.jpg",
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSUtFi6QokzdSE3NhYOnqw1ZI7FB3bvfUzlSr_fnLqxTsA05PhLzi7hmKE&s=10",
 
-  excerpt: "Long before kingdoms carved their names into stone and before mankind learned to fear...",
+  excerpt: "My Crush Accidentally Became My Roommate Chapter 2: ",
 
   content: `
   
-      <p>Exercise, hydration and balanced nutrition help immunity.</p>
+      <p>
+
+By the second month, everyone in our apartment building had already reached one conclusion.
+
+Emma and I were dating.
+
+It didn't matter how many times we denied it.
+
+Mrs. Parker from Apartment 302 would wink every time she saw us.
+
+"Young love is so beautiful."
+
+"We're not—"
+
+"I remember when my husband looked at me like that."
+
+Emma blinked.
+
+"Like what?"
+
+Mrs. Parker smiled.
+
+"Like you're the only person in the room."
+
+I nearly dropped my grocery bag.
+
+Emma looked at me.
+
+I immediately became very interested in the floor.
+
+---
+
+Things only got worse.
+
+One morning, Emma walked out of the bathroom wrapped in a towel, her wet hair dripping onto the floor.
+
+"I forgot my clothes!"
+
+I froze.
+
+She froze.
+
+For three painfully long seconds, nobody moved.
+
+Then she pointed at the bedroom.
+
+"My suitcase!"
+
+"Oh! Right!"
+
+I grabbed the suitcase.
+
+Unfortunately...
+
+The front door opened.
+
+Our landlord had chosen that exact moment to inspect the apartment.
+
+He looked at Emma.
+
+Then at me.
+
+Then at the towel.
+
+Then back at me.
+
+"Oh..."
+
+His eyebrows slowly rose.
+
+"I see."
+
+"No!"
+
+"It's not what it looks like."
+
+Emma laughed so hard she had to lean against the wall.
+
+The landlord chuckled.
+
+"I'll... come back later."
+
+He closed the door.
+
+I buried my face in my hands.
+
+Emma couldn't stop laughing.
+
+"You should've seen your face."
+
+"I'll never recover from this."
+
+"Nope."
+
+---
+
+That evening, we decided to go grocery shopping together.
+
+It sounded simple.
+
+It wasn't.
+
+Emma wandered into every aisle except the ones we actually needed.
+
+She tried on ridiculous sunglasses.
+
+She placed a watermelon in the shopping cart.
+
+Then another.
+
+"We don't need two."
+
+"What if the first one disappoints us?"
+
+"How does a watermelon disappoint someone?"
+
+"It knows."
+
+She nodded seriously.
+
+I laughed.
+
+An elderly man walking past smiled.
+
+"You two are adorable."
+
+Emma opened her mouth.
+
+I quickly grabbed the cart.
+
+"We're leaving."
+
+---
+
+Halfway home, it started raining.
+
+Not ordinary rain.
+
+The kind that looked like the sky had given up.
+
+Within seconds we were soaked.
+
+Emma shrieked.
+
+"My hair!"
+
+I laughed.
+
+"My groceries!"
+
+She grabbed my hand.
+
+"Run!"
+
+We sprinted through the rain, laughing like children.
+
+When we finally reached the apartment, we were completely drenched.
+
+Emma looked at me.
+
+"You look terrible."
+
+"So do you."
+
+She splashed water at me.
+
+"Oh, that's war."
+
+Five minutes later...
+
+The kitchen floor looked like a swimming pool.
+
+She laughed so hard she nearly slipped.
+
+I caught her before she fell.
+
+Everything suddenly became quiet.
+
+Very quiet.
+
+She was inches away.
+
+Water dripped from her hair.
+
+Her hand rested on my shoulder.
+
+Our eyes met.
+
+Neither of us spoke.
+
+Neither of us moved.
+
+Then...
+
+"WHO STOLE MY COOKIE?"
+
+The neighbor's parrot screamed through the wall.
+
+Emma burst into laughter.
+
+I sighed.
+
+"Perfect timing."
+
+---
+
+The next weekend, Emma insisted we visit the town fair.
+
+"I'm warning you."
+
+"What?"
+
+"I'm extremely competitive."
+
+She smiled.
+
+"So am I."
+
+Big mistake.
+
+The first game involved throwing rings onto bottles.
+
+She won.
+
+Barely.
+
+"I told you."
+
+The second game was basketball.
+
+I won.
+
+She accused me of cheating.
+
+"I've literally never played before."
+
+"Liar."
+
+The third game was darts.
+
+Neither of us hit the target.
+
+The vendor looked genuinely concerned.
+
+"Maybe... try fishing instead?"
+
+Emma laughed until tears filled her eyes.
+
+---
+
+Then we found the photo booth.
+
+"We have to."
+
+"I don't know."
+
+"You have no choice."
+
+She dragged me inside.
+
+The countdown began.
+
+Three...
+
+Two...
+
+One...
+
+In the first picture, we smiled.
+
+Second picture...
+
+She crossed her eyes.
+
+Third...
+
+I pretended to panic.
+
+Fourth...
+
+She suddenly leaned against my shoulder.
+
+Click.
+
+Neither of us expected that one.
+
+When the photo strip came out, she stared at the last picture a little longer than the others.
+
+"I like this one."
+
+"So do I."
+
+She quietly folded the pictures and slipped them into her wallet.
+
+---
+
+Monday morning brought another surprise.
+
+A man in an expensive suit stood outside our apartment.
+
+He was handsome.
+
+Well-dressed.
+
+Confident.
+
+He smiled when Emma opened the door.
+
+"There you are."
+
+Emma looked shocked.
+
+"Daniel?"
+
+"You disappeared."
+
+"I've been busy."
+
+"I've been calling."
+
+"I know."
+
+I stood awkwardly inside the apartment.
+
+Daniel noticed me.
+
+"And you are?"
+
+"Liam."
+
+He extended his hand.
+
+"Emma's boyfriend?"
+
+Emma answered so quickly she almost shouted.
+
+"No!"
+
+Daniel smiled.
+
+"Good."
+
+Something about that single word tightened my chest.
+
+---
+
+After he left, Emma sighed.
+
+"Everything okay?"
+
+She nodded.
+
+"He used to like me."
+
+"Used to?"
+
+"I think he still does."
+
+"Oh."
+
+She looked at me.
+
+"But I turned him down."
+
+"Why?"
+
+She shrugged.
+
+"We wanted different things."
+
+I forced a smile.
+
+"That's understandable."
+
+Inside...
+
+It didn't feel understandable at all.
+
+---
+
+Over the next few days, Daniel kept showing up.
+
+Flowers.
+
+Coffee.
+
+Lunch invitations.
+
+Even concert tickets.
+
+Emma rejected every one of them.
+
+Still...
+
+Seeing another man trying so hard to win her over made me question everything.
+
+One evening, she found me sitting on the apartment balcony.
+
+"You've been quiet."
+
+"I'm fine."
+
+"Liar."
+
+I smiled weakly.
+
+"You always know?"
+
+"You make this face."
+
+"What face?"
+
+"The one that says you're pretending everything's okay."
+
+I looked away.
+
+Before I could answer, her phone buzzed.
+
+Daniel.
+
+Again.
+
+She sighed.
+
+"I have an idea."
+
+"What?"
+
+She looked at me with a mischievous grin.
+
+"Let's pretend we're dating."
+
+I nearly choked on my coffee.
+
+"...What?"
+
+"Just until he gets the message."
+
+"You want us to fake being a couple?"
+
+She nodded innocently.
+
+"It'll only be for a little while."
+
+My heart was already racing.
+
+Pretend?
+
+
+      </p>
      
       <div class="affiliate-box">
     <img src="https://s3-us-west-1.amazonaws.com/static.neolife.com/market/us/sku/2930/landingpage_l.jpg" alt="Organic Green Tea">
@@ -823,7 +1272,19 @@ slug: "Clauneck-the-guardian-of-the-hidden-realm ",
     </div>
   </div>
   
-      <p>Sleep is equally important for immune function.</p>
+      <p>
+      Living with my crush was already difficult enough.
+
+Now she wanted us to act like boyfriend and girlfriend.
+
+I had no idea that pretending would soon become much more confusing than telling the truth.
+
+Because sometimes...
+
+The hardest person to fool...
+
+Is yourself.
+      </p>
     `
   },
 
@@ -1283,14 +1744,6 @@ She grinned.
 
 Deep down...
 
-I secretly wished the paperwork would never end.
-
-Because every day with Emma felt like a page from a story I never wanted to finish.
-
-Little did I know...
-
-The biggest surprise was still waiting just around the corner.
-
 
       </p>
      
@@ -1303,7 +1756,15 @@ The biggest surprise was still waiting just around the corner.
     </div>
   </div>
   
-      <p>Consistency and nutrition matter most.</p>
+      <p>I secretly wished the paperwork would never end.
+
+Because every day with Emma felt like a page from a story I never wanted to finish.
+
+Little did I know...
+
+The biggest surprise was still waiting just around the corner.
+
+</p>
     `
   }
   
