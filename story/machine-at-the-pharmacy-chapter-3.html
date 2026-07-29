@@ -1,0 +1,511 @@
+function loadChapterNavigation(currentPost) {
+
+  const nav = document.getElementById("chapterNavigation");
+
+  if (!nav) return;
+
+  const chapters = posts
+    .filter(p => p.series === currentPost.series)
+    .sort((a, b) => a.chapter - b.chapter);
+
+  const currentIndex = chapters.findIndex(
+    p => p.slug === currentPost.slug
+  );
+
+  let html = '<div class="chapter-nav">';
+
+  if (currentIndex > 0) {
+    html += `
+      <a class="chapter-btn"
+      href="post.html?slug=${chapters[currentIndex - 1].slug}">
+      ← Previous
+      </a>
+    `;
+  }
+
+  chapters.forEach(ch => {
+
+    if (ch.slug === currentPost.slug) {
+
+      html += `
+        <span class="chapter-number active">
+          ${ch.chapter}
+        </span>
+      `;
+
+    } else {
+
+      html += `
+        <a class="chapter-number"
+        href="post.html?slug=${ch.slug}">
+          ${ch.chapter}
+        </a>
+      `;
+    }
+
+  });
+
+  if (currentIndex < chapters.length - 1) {
+    html += `
+      <a class="chapter-btn"
+      href="post.html?slug=${chapters[currentIndex + 1].slug}">
+      Next →
+      </a>
+    `;
+  }
+
+  html += '</div>';
+
+  nav.innerHTML = html;
+}
+
+if(el){
+
+
+el.innerHTML =
+"👁 "+
+(doc.exists ? doc.data().count : 0)
++
+" views";
+
+
+}
+
+
+});
+
+
+}
+
+
+
+
+
+async function loadPostViews(slug){
+
+
+
+const doc =
+await db.collection("views")
+.doc(slug)
+.get();
+
+
+
+const views =
+doc.exists ? doc.data().count : 0;
+
+
+
+const h1 =
+document.querySelector(".main-post h1");
+
+
+
+if(h1){
+
+
+h1.innerHTML += `
+
+<div class="view-count">
+
+👁 ${views} views
+
+</div>
+
+`;
+
+}
+
+
+
+}
+
+
+
+
+
+
+/* =========================
+RELATED POSTS
+========================= */
+
+
+function loadRelated(currentSlug){
+
+
+
+const related =
+document.getElementById("relatedPosts");
+
+
+if(!related)return;
+
+
+
+related.innerHTML="";
+
+
+
+const random =
+posts
+.filter(p=>p.slug!==currentSlug)
+.sort(()=>0.5-Math.random())
+.slice(0,5);
+
+
+
+random.forEach((p,i)=>{
+
+
+const colors =
+[
+"#0d9488",
+"#2563eb",
+"#f97316",
+"#a855f7",
+"#ef4444"
+];
+
+
+related.innerHTML += `
+
+
+<a href="${p.url}"
+class="related-card"
+style="border-left:5px solid ${colors[i]}">
+
+
+<div class="related-title">
+
+${p.title}
+
+</div>
+
+
+<div class="related-tag">
+
+Read Now →
+
+</div>
+
+
+</a>
+
+
+`;
+
+});
+
+
+}
+
+
+
+
+
+/* =========================
+RANDOM POSTS
+========================= */
+
+
+function getRandomPosts(array,count){
+
+
+return [...array]
+.sort(()=>Math.random()-0.5)
+.slice(0,count);
+
+
+}
+
+
+
+
+
+
+/* =========================
+COMMENTS
+========================= */
+
+
+async function loadComments(){
+
+
+
+const box =
+document.getElementById("commentsContainer");
+
+
+if(!box)return;
+
+
+
+const page =
+window.location.pathname
+.split("/")
+.pop();
+
+
+
+const snapshot =
+await db.collection("comments")
+.where("postSlug","==",page)
+.get();
+
+
+
+box.innerHTML="";
+
+
+
+snapshot.forEach(doc=>{
+
+
+const c=doc.data();
+
+
+box.innerHTML += `
+
+
+<div class="comment-card">
+
+<b>${c.name}</b>
+
+<p>${c.text}</p>
+
+
+</div>
+
+
+`;
+
+
+});
+
+
+}
+
+
+
+
+
+async function addComment(){
+
+
+
+const name =
+document.getElementById("commentName").value;
+
+
+const text =
+document.getElementById("commentText").value;
+
+
+
+const page =
+window.location.pathname
+.split("/")
+.pop();
+
+
+
+if(!name || !text){
+
+alert("Fill all fields");
+
+return;
+
+}
+
+
+
+await db.collection("comments")
+.add({
+
+postSlug:page,
+
+name,
+
+text,
+
+date:new Date()
+
+});
+
+
+
+document.getElementById("commentName").value="";
+
+document.getElementById("commentText").value="";
+
+
+
+loadComments();
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+COPY LINKS
+========================= */
+
+
+function copyLink(){
+
+
+navigator.clipboard.writeText(
+window.location.href
+);
+
+
+alert("Link copied!");
+
+}
+
+
+
+function copyPostLink(url){
+
+
+navigator.clipboard.writeText(
+window.location.origin+"/"+url
+);
+
+
+alert("Link copied!");
+
+}
+
+
+
+
+
+function loadChapterNavigation(currentPost) {
+
+  const nav = document.getElementById("chapterNavigation");
+
+  if (!nav) return;
+
+
+  // Get only chapters from the same story series
+  const chapters = posts
+    .filter(p => p.series === currentPost.series)
+    .sort((a, b) => a.chapter - b.chapter);
+
+
+
+  const currentIndex = chapters.findIndex(
+    p => p.slug === currentPost.slug
+  );
+
+
+
+  let html = '<div class="chapter-nav">';
+
+
+
+  // Previous button
+
+  if (currentIndex > 0) {
+
+    html += `
+
+    <a class="chapter-btn"
+    href="${chapters[currentIndex - 1].url}">
+
+    ← Previous
+
+    </a>
+
+    `;
+
+  }
+
+
+
+
+  // Chapter numbers
+
+  chapters.forEach(ch => {
+
+
+
+    if (ch.slug === currentPost.slug) {
+
+
+      html += `
+
+      <span class="chapter-number active">
+
+      ${ch.chapter}
+
+      </span>
+
+      `;
+
+
+
+    } else {
+
+
+      html += `
+
+      <a class="chapter-number"
+      href="${ch.url}">
+
+      ${ch.chapter}
+
+      </a>
+
+      `;
+
+
+    }
+
+
+
+  });
+
+
+
+
+
+  // Next button
+
+  if (currentIndex < chapters.length - 1) {
+
+
+    html += `
+
+
+    <a class="chapter-btn"
+    href="${chapters[currentIndex + 1].url}">
+
+
+    Next →
+
+    </a>
+
+
+    `;
+
+
+  }
+
+
+
+  html += '</div>';
+
+
+
+  nav.innerHTML = html;
+
+}
