@@ -64,11 +64,11 @@ slug: "Clauneck-the-guardian-of-the-hidden-realm ",
 
 
 {
-    slug: "Clauneck-the-guardian-of-the-hidden-realm ",
+    slug: " Clauneck: The Guardian of the Hidden Realm",
   
   url:" Raspberry.html",
 
-  title: "Clauneck: The Guardian of the Hidden Realm",
+  title: "Raspberry fruit page, learn more",
 
   image: "https://www.image2url.com/r2/default/images/1783097350013-6971651e-d50a-48cd-877e-1ad1d8ec203f.jpg",
 
