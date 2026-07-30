@@ -387,12 +387,757 @@ series: "The Machine At The Pharmacy Told A Different Story",
   
   
     {
-    slug: "best-food-for-healthy-kidney",
-    title: "The Devil's Son Wants Me Alive",
+    slug: "Forever with My Funny Stranger",
+    url: "Forever with My Funny Stranger.html",
+    title: "Forever with My Funny Stranger",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One",
+    excerpt: "The first thing Daniel ever stole from me wasn't my heart. It was my umbrella.",
     content: `
-      <p>Kidney health is important for removing waste and balancing fluids.</p>
+      <p>
+
+The first thing Daniel ever stole from me wasn't my heart.
+
+It was my umbrella.
+
+"I'll return it!" he shouted as he sprinted across the street, laughing like someone who had never paid a bill in his life.
+
+I stood there in the pouring rain, blinking.
+
+"My umbrella!" I yelled.
+
+He stopped halfway across the road, looked at the bright yellow umbrella in his hand, then looked back at me with a dramatic gasp.
+
+"Oh... this is yours?"
+
+"No! I chase random strangers in the rain for fun."
+
+He grinned.
+
+"I knew it. That's exactly what a person with a yellow umbrella would say."
+
+Before I could throw my handbag at him, a speeding motorcycle splashed muddy water all over both of us.
+
+Daniel looked down at his soaked shirt and sighed.
+
+"Well... now we're matching."
+
+I wanted to be angry.
+
+Instead...
+
+I laughed.
+
+That was the beginning of everything.
+
+---
+
+People always say love begins with fireworks.
+
+Mine began with theft.
+
+Three days later, I walked into my favorite café.
+
+Guess who was sitting in my usual seat?
+
+Daniel.
+
+He looked up from his coffee and smiled.
+
+"I knew you'd find me."
+
+"You stole my seat too?"
+
+"No," he replied seriously. "I rented it."
+
+I folded my arms.
+
+"From who?"
+
+"The chair."
+
+The waitress burst into laughter.
+
+I couldn't help smiling.
+
+He pulled another chair toward him.
+
+"Sit."
+
+"I don't even know you."
+
+"You know enough."
+
+"I don't know your last name."
+
+"Neither do I."
+
+I blinked.
+
+"What?"
+
+"I mean... I forgot to introduce myself properly."
+
+He stretched out his hand.
+
+"I'm Daniel."
+
+"I'm Ava."
+
+He shook my hand dramatically.
+
+"Congratulations."
+
+"For what?"
+
+"You've officially met the funniest man alive."
+
+I rolled my eyes.
+
+"That's a very bold claim."
+
+"You'll see."
+
+---
+
+He wasn't lying.
+
+Daniel could make anyone laugh.
+
+Old women.
+
+Children.
+
+Security guards.
+
+Even stray dogs seemed happier around him.
+
+One afternoon we walked through a park.
+
+He suddenly pointed at a squirrel.
+
+"I think that squirrel owes me money."
+
+I stared.
+
+"What?"
+
+"It borrowed three acorns last winter."
+
+"You need help."
+
+"I know."
+
+Then he waved at the squirrel.
+
+The squirrel actually stood on its hind legs.
+
+Daniel gasped.
+
+"He remembers me!"
+
+People around us stared.
+
+I laughed so hard I nearly fell onto the grass.
+
+---
+
+Dating Daniel was like living inside a comedy movie.
+
+One evening he insisted on cooking dinner.
+
+"I've watched enough cooking videos."
+
+I should have run.
+
+Instead, I stayed.
+
+He confidently tied an apron around his waist.
+
+"Tonight," he announced, "prepare yourself for the greatest pasta in history."
+
+Thirty minutes later...
+
+Smoke filled the kitchen.
+
+The fire alarm screamed.
+
+The pasta looked like charcoal.
+
+Daniel proudly placed it on the table.
+
+"Bon appétit."
+
+"It looks dangerous."
+
+"It has personality."
+
+"It has carbon."
+
+He took one bite.
+
+Paused.
+
+Drank an entire bottle of water.
+
+Then whispered,
+
+"We're ordering pizza."
+
+---
+
+Whenever we argued, the fights never lasted.
+
+One afternoon I caught him hiding something behind his back.
+
+"What are you doing?"
+
+"Nothing."
+
+"What are you hiding?"
+
+He slowly revealed...
+
+My missing slipper.
+
+"I've been looking everywhere!"
+
+"I know."
+
+"You stole my slipper?"
+
+"I wanted to see how long it would take."
+
+"I walked around the house wearing one slipper for two hours!"
+
+"I was conducting scientific research."
+
+"What research?"
+
+"To discover whether you'd notice."
+
+I chased him around the apartment with a pillow.
+
+He laughed until he crashed into the sofa.
+
+Five minutes later we were both lying on the floor, breathless from laughing.
+
+Neither of us remembered why we were angry.
+
+---
+
+My best friend Mia finally met him.
+
+She watched him carefully for exactly five minutes.
+
+Then she pulled me aside.
+
+"He's weird."
+
+"I know."
+
+"He talks to pigeons."
+
+"I know."
+
+"He thanked an elevator for stopping."
+
+"I know."
+
+"He winked at a mannequin."
+
+"I know."
+
+She sighed.
+
+"I've never seen you this happy."
+
+Neither had I.
+
+---
+
+Daniel believed every bad day deserved ice cream.
+
+Lost your wallet?
+
+Ice cream.
+
+Bad haircut?
+
+Ice cream.
+
+Burnt dinner?
+
+Double ice cream.
+
+One rainy evening I received terrible news.
+
+My company had canceled a project I'd spent months working on.
+
+I sat quietly in my apartment.
+
+A knock came at the door.
+
+Daniel stood outside wearing a superhero cape.
+
+In one hand...
+
+Chocolate ice cream.
+
+In the other...
+
+Vanilla.
+
+"I heard sadness lives here."
+
+I smiled despite myself.
+
+"What are you wearing?"
+
+"My Emotional Support Superhero Outfit."
+
+"You look ridiculous."
+
+"I know."
+
+He entered dramatically.
+
+"For today's mission..."
+
+He raised both tubs.
+
+"We attack depression with sugar."
+
+We spent the night eating ice cream straight from the containers while watching terrible comedy movies.
+
+By midnight I wasn't thinking about work anymore.
+
+I was laughing so hard soda came out of my nose.
+
+Daniel pointed.
+
+"See?
+
+Mission successful."
+
+---
+
+His biggest talent wasn't making jokes.
+
+It was making ordinary days unforgettable.
+
+Shopping became treasure hunts.
+
+Laundry became fashion shows.
+
+Cleaning became dance competitions.
+
+One Saturday he appeared wearing sunglasses indoors.
+
+"Why?"
+
+"I'm protecting my celebrity identity."
+
+"No one knows you."
+
+"They will."
+
+The cashier looked at him.
+
+Daniel whispered,
+
+"Please don't tell the paparazzi."
+
+The cashier played along.
+
+"My lips are sealed."
+
+He bowed dramatically.
+
+When we reached the parking lot I couldn't stop laughing.
+
+"You bribed a cashier into pretending you're famous."
+
+"No."
+
+"I inspired her."
+
+---
+
+Months passed.
+
+Without realizing it...
+
+My apartment slowly became ours.
+
+His hoodie stayed on my couch.
+
+His toothbrush appeared beside mine.
+
+His favorite mug somehow replaced mine.
+
+One morning I opened the refrigerator.
+
+Half of it contained yogurt.
+
+The other half...
+
+Energy drinks.
+
+I smiled.
+
+Daniel walked in.
+
+"Morning."
+
+"You've invaded."
+
+He kissed my forehead.
+
+"I'm a peaceful invader."
+
+---
+
+Not everything was perfect.
+
+Sometimes life became serious.
+
+Bills.
+
+Stress.
+
+Family expectations.
+
+Work deadlines.
+
+One evening I snapped.
+
+"I'm tired."
+
+"I know."
+
+"I'm scared we're pretending everything is funny."
+
+He became quiet.
+
+Then he sat beside me.
+
+"You know why I joke so much?"
+
+I shook my head.
+
+"When I was younger... life wasn't easy."
+
+His smile softened.
+
+"My dad always said if you can laugh, you can survive one more day."
+
+I held his hand.
+
+"So that's what you've been doing?"
+
+"Every day."
+
+For the first time...
+
+The funniest man I'd ever met looked vulnerable.
+
+I hugged him tightly.
+
+"You don't always have to make me laugh."
+
+"I know."
+
+"But I like hearing your laugh."
+
+---
+
+Weeks later he invited me to a beach.
+
+"I have a surprise."
+
+Whenever Daniel said surprise...
+
+Chaos followed.
+
+We reached the shore just before sunset.
+
+He handed me a small kite.
+
+"We're flying this?"
+
+"Yes."
+
+It refused to fly.
+
+For thirty minutes we ran across the sand.
+
+The kite crashed into bushes.
+
+Children laughed at us.
+
+An old man applauded.
+
+Daniel tripped into the sand face-first.
+
+I laughed until tears rolled down my cheeks.
+
+He stood up covered in sand.
+
+"Exactly as planned."
+
+"That wasn't planned."
+
+"It became planned."
+
+---
+
+As the sun disappeared behind the ocean...
+
+He suddenly became quiet.
+
+That scared me more than anything.
+
+Daniel was never quiet.
+
+He reached into his pocket.
+
+"I've been thinking."
+
+"Dangerous."
+
+"I know."
+
+He smiled.
+
+"You remember the umbrella?"
+
+"The one you stole?"
+
+"I prefer borrowed."
+
+"You never gave it back."
+
+"I kept it."
+
+"Why?"
+
+"Because it reminds me of the luckiest mistake of my life."
+
+He slowly knelt.
+
+My heart stopped.
+
+People nearby noticed.
+
+Someone whispered.
+
+Someone started recording.
+
+Daniel looked into my eyes.
+
+"I don't promise a perfect life."
+
+"I don't promise expensive vacations every year."
+
+"I don't even promise I won't steal your fries."
+
+"You definitely will."
+
+"I absolutely will."
+
+People laughed.
+
+He continued.
+
+"But I promise every day you'll have someone trying his best to make you smile."
+
+His voice trembled.
+
+"I promise to stand beside you when life becomes heavy."
+
+"I promise to laugh with you."
+
+"Cry with you."
+
+"Grow old with you."
+
+Then he opened a small ring box.
+
+"Ava..."
+
+"Will you spend forever with your funny stranger?"
+
+I didn't answer immediately.
+
+Instead...
+
+I started laughing.
+
+He looked horrified.
+
+"Oh no."
+
+"Is that a no?"
+
+I couldn't speak.
+
+I was crying and laughing at the same time.
+
+Finally I nodded.
+
+"Yes."
+
+"Yes?"
+
+"Yes!"
+
+He slipped the ring onto my finger.
+
+The beach erupted into applause.
+
+Someone whistled.
+
+Children cheered.
+
+Daniel stood up and hugged me so tightly my feet left the ground.
+
+"I can't believe it."
+
+"I can."
+
+"You can?"
+
+"I've been waiting for you to ask."
+
+"You knew?"
+
+"You've been acting suspicious for weeks."
+
+"I was subtle."
+
+"You hid the ring inside the cereal box."
+
+"You found it?"
+
+"I thought it was a toy."
+
+He covered his face.
+
+"I'm never planning surprises again."
+
+"Oh, you definitely are."
+
+---
+
+Our wedding was exactly what everyone expected.
+
+Beautiful.
+
+Chaotic.
+
+Ridiculously funny.
+
+Daniel forgot where he'd put his shoes.
+
+My flower girl walked down the aisle eating cake.
+
+His best man accidentally gave the speech meant for another wedding.
+
+Halfway through he realized his mistake.
+
+"So... congratulations... whoever this speech belongs to."
+
+Everyone laughed.
+
+Even the priest struggled to keep a straight face.
+
+When it was time for our vows...
+
+Daniel smiled.
+
+"My beautiful wife..."
+
+"You once chased me because I stole your umbrella."
+
+"You still haven't returned it."
+
+"I was hoping marriage would settle the matter."
+
+"It doesn't."
+
+"Worth trying."
+
+Everyone laughed again.
+
+He took my hands.
+
+"You've turned every ordinary day into something worth remembering."
+
+"You've loved every strange part of me."
+
+"You've laughed at my terrible jokes."
+
+"Most of them."
+
+"Okay... some of them."
+
+"I'll spend the rest of my life trying to earn the rest of those laughs."
+
+I wiped away happy tears.
+
+When it was my turn...
+
+I smiled.
+
+"You walked into my life like a storm."
+
+"You annoyed me."
+
+"You embarrassed me."
+
+"You stole my umbrella."
+
+He grinned proudly.
+
+"But somewhere between all your terrible jokes..."
+
+"...burnt dinners..."
+
+"...missing slippers..."
+
+"...and endless ice cream..."
+
+"...you quietly stole my heart too."
+
+The room became silent.
+
+"I never believed forever could be this much fun."
+
+"But now I do."
+
+"So yes..."
+
+"I'll choose you."
+
+"Again."
+
+"And again."
+
+"And again."
+
+"Forever."
+
+The applause echoed through the hall.
+
+Daniel leaned closer.
+
+"One question."
+
+"What?"
+
+
+      </p>
+     
      <div class="affiliate-box">
     <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
 
@@ -401,19 +1146,39 @@ series: "The Machine At The Pharmacy Told A Different Story",
       <a href="https://example.com" target="_blank">Organic Green Tea</a>
     </div>
   </div>
-      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
+      <p>
+      "Can I keep the umbrella?"
+
+I laughed.
+
+"Only if I can keep you."
+
+He kissed my forehead.
+
+"Deal."
+
+And just like that, the stranger who had once run away with my umbrella became the man who walked beside me through every season of life. We discovered that romance wasn't always about grand gestures or perfect moments. Sometimes it was about laughing until your stomach hurt after a terrible joke, sharing burnt dinners and melting ice cream, dancing in the kitchen with socks on, and choosing each other every single day.
+
+Forever, it turned out, wasn't measured by years.
+
+It was measured by smiles.
+
+And with my funny stranger beside me, I knew I'd never run out of reasons to laugh.
+
+</p>
     `
   },
   
   
     {
-    slug: "best-food-for-healthy-kidney",
-    title: "The Girls Who Could See Demons ",
+    slug: "Happily Ever After... with Endless Pranks",
+    url: "Happily Ever After... with Endless Pranks.html",
+    title: "Happily Ever After... with Endless Pranks",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One",
+    excerpt: "The church doors swung open, and everyone stood to their feet as the newly married couple walked out with smiles so wide that even the photographer complained.",
     content: `
       <p>
-      Happily Ever After... with Endless Pranks
+      
 
 The church doors swung open, and everyone stood to their feet as the newly married couple walked out with smiles so wide that even the photographer complained.
 
@@ -1015,7 +1780,18 @@ Some said trust.
 
 Some said communication.
 
-Some said patience.
+    
+      </p>
+      <div class="affiliate-box">
+    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
+
+    <div>
+      <strong>Recommended Product:</strong><br>
+      <a href="https://example.com" target="_blank">Organic Green Tea</a>
+    </div>
+  </div>
+      <p>
+      Some said patience.
 
 Ethan and Lily agreed with all of those.
 
@@ -1026,16 +1802,8 @@ Never stop making the person you love smile.
 Because the greatest prank life ever played on them was introducing two complete strangers who refused to grow up, laughed through every season together, and discovered that happily ever after wasn't a perfect ending.
 
 It was waking up every morning beside your favorite person, wondering what ridiculous surprise they had planned for the day—and secretly hoping it would be a good one.
-      </p>
-      <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
+ 
+ </p>
     `
   },
   
