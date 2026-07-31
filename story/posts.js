@@ -1,56 +1,46 @@
 const posts = [
 
-{
   
-slug: "the-machine-at-the-pharmacy-told-a-different-story-chapter-1",
-
+   {
+    slug: "best-food-for-healthy-kidney",
+       
 series: "The Machine At The Pharmacy Told A Different Story",
   
-  url:"machine-at-the-pharmacy-chapter-1.html",
+    title: "My Husband Shadow Lives Upstairs",
+    image: "file_000000007e28720a9295faef6aaa2a56.png",
+    excerpt: "Chapter One ",
+    content: `
+      <p>Kidney health is important for removing waste and balancing fluids.</p>
+     <div class="affiliate-box">
+    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
 
-  chapter: 1,
+    <div>
+      <strong>Recommended Product:</strong><br>
+      <a href="https://example.com" target="_blank">Organic Green Tea</a>
+    </div>
+  </div>
+      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
+    `
+  },
 
-  title: "Chapter 1: The Machine At The Pharmacy Told A Different Story",
+  {
+    slug: "best-food-for-healthy-kidney",
+    title: "My Husband Shadow Lives Upstairs",
+    image: "file_000000007e28720a9295faef6aaa2a56.png",
+    excerpt: "Chapter One ",
+    content: `
+      <p>Kidney health is important for removing waste and balancing fluids.</p>
+     <div class="affiliate-box">
+    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
 
-  image: "https://www.image2url.com/r2/default/images/1781154681093-da3b869a-b8a8-4023-b5ec-8250f4011d9b.jpg",
-
-  excerpt: "The Machine At The Pharmacy Told A Different Story chapter 1 - by Dr Evelyn",
-
-  content: `
-
-<p>
-
-</p>
-
-`
-
-},
-
-
-{
-slug: "the-machine-at-the-pharmacy-told-a-different-story-chapter-2",
-
-  series: "The Machine At The Pharmacy Told A Different Story",
-
-url:"machine-at-the-pharmacy-chapter-2.html",
-
-  chapter: 2,
-
-title: "Chapter 2: The Machine At The Pharmacy Told A Different Story",
-
-  image: "https://www.image2url.com/r2/default/images/1781154681093-da3b869a-b8a8-4023-b5ec-8250f4011d9b.jpg",
-
-  excerpt: "The Machine At The Pharmacy Told A Different Story chapter 2 - by Dr Evelyn",
-
-  content: `
-
-<p>
-
-</p>
-
-`
-
-}, 
+    <div>
+      <strong>Recommended Product:</strong><br>
+      <a href="https://example.com" target="_blank">Organic Green Tea</a>
+    </div>
+  </div>
+      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
+    `
+  },
 
   
    {
