@@ -300,7 +300,8 @@ The pharmacist looked concerned.
     slug: "best-food-for-healthy-kidney",
        
 series: "The Machine At The Pharmacy Told A Different Story",
-  
+    url:"machine-at-the-pharmacy-chapter-1.html",
+     
     title: "My Husband Shadow Lives Upstairs",
     image: "file_000000007e28720a9295faef6aaa2a56.png",
     excerpt: "Chapter One ",
@@ -320,6 +321,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
 
   {
     slug: "best-food-for-healthy-kidney",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+    
     title: "My Husband Shadow Lives Upstairs",
     image: "file_000000007e28720a9295faef6aaa2a56.png",
     excerpt: "Chapter One ",
@@ -339,6 +342,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
 
   {
     slug: "Understanding-Diabetes-Symptoms",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+    
     title: "I Sold My Heart For Seven Days ",
     image: "https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One ",
@@ -358,6 +363,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
 
   {
     slug: "Mental-Health-and-Stress",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+    
     title: "The Night Heaven Lost An Angel ",
     image: "https://images.unsplash.com/photo-1493836512294-502baa1986e2?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One ",
@@ -377,6 +384,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
 
   {
     slug: "How-to-Improve-Your-Immune",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+
     title: "My Mother Married My Enemy ",
     image: "https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One ",
@@ -396,6 +405,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
 
   {
     slug: "The-Truth-About-Weight-Loss",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+    
     title: "The Forgotten Son Of Atlantis",
     image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One ",
@@ -415,6 +426,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
 
   {
     slug: "Healthy-Pregnancy-Guide",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+    
     title: "The CEO Who Hides Dead Bodies ",
     image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One ",
@@ -434,6 +447,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
 
   {
     slug: "Natural-Ways-to-Sleep-Better",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+    
     title: "The Secret Baby Of Blackwood Castle",
     image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One ",
@@ -453,6 +468,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
 
   {
     slug: "Best-Exercises-for-Heart-Health",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+    
     title: "The Boy Who Could Hear Graves",
     image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One ",
@@ -472,6 +489,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
 
   {
     slug: "Common-Causes-of-Fatigue",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+    
     title: "The Church Beneath The Cemetery",
     image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One ",
@@ -491,6 +510,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
   
     {
     slug: "best-food-for-healthy-kidney",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+      
     title: "My Roommate is The Devil's Daughter ",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One",
@@ -511,6 +532,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
   
     {
     slug: "best-food-for-healthy-kidney",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+      
     title: "The Last Qeen Of Horrow Earth ",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One ",
@@ -531,6 +554,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
   
     {
     slug: "best-food-for-healthy-kidney",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+      
     title: "The Last Daughter Of The Moon Kingdom ",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One ",
@@ -551,6 +576,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
   
     {
     slug: "best-food-for-healthy-kidney",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+      
     title: "The Boy Who Could Stop Time ",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One ",
@@ -571,6 +598,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
   
     {
     slug: "best-food-for-healthy-kidney",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+      
     title: "The Boy With Fire In The Veins ",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One ",
@@ -591,6 +620,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
   
     {
     slug: "best-food-for-healthy-kidney",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+      
     title: "Seven Nights With My Enemy ",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One ",
@@ -611,6 +642,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
   
     {
     slug: "best-food-for-healthy-kidney",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+      
     title: "The Girl The Wolves Chose",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One",
@@ -631,6 +664,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
   
     {
     slug: "best-food-for-healthy-kidney",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+      
     title: "The Devil's Son Wants Me Alive",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One",
@@ -651,6 +686,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
   
     {
     slug: "best-food-for-healthy-kidney",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+      
     title: "The Girls Who Could See Demons ",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Chapter One",
@@ -671,6 +708,8 @@ series: "The Machine At The Pharmacy Told A Different Story",
   
     {
     slug: "best-food-for-healthy-kidney",
+    url:"machine-at-the-pharmacy-chapter-1.html",
+      
     title: "The Queen Of Ashes And Bones ",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
     excerpt: "Discover nutrition strategies for maintaining healthy kidneys.",
