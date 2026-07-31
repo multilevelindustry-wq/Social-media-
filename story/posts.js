@@ -296,415 +296,57 @@ The pharmacist looked concerned.
 
 }, 
 
-   {
-    slug: "best-food-for-healthy-kidney",
-       
-series: "The Machine At The Pharmacy Told A Different Story",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-     
-    title: "My Husband Shadow Lives Upstairs",
-    image: "file_000000007e28720a9295faef6aaa2a56.png",
-    excerpt: "Chapter One ",
-    content: `
-      <p>Kidney health is important for removing waste and balancing fluids.</p>
-     <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
-    `
-  },
-
   {
-    slug: "best-food-for-healthy-kidney",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-    
-    title: "My Husband Shadow Lives Upstairs",
-    image: "file_000000007e28720a9295faef6aaa2a56.png",
-    excerpt: "Chapter One ",
-    content: `
-      <p>Kidney health is important for removing waste and balancing fluids.</p>
-     <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
+  slug: "The-Stranger-Who-Stole-My-Heart-Forever-1",
 
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
-    `
-  },
+  series: "The Stranger Who Stole My Heart... Forever",
 
-  {
-    slug: "Understanding-Diabetes-Symptoms",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-    
-    title: "I Sold My Heart For Seven Days ",
-    image: "https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One ",
-    content: `
-      <p>Diabetes is a chromebook .</p>
+  url: "The-Stranger-Who-Stole-My-Heart-Forever.html",
+
+  chapter: 1,
+
+  title: "The Stranger Who Stole My Heart... Forever",
+
+  image: "https://www.image2url.com/r2/default/images/1781154681093-da3b869a-b8a8-4023-b5ec-8250f4011d9b.jpg",
+
+  excerpt: "The last person Mia expected to meet on a perfectly ordinary Saturday was the loud, ridiculously funny stranger who would accidentally steal her coffee, her peace of mind, and eventually her heart.",
+
+  content: `
+      <h2>The Stranger Who Stole My Heart... Forever</h2>
+
+      <p>
+      Saturdays in Brookville were usually peaceful, predictable, and pleasantly boring. Mia loved it that way. She worked as a freelance illustrator from her tiny apartment overlooking Willow Square, where old men played chess, children chased pigeons, and couples walked hand in hand pretending life was a romantic movie. She had convinced herself she didn't need any of that. Romance, according to her, was expensive, distracting, and usually ended with someone crying over melted ice cream. Her only plan that morning was to enjoy a giant caramel latte, finish sketching a children's book, and avoid unnecessary conversations. Fate, however, had apparently laughed at her schedule. The moment she stepped into Bean & Bloom Café, someone rushed through the door, slipped dramatically on the welcome mat, spun like a confused ballerina, and crashed straight into her. Her coffee flew into the air in slow motion before landing perfectly on the stranger's white hoodie. The café fell silent. Mia stared in horror while the stranger blinked twice, looked down at the coffee stains, and said with complete seriousness, "Well... I always wanted a caramel-colored hoodie. Thanks for helping my fashion dreams come true." The customers burst into laughter, and despite every attempt to stay annoyed, Mia felt the corner of her mouth betray her with the smallest smile.
+      </p>
+
+      <p>
+      "You're laughing," the stranger announced proudly as if he had won an Olympic medal. "Mission accomplished. Hi, I'm Ethan, professional coffee catcher and part-time embarrassment specialist." Mia folded her arms. "You bumped into me." Ethan nodded confidently. "Correct. But look on the bright side—we've skipped all the awkward introductions normal people have." Before she could reply, the barista handed Ethan a towel and whispered, "This happens every week." Ethan gasped dramatically. "Please don't ruin my mysterious reputation." Mia laughed again, louder this time. She hated how easy it was. Ethan insisted on buying her another drink, accidentally ordered six muffins because he misunderstood the cashier, and somehow convinced half the café to help them finish the mountain of pastries. By the time they left, strangers were waving goodbye as if Mia and Ethan had been hosting a comedy show instead of cleaning frosting off their noses.
+      </p>
+
+      <p>
+      Ethan offered to walk her home because, according to him, "The city clearly isn't safe for innocent coffee cups." Along the way they encountered one ridiculous situation after another. A tiny dog escaped its leash and chased Ethan around a fountain while Mia laughed so hard she nearly dropped her sketchbook. Ethan climbed onto a bench to escape the fearless puppy, only to discover the dog was more interested in the sausage roll sticking out of his pocket than in attacking him. Moments later, an elderly woman mistook them for newlyweds and congratulated them on "their beautiful marriage." Ethan thanked her politely while Mia turned bright red. "Honey," Ethan said dramatically, "we really should tell your grandmother the honeymoon has been postponed." Mia elbowed him so hard he almost walked into a lamppost. Instead of getting offended, he bowed theatrically to the amused pedestrians. Somehow, every embarrassing moment around him became something worth laughing about.
+      </p>
+
+      <p>
+      The afternoon drifted by without either of them noticing. They wandered through a weekend street market where Ethan insisted on trying every free food sample available. One vendor challenged him to eat the world's hottest pepper sauce. Ethan confidently declared he feared nothing. Ten seconds later, tears streamed down his face as he desperately hugged a giant carton of milk while children applauded his dramatic performance. Mia laughed until her stomach hurt. To recover his dignity, Ethan won her a stuffed panda at a ring-toss game after several spectacular failures that involved rings landing on spectators instead of bottles. When he finally succeeded, he handed her the panda with an exaggerated bow. "For the lady who survived the Great Coffee Disaster." She accepted it with a shy smile. Somewhere between the laughter, the ridiculous games, and Ethan's endless jokes, Mia realized she hadn't thought about work, deadlines, or loneliness all day.
+      </p>
+
       <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
 
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Common symptoms include excessive thirst and fatigue.</p>
-    `
-  },
+        <div>
+          <strong>Recommended Product:</strong><br>
+          <a href="https://example.com" target="_blank">Organic Green Tea</a>
+        </div>
+      </div>
 
-  {
-    slug: "Mental-Health-and-Stress",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-    
-    title: "The Night Heaven Lost An Angel ",
-    image: "https://images.unsplash.com/photo-1493836512294-502baa1986e2?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One ",
-    content: `
-      <p>Mental health affects overall wellbeing.</p>
-      <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
+      <h2>A Promise Hidden Behind Laughter</h2>
 
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Practice mindfulness and get adequate sleep.</p>
-    `
-  },
+      <p>
+      Evening painted the sky with soft shades of pink and gold as they sat on a park bench sharing the last muffin from the accidental bakery purchase. Ethan admitted that he had recently moved to Brookville after leaving a stressful corporate job because he wanted a life filled with stories worth remembering instead of endless spreadsheets. Mia confessed that after a painful breakup two years earlier, she had quietly promised herself never to trust charming strangers again. Ethan listened without interrupting, then smiled gently. "Good thing I'm not charming," he said. "I'm just spectacularly clumsy." Mia laughed through the unexpected sting of happy tears. Before they parted ways, Ethan scribbled his phone number inside her sketchbook beside a tiny cartoon of himself slipping on a coffee puddle. "If you ever need someone to embarrass you in public," he said, "I'm available seven days a week." As Mia walked home hugging the stuffed panda, she realized something extraordinary had happened. The funny stranger she had met only hours earlier hadn't just stolen her coffee or her peaceful Saturday—he had quietly, effortlessly begun stealing her heart, and for the first time in years, she wasn't interested in getting it back.
+      </p>
+  `
+},
 
-  {
-    slug: "How-to-Improve-Your-Immune",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-
-    title: "My Mother Married My Enemy ",
-    image: "https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One ",
-    content: `
-      <p>Exercise, hydration and balanced nutrition help immunity.</p>
-      <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Sleep is equally important for immune function.</p>
-    `
-  },
-
-  {
-    slug: "The-Truth-About-Weight-Loss",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-    
-    title: "The Forgotten Son Of Atlantis",
-    image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One ",
-    content: `
-      <p>Crash dieting may damage metabolism.</p>
-      <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Consistency and nutrition matter most.</p>
-    `
-  },
-
-  {
-    slug: "Healthy-Pregnancy-Guide",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-    
-    title: "The CEO Who Hides Dead Bodies ",
-    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One ",
-    content: `
-      <p>Prenatal care is essential during pregnancy.</p>
-      <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Attend regular medical checkups.</p>
-    `
-  },
-
-  {
-    slug: "Natural-Ways-to-Sleep-Better",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-    
-    title: "The Secret Baby Of Blackwood Castle",
-    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One ",
-    content: `
-      <p>A healthy sleep routine improves energy and focus.</p>
-   <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Avoid screens before bedtime.</p>
-    `
-  },
-
-  {
-    slug: "Best-Exercises-for-Heart-Health",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-    
-    title: "The Boy Who Could Hear Graves",
-    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One ",
-    content: `
-      <p>Walking and cycling improve heart health.</p>
-    <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Exercise at least 30 minutes daily.</p>
-    `
-  },
-
-  {
-    slug: "Common-Causes-of-Fatigue",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-    
-    title: "The Church Beneath The Cemetery",
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One ",
-    content: `
-      <p>Fatigue may result from stress, poor diet or illness.</p>
-      <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Seek professional medical advice if symptoms persist.</p>
-    `
-  },
-  
-    {
-    slug: "best-food-for-healthy-kidney",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-      
-    title: "My Roommate is The Devil's Daughter ",
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One",
-    content: `
-      <p>Kidney health is important for removing waste and balancing fluids.</p>
-       <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
-    `
-  },
-  
-  
-    {
-    slug: "best-food-for-healthy-kidney",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-      
-    title: "The Last Qeen Of Horrow Earth ",
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One ",
-    content: `
-      <p>Kidney health is important for removing waste and balancing fluids.</p>
-       <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
-    `
-  },
-  
-  
-    {
-    slug: "best-food-for-healthy-kidney",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-      
-    title: "The Last Daughter Of The Moon Kingdom ",
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One ",
-    content: `
-      <p>Kidney health is important for removing waste and balancing fluids.</p>
-     <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
-    `
-  },
-  
-  
-    {
-    slug: "best-food-for-healthy-kidney",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-      
-    title: "The Boy Who Could Stop Time ",
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One ",
-    content: `
-      <p>Kidney health is important for removing waste and balancing fluids.</p>
-     <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
-    `
-  },
-  
-  
-    {
-    slug: "best-food-for-healthy-kidney",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-      
-    title: "The Boy With Fire In The Veins ",
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One ",
-    content: `
-      <p>Kidney health is important for removing waste and balancing fluids.</p>
-    <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
-    `
-  },
-  
-  
-    {
-    slug: "best-food-for-healthy-kidney",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-      
-    title: "Seven Nights With My Enemy ",
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One ",
-    content: `
-      <p>Kidney health is important for removing waste and balancing fluids.</p>
-     <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
-    `
-  },
-  
-  
-    {
-    slug: "best-food-for-healthy-kidney",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-      
-    title: "The Girl The Wolves Chose",
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One",
-    content: `
-      <p>Kidney health is important for removing waste and balancing fluids.</p>
-    <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
-    `
-  },
-  
-  
-    {
-    slug: "best-food-for-healthy-kidney",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-      
-    title: "The Devil's Son Wants Me Alive",
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One",
-    content: `
-      <p>Kidney health is important for removing waste and balancing fluids.</p>
-     <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
-    `
-  },
-  
-  
-    {
-    slug: "best-food-for-healthy-kidney",
-    url:"machine-at-the-pharmacy-chapter-1.html",
-      
-    title: "The Girls Who Could See Demons ",
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One",
-    content: `
-      <p>Kidney health is important for removing waste and balancing fluids.</p>
-      <div class="affiliate-box">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
-
-    <div>
-      <strong>Recommended Product:</strong><br>
-      <a href="https://example.com" target="_blank">Organic Green Tea</a>
-    </div>
-  </div>
-      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
-    `
-  },
-  
   
     {
 slug: "The Ring That Went Missing-1",
