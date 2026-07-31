@@ -707,13 +707,21 @@ series: "The Machine At The Pharmacy Told A Different Story",
   
   
     {
-    slug: "The Ring That Went Missing",
-    url:"The Ring That Went Missing.html",
-      
-    title: "The Ring That Went Missing",
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "The morning was supposed to be perfect. The sun shone brightly over Maple Street, birds chirped happily, and Mia stood in front of the mirror trying to decide whether the blue dress or the pink one made her look less nervous.",
-    content: `
+slug: "The Ring That Went Missing-1",
+
+series: "The Ring That Went Missing",
+  
+  url:"The Ring That Went Missing.html",
+
+  chapter: 1,
+
+  title: "The Ring That Went Missing",
+
+  image: "https://www.image2url.com/r2/default/images/1781154681093-da3b869a-b8a8-4023-b5ec-8250f4011d9b.jpg",
+
+  excerpt: "The morning was supposed to be perfect. The sun shone brightly over Maple Street,",
+
+  content: `
       <p>
       
 
