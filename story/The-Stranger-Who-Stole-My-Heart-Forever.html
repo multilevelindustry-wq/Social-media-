@@ -293,100 +293,116 @@ if(post){
 
 
 document.title =
-post.title + " | Clauneck Stories";
+post.title + " | Claunex Stories";
 
 
+
+/* ===== AUTO LONG-TAIL SEO KEYWORDS FOR EVERY STORY ===== */
 
 let baseKeywords = [
 
 post.title,
-
-post.title + "Mysterious whispering forest story, Fantasy adventure with ancient relics",
-
-post.title + "Dark fantasy about forgotten kingdoms, Ancient moon legend fiction",
-
-post.title + "Fantasy story about wisdom and power, Hidden prophecy fantasy adventure",
-
-post.title + "Ancient occult inspired fantasy fiction, Magical moonlight adventure story",
-
-post.title + "Dark fantasy inspired by demonology, Ancient mystical creature fantasy",
-
-post.title + "Supernatural moon prophecy story, Fantasy about forbidden ancient rituals",
-
-post.title + "Hidden world beneath ancient tree, Ancient magical civilization fantasy",
-
-post.title + "Fantasy story with immortal teacher, Clauneck origin fantasy novel",
-
-"Dark fantasy with ancient secrets, Clauneck guardian of hidden knowledge",
-
-"Magical whisper beneath the moon story, Fantasy story about forgotten ancient being",
-
-"Hidden realm of Clauneck story, Clauneck ancient demon fantasy tale",
-
-"Ancient moon fantasy novel about Clauneck, Clauneck mythology inspired fiction",
-
-"Clauneck's first whisper beneath the ancient moon story, Clauneck dark fantasy story",
-
-"Ancient whispers in the forest story, Fantasy about cursed hidden valley",
-
-"Secret book of Clauneck story, Best Clauneck fantasy story online",
-
-"Ancient forest supernatural fantasy story, Fantasy novel about forbidden knowledge",
-
-"Moonlit mystery fantasy adventure, Clauneck legend retold in fiction",
-
-"Ancient magical book fantasy story, Hidden chamber beneath the roots story",
-
-"Fantasy about mystical ancient prophecy, Dark moon supernatural adventure",
-
-"Clauneck and the chosen girl story, Fantasy story about mystical symbols"
+post.title + " story",
+post.title + " romance story",
+post.title + " love story",
+post.title + " romantic novel",
+post.title + " full story",
+post.title + " complete novel",
+post.title + " online story",
+post.title + " free to read",
+post.title + " chapter 1",
+post.title + " latest chapter",
+post.title + " English romance novel",
+post.title + " emotional love story",
+post.title + " billionaire romance",
+post.title + " enemies to lovers",
+post.title + " fake relationship romance",
+post.title + " slow burn romance",
+post.title + " romantic comedy",
+post.title + " heartwarming love story",
+post.title + " best romance novel",
+post.title + " romance series",
+post.title + " web novel",
+post.title + " fiction story",
+post.title + " drama romance",
+post.title + " love and heartbreak",
+post.title + " unforgettable romance",
+post.title + " romance adventure",
+post.title + " romantic fiction",
+post.title + " read online",
+post.title + " Clauneck Stories"
 
 ];
 
+let suffixes = [
 
+"read online free",
+"full novel",
+"complete story",
+"latest chapters",
+"chapter one",
+"chapter 1",
+"chapter two",
+"chapter 2",
+"romance fiction",
+"love story",
+"romantic novel",
+"best romance story",
+"emotional romance",
+"funny romance",
+"romantic comedy",
+"drama novel",
+"fiction novel",
+"online novel",
+"free web novel",
+"free romance novel",
+"English novel",
+"love and betrayal story",
+"heartwarming romance",
+"love triangle novel",
+"office romance story",
+"college romance novel",
+"boss and employee romance",
+"billionaire love story",
+"marriage of convenience novel",
+"second chance romance",
+"slow burn romance",
+"enemies to lovers",
+"friends to lovers",
+"unexpected romance",
+"falling in love story",
+"romantic adventure",
+"beautiful love story",
+"best web novel",
+"top romance stories",
+"read romance online",
+"free fiction stories",
+"Clauneck Stories",
+"romantic series",
+"best online story",
+"new romance novel",
+"captivating romance",
+"must read romance",
+"love and destiny story",
+"heart touching novel",
+"viral romance story"
 
-
+];
 
 let longTail = [];
 
+baseKeywords.forEach(base => {
 
-baseKeywords.forEach(k=>{
+    suffixes.forEach(suffix => {
 
+        longTail.push(`${base} ${suffix}`);
 
-longTail.push(
-
-k,
-
-k+"Ancient mystery fantasy with Clauneck, Dark fantasy involving hidden prophecies",
-
-k+"Best supernatural fantasy stories about Clauneck, Clauneck ancient moon legend fantasy story",
-
-k+"Clauneck magical powers explained through fiction, Epic fantasy involving ancient moon",
-
-k+"Supernatural forest legend story, Fantasy romance with ancient guardian",
-
-k+"Ancient seal breaking fantasy novel, Forgotten god fantasy fiction",
-
-k+"Fantasy story with mystical relics, Dark fantasy about redemption and destiny",
-
-k+"Fantasy novel about lost civilizations, Ancient guardian of forbidden knowledge",
-
-k+"Fantasy about magical bloodline, Supernatural adventure with ancient secrets",
-
-k+"Clauneck fantasy series, Ancient spirit under the moon story"
-
-);
-
+    });
 
 });
 
-
-
-document
-.getElementById("metaKeywords")
-.content =
+document.getElementById("metaKeywords").content =
 [...new Set(longTail)].join(",");
-
 
 
 
