@@ -1,6 +1,221 @@
 const posts = [
 
   {
+  slug: "He-Still-Makes-Me-Laugh-Every-Morning-1",
+
+  series: "He Still Makes Me Laugh Every Morning",
+
+  url: "He-Still-Makes-Me-Laugh-Every-Morning.html",
+
+  chapter: 1,
+
+  title: "He Still Makes Me Laugh Every Morning",
+
+  image: "https://www.image2url.com/r2/default/images/1781154681093-da3b869a-b8a8-4023-b5ec-8250f4011d9b.jpg",
+
+  excerpt: "Every morning in Willowbrook began with birds singing, warm sunshine spilling through the curtains, and one ridiculously funny man who somehow found a brand-new way to make me laugh before breakfast.",
+
+  content: `
+
+<h2>He Still Makes Me Laugh Every Morning</h2>
+
+<p>
+Every morning in Willowbrook felt like the beginning of a cheerful movie. The baker waved at everyone before sunrise, children raced bicycles down Maple Lane, and old Mrs. Henderson watered flowers while singing loudly enough for the entire neighborhood to hear. Yet none of those things were responsible for the smile that appeared on my face each day. That honor belonged to Ethan Brooks, the man who lived in the apartment across from mine. He possessed a remarkable talent for turning ordinary mornings into unforgettable comedy shows. Sometimes he greeted the sunrise wearing mismatched slippers and a superhero cape because he had "overslept saving the world." Other days he accidentally brushed his teeth with shaving cream before realizing why his mouth tasted like peppermint soap. Instead of becoming embarrassed, he would bow dramatically to imaginary audiences while I laughed so hard that coffee nearly spilled from my mug. I had met him only a few weeks earlier after he confused my apartment with his and confidently walked inside carrying groceries. He apologized by cooking breakfast, although he managed to burn toast, scramble eggs onto the floor, and somehow convince me it was the funniest meal ever served. From that day forward, laughter quietly became part of my daily routine, and before I even realized it, so did Ethan.
+</p>
+
+<p>
+Our friendship grew through endless ridiculous adventures. Ethan believed every problem could be solved with either pancakes or bad jokes, preferably both. When my alarm clock stopped working, he stood outside my window wearing a construction helmet and banged two saucepan lids together while shouting, "Your Majesty, breakfast refuses to wait!" When my cat refused to come inside, Ethan dressed as another cat using cardboard ears and crawled around the garden until the confused feline followed him home. Even grocery shopping became dangerous because he insisted on narrating our trip like a wildlife documentary. "Observe," he whispered dramatically while pointing at an elderly woman choosing tomatoes, "the rare bargain hunter approaches her natural prey." I laughed so loudly that three strangers started laughing without knowing why. He never mocked people cruelly; his humor always made everyone—including himself—the punchline. Somehow, even rainy mornings became brighter whenever Ethan appeared holding an umbrella decorated with giant yellow ducks or socks that proudly refused to match. My neighbors began opening their windows just to witness whatever nonsense he invented next.
+</p>
+
+<p>
+One Saturday morning, Ethan announced he had prepared "the most romantic breakfast in human history." I expected candles, flowers, or at least edible pancakes. Instead, I found my kitchen transformed into what looked suspiciously like a pirate ship. Bedsheets became sails, wooden spoons became swords, and my dining chair had been promoted to captain. Wearing an oversized pirate hat, Ethan declared that hidden somewhere inside the apartment was "the legendary treasure of true love." The treasure hunt included hilariously terrible clues tucked beneath cereal boxes, flowerpots, and even inside my slippers. Every clue contained another awful joke that made me groan before bursting into laughter anyway. The final clue led me to the refrigerator, where I discovered a tiny chocolate cupcake with a handwritten note saying, "Congratulations! You found breakfast before I accidentally ate it." Ethan admitted he really had almost eaten it while waiting for me. We sat on the kitchen floor laughing until our stomachs hurt. The breakfast was cold, the coffee tasted suspiciously salty because he confused the sugar jar, and nothing had gone according to his plan. Yet somehow it became my favorite breakfast of all time.
+</p>
+
+<div class="affiliate-box">
+    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
+
+    <div>
+      <strong>Recommended Product:</strong><br>
+      <a href="https://example.com" target="_blank">Organic Green Tea</a>
+    </div>
+</div>
+
+<h2>A Cup of Laughter Every Morning</h2>
+
+<p>
+Nothing completed our chaotic mornings better than sharing a warm cup of tea after Ethan's latest comedy performance. While we laughed about burnt pancakes, confused cats, or another one of his spectacular kitchen disasters, the peaceful moment reminded me that happiness often hides inside the simplest routines shared with someone who genuinely makes life brighter.
+</p>
+
+<p>
+As weeks turned into months, our morning tradition became famous throughout Willowbrook. People purposely slowed their walks past our building because they expected entertainment before work. Ethan once tried learning yoga from an online video, only to become stuck upside down between the couch and coffee table while insisting he had discovered "advanced relaxation." Another morning he proudly baked muffins that looked perfect until everyone realized he had forgotten to remove the paper wrappers before mixing the batter. Even my usually serious boss noticed I arrived smiling every day. "What's your secret?" she asked. I simply shrugged because explaining Ethan required more time than a lunch break. His laughter was contagious, but his kindness was even stronger. Whenever neighbors needed help carrying groceries, fixing fences, or cheering someone after a difficult day, Ethan volunteered immediately. Somehow he always mixed generosity with humor, making people laugh while quietly making their lives easier. Watching him care for others made me realize I wasn't only falling for the funniest man I had ever met—I was falling for one of the kindest.
+</p>
+
+<p>
+One chilly autumn morning, I woke to complete silence. There were no saucepan alarms, pirate speeches, duck umbrellas, or dramatic superhero entrances. Curious, I walked across the hallway and knocked gently on Ethan's apartment door. It opened slowly, revealing him sitting on the couch surrounded by balloons, paper decorations, and dozens of burnt cookies. His usually cheerful smile looked nervous. "I was trying to surprise you," he admitted, scratching the back of his head. "Then I burned the cookies, popped half the balloons, glued two decorations to my hair, and accidentally scared myself with my own surprise." Before I could answer, one remaining balloon floated downward, bumped him on the nose, and made him sneeze so violently that confetti exploded everywhere. We both burst into uncontrollable laughter. Through tears of happiness, he quietly admitted that making me laugh every morning had become the favorite part of his entire day because hearing my laughter reminded him that life was worth celebrating, even when everything went wonderfully wrong.
+</p>
+
+<p>
+That evening, we walked through the park beneath glowing streetlights, laughing about every ridiculous memory we had created together. Ethan reached into his jacket pocket and produced a tiny paper ring folded from a grocery receipt. "I couldn't afford anything fancy today," he said with an embarrassed grin, "and honestly, I'd probably lose a real ring before breakfast anyway." I slipped the paper ring onto my finger as though it were the most valuable jewel in the world. We both laughed again, but this time the laughter carried something deeper—comfort, affection, and the quiet certainty that our happiest moments had only just begun. As the stars appeared above Willowbrook, I realized love wasn't always about grand speeches or perfect dates. Sometimes it arrived wearing mismatched socks, carrying burnt pancakes, telling terrible jokes, and making me laugh every single morning. And somehow, that was more romantic than anything I had ever imagined.
+</p>
+
+`
+},
+
+
+  {
+  slug: "Our-Honeymoon-Started-with-an-Argument-1",
+
+  series: "Our Honeymoon Started with an Argument",
+
+  url: "Our-Honeymoon-Started-with-an-Argument.html",
+
+  chapter: 1,
+
+  title: "Our Honeymoon Started with an Argument",
+
+  image: "https://www.image2url.com/r2/default/images/1781154681093-da3b869a-b8a8-4023-b5ec-8250f4011d9b.jpg",
+
+  excerpt: "Everyone promised that a honeymoon would begin with kisses, laughter, and breathtaking sunsets. Ours began with an argument over a suitcase that neither of us wanted to admit we had packed incorrectly.",
+
+  content: `
+      <h2>Our Honeymoon Started with an Argument</h2>
+
+      <p>
+      Everyone said the honeymoon would be the happiest week of our lives. Friends filled our ears with stories about candlelit dinners, romantic walks along white sandy beaches, and endless cuddles beneath the stars. No one warned us that the first words my brand-new husband, Ethan, would say after we arrived at the airport were, "You packed the passports... right?" My smile disappeared faster than free cake at a wedding reception. "I thought you packed them," I answered, staring at him with the same horror people reserve for finding pineapple on pizza. For thirty dramatic seconds we blamed each other, accused each other of being forgetful, and nearly cancelled our marriage before remembering that I had secretly tucked both passports inside my handbag fifteen minutes earlier. Instead of apologizing, Ethan burst into uncontrollable laughter. I tried staying angry, but his ridiculous wheezing laugh echoed through the airport until strangers began laughing with him. Our honeymoon officially started with an argument... followed by public embarrassment.
+      </p>
+
+      <p>
+      Things somehow became even funnier after we reached the seaside resort. The receptionist smiled politely and congratulated us before handing Ethan a room key with a mysterious wink. Five minutes later we discovered we had accidentally been given the honeymoon suite belonging to another newly married couple named Emma and Eric. Imagine our surprise when the real couple walked into the room carrying balloons and chocolate-covered strawberries while Ethan stood in the middle of their bedroom wearing the fluffy hotel robe. Eric screamed. Emma laughed so hard she dropped the strawberries. Ethan confidently declared, "Well... this is awkward." The hotel staff apologized a hundred times, upgraded all of us, and even gave us free desserts to make peace. Ethan insisted the entire misunderstanding happened because "all romantic husbands look equally handsome." I threw a pillow at him before stealing half of his chocolate cake.
+      </p>
+
+      <p>
+      Determined to recover from our disastrous beginning, we joined a couples' cooking class offered by the resort. The instructor promised we would prepare the perfect romantic dinner together. Ethan somehow interpreted that as permission to become a celebrity chef. He dramatically flipped vegetables into the air, spun frying pans like circus equipment, and confidently announced that recipes were merely "friendly suggestions." Within minutes he confused sugar with salt, nearly seasoned dessert with black pepper, and somehow managed to set his apron on fire without noticing. The instructor calmly extinguished the tiny flames while the other couples applauded, believing it was part of the entertainment. Our final meal looked like something rescued from a science experiment, yet Ethan proudly served it with a flower tucked behind his ear. We laughed until tears rolled down our cheeks before giving up and ordering pizza. Oddly enough, sharing terrible food became one of my favorite honeymoon memories.
+      </p>
+
+      <p>
+      The following afternoon we rented bicycles to explore the nearby village. Ethan insisted he knew the quickest route despite ignoring every map available. Twenty minutes later we found ourselves completely lost beside a sunflower farm with a very curious goat following us. For reasons still unknown, the goat became obsessed with Ethan's bright floral shirt and chased him across the field while I laughed so hard I couldn't breathe. Local children gathered to cheer for the goat as if they were watching a football match. Ethan eventually escaped by surrendering his sunhat, which the victorious goat proudly chewed like a trophy. Covered in sweat and grass stains, he looked at me and declared, "I think your new rival has won." I kissed his dusty cheek before admitting that no matter how ridiculous he looked, he was still the most charming man I'd ever met.
+      </p>
+
+      <div class="affiliate-box">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
+
+          <div>
+              <strong>Recommended Product:</strong><br>
+              <a href="https://example.com" target="_blank">Organic Green Tea</a>
+          </div>
+      </div>
+
+      <h2>When Laughter Became Our Love Language</h2>
+
+      <p>
+      That evening we carried cups of warm tea onto the quiet beach just as the sun melted into the ocean with brilliant shades of orange and pink. The breeze was gentle, the waves whispered against the shore, and for the first time since our wedding we sat in complete silence. Ethan reached into his pocket and pulled out a tiny seashell instead of the romantic surprise he had promised. "I lost the surprise," he admitted with an embarrassed grin, "but I found this shell while looking for it, and somehow it reminded me of you. It's not perfect, it's a little cracked, but it's beautiful because it survived the waves." My eyes filled with tears while he nervously scratched his head, worried he had ruined another romantic moment. Instead, I hugged him so tightly we nearly rolled into the ocean. I realized then that perfection had never been the point. Our honeymoon wasn't memorable because everything went according to plan—it became unforgettable because every disaster ended with laughter, every misunderstanding ended with forgiveness, and every unexpected adventure reminded us why we had fallen in love in the first place. As the stars slowly appeared above us, Ethan smiled and whispered, "Tomorrow, let's try not to argue before breakfast." I laughed, kissed him gently, and replied, "No promises... but I promise I'll always laugh with you afterward." The waves carried our laughter into the night, beginning a marriage that would forever be filled with playful arguments, endless jokes, and a love strong enough to turn every mistake into another beautiful story.
+      </p>
+  `
+},
+
+
+  {
+  slug: "Love-Laughter-and-Too-Much-Cake-1",
+
+  series: "Love, Laughter, and Too Much Cake",
+
+  url: "Love-Laughter-and-Too-Much-Cake.html",
+
+  chapter: 1,
+
+  title: "Love, Laughter, and Too Much Cake",
+
+  image: "https://www.image2url.com/r2/default/images/1781154681093-da3b869a-b8a8-4023-b5ec-8250f4011d9b.jpg",
+
+  excerpt: "Emma only wanted to buy a birthday cake before work, but a clumsy stranger, a runaway wedding cake, and a bakery full of laughter completely changed the direction of her day.",
+
+  content: `
+      <h2>Love, Laughter, and Too Much Cake</h2>
+
+      <p>
+      Emma believed there were only three things capable of fixing a terrible morning: hot coffee, fresh cake, and pretending the rest of the world didn't exist until after breakfast. Unfortunately, Maple Bakery had other plans. The tiny shop was packed with customers ordering cakes for birthdays, anniversaries, and weddings, leaving Emma trapped in a line that moved slower than a sleepy turtle. She checked her watch every few seconds, muttering dramatic complaints to herself until the elderly woman in front of her giggled. Just as Emma reached the counter, someone rushed through the bakery door carrying a tower of colorful cake boxes taller than his head. He couldn't see where he was going. Neither could Emma. They collided with spectacular timing. Boxes flew through the air like startled birds, cupcakes rolled across the floor, frosting landed on a businessman’s expensive suit, and Emma somehow ended up wearing a chocolate rose on her forehead. The bakery fell silent for exactly two seconds before everyone burst into laughter. The stranger removed the largest cake box from his face and smiled with complete confidence. "Well," he said, "I always wanted to make a sweet first impression." Emma tried to stay angry, but the ridiculous grin on his face made it impossible. She laughed so hard that tears rolled down her cheeks, while the bakery staff applauded the accidental performance as if they had just witnessed professional comedy.
+      </p>
+
+      <p>
+      The stranger introduced himself as Noah, explaining that he worked for his uncle's event company and had been trusted with delivering expensive cakes for the first time. Judging by the frosting covering his jacket, his promotion wasn't going very well. Instead of apologizing with awkward silence, he insisted on buying Emma another cake, another coffee, and even another breakfast because, according to him, "emotional damage burns calories." Emma couldn't stop laughing at the strange logic. Together they cleaned frosting off the floor while customers offered completely useless advice. One little boy pointed at Noah and announced loudly that he should probably deliver vegetables instead because vegetables didn't explode. Even the bakery owner laughed so hard that she handed both of them free cinnamon rolls simply because they had accidentally entertained everyone. Emma discovered Noah had an endless supply of terrible jokes, each somehow worse than the last, yet every punchline arrived with such confidence that resisting laughter became impossible.
+      </p>
+
+      <p>
+      By the time they finally left the bakery, Emma realized she was already twenty-five minutes late for work. Noah insisted the least he could do was drive her to the office since the disaster had technically been his fault. During the drive, they became trapped behind a parade celebrating the town's annual Cherry Blossom Festival. Costumed dancers, musicians, giant balloons, and people dressed as slices of cake completely blocked the road. Noah leaned out the window and asked one performer where the traffic ended. The performer simply handed him a cupcake before continuing to dance away. Emma laughed until she nearly dropped her handbag. Noah shrugged, accepted the free dessert as compensation from the universe, and declared it the most delicious traffic jam he had ever experienced. Their conversation flowed so naturally that Emma forgot she had only met him an hour earlier. They argued over whether pineapple belonged on pizza, debated which superhero would make the worst baker, and invented ridiculous stories about the serious-looking pigeon sitting on a nearby traffic light. For the first time in months, Emma found herself smiling without forcing it.
+      </p>
+
+      <p>
+      Emma's coworkers refused to believe her explanation when she arrived covered with tiny spots of pink frosting. Her best friend Lily listened carefully before asking the only question that mattered. "Was he handsome?" Emma hesitated just long enough to answer the question without speaking. Lily laughed and accused her of already having a crush. Emma denied everything with theatrical outrage, insisting Noah was simply a walking disaster wearing sneakers. Later that afternoon, however, a delivery arrived at the office. Inside was a beautiful chocolate cake decorated with tiny sugar daisies and a handwritten note that read, "Round Two. I promise this one won't hit you in the face. Probably. — Noah." The entire office gathered around to read the note before teasing Emma without mercy. Her manager even asked if future meetings should include helmets in case Noah decided to visit.
+      </p>
+
+      <div class="affiliate-box">
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
+
+        <div>
+          <strong>Recommended Product:</strong><br>
+          <a href="https://example.com" target="_blank">Organic Green Tea</a>
+        </div>
+      </div>
+
+      <h2>When Every Slice Comes with a Smile</h2>
+
+      <p>
+      That evening Emma accepted Noah's invitation to visit Maple Bakery again, claiming she only wanted to thank him for the cake, though both of them secretly knew it was an excuse to spend more time together. They shared oversized slices of chocolate cake while laughing about their disastrous first meeting, accidentally joined a children's cupcake decorating contest after sitting at the wrong table, and somehow won second place despite creating a cupcake that looked suspiciously like a frightened potato. As the bakery lights glowed warmly against the evening sky, Emma realized something unexpected had happened between one embarrassing accident and far too much cake. She had met someone who could turn ordinary moments into unforgettable adventures simply by making her laugh. Noah smiled, raised his coffee cup, and said, "Here's to making terrible first impressions and wonderful second ones." Emma clinked her cup against his, laughing once again, completely unaware that this hilarious bakery accident was only the first chapter of a love story that would become sweeter, funnier, and far more chaotic than either of them could ever imagine.
+      </p>
+  `
+},
+
+
+  {
+  slug: "The-Proposal-Everyone-Ruined-1",
+
+  series: "The Proposal Everyone Ruined",
+
+  url: "The-Proposal-Everyone-Ruined.html",
+
+  chapter: 1,
+
+  title: "The Proposal Everyone Ruined",
+
+  image: "https://www.image2url.com/r2/default/images/1781154681093-da3b869a-b8a8-4023-b5ec-8250f4011d9b.jpg",
+
+  excerpt: "The proposal was supposed to be the most romantic evening of Emily's life, but the universe clearly had a different script in mind.",
+
+  content: `
+      <h2>The Proposal Everyone Ruined</h2>
+
+      <p>
+      The proposal was supposed to be perfect. Ryan had spent three months planning every tiny detail, from the fairy lights hanging around Willow Lake to the violinist waiting behind the roses. He even practiced kneeling in front of his bedroom mirror until his knees ached. His best friend Jake promised to distract Emily while Ryan prepared the lakeside surprise, but trusting Jake with anything important was like trusting a goat to babysit a vegetable garden. Emily arrived wearing the blue dress Ryan secretly loved, completely unaware that the nervous man texting everyone every thirty seconds was about to ask the biggest question of his life. Unfortunately, before she even reached the lake, Jake accidentally sent a message meant for Ryan into the family group chat instead. The message read, "Mission Proposal starts in ten minutes. Nobody ruin this!" Within seconds everyone knew except Emily, who only wondered why her phone kept buzzing with strange emojis. Ryan tried to ignore the disaster and welcomed Emily with his brightest smile, pretending nothing had happened. The violinist began playing, ducks floated gracefully across the water, and for one glorious minute everything looked exactly as planned. Then a little boy chasing a balloon crashed into Ryan, knocking the engagement ring box straight into the grass. Ryan froze. Emily blinked. Jake laughed so hard he nearly fell into the lake.
+      </p>
+
+      <p>
+      "Did you just lose something?" Emily asked, trying not to laugh. Ryan quickly replied, "Only my dignity." Everyone nearby immediately joined the search for the missing ring. A retired couple abandoned their evening walk to crawl through the grass. Two teenagers turned on their phone flashlights like detectives solving an international mystery. Jake insisted the ring had probably been stolen by a duck because "they always look suspicious." Emily laughed until tears rolled down her cheeks while Ryan silently prayed the earth would swallow him whole. Just when he thought things could not get worse, Emily's energetic grandmother arrived carrying homemade cupcakes. She loudly announced, "I heard someone is proposing tonight! Where's my front-row seat?" Every head in the park turned toward Ryan. The violinist awkwardly continued playing romantic music while people clapped for absolutely no reason. Ryan's face became so red that Emily wondered if he might actually explode. Before anyone found the ring, Emily's little cousin grabbed an ordinary bottle cap from the ground, held it high, and shouted, "I found it!" The crowd cheered wildly until everyone realized it was trash. Even Ryan had to laugh despite the panic tightening his stomach.
+      </p>
+
+      <p>
+      The search continued for nearly half an hour until Jake proudly announced he had discovered the ring sparkling beneath a picnic blanket. He sprinted toward Ryan like an Olympic champion, only to trip over a sleepy golden retriever. The tiny ring flew into the air again, landed inside Grandma's cupcake basket, and disappeared beneath layers of chocolate frosting. Nobody noticed except the hungry family dog, who happily grabbed a cupcake and swallowed it whole before anyone could stop him. A horrified silence spread across the park. Then Grandma calmly said, "Well... I suppose that's one way to keep a family treasure." Ryan looked at the dog. The dog wagged its tail proudly. Jake whispered, "Should we... follow him?" Emily burst into uncontrollable laughter, leaning against Ryan because she could barely stand. Soon even Ryan started laughing. The entire proposal had transformed into the funniest evening either of them had ever experienced. Children were laughing. The violinist stopped playing because he was laughing too. Even strangers who had no idea what was happening applauded simply because everyone else was smiling. Ryan realized the perfect proposal he imagined had vanished, replaced by complete, unforgettable chaos.
+      </p>
+
+<div class="affiliate-box">
+    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
+
+    <div>
+      <strong>Recommended Product:</strong><br>
+      <a href="https://example.com" target="_blank">Organic Green Tea</a>
+    </div>
+</div>
+
+      <h2>Love Doesn't Need a Perfect Plan</h2>
+
+      <p>
+      After an emergency visit to the local veterinarian confirmed the mischievous dog would be perfectly fine, the ring was carefully recovered, thoroughly cleaned, and polished until it sparkled brighter than before. By then the fairy lights had begun glowing against the evening sky, the crowd had mostly gone home, and only close friends and family remained around the lake. Ryan looked at Emily, whose eyes were still shining with laughter, and realized that every disaster had somehow made the moment more beautiful instead of ruining it. He finally knelt on one knee, holding up the now legendary ring, and admitted, "This isn't the proposal I planned. Honestly, it's a thousand times crazier. But if we can survive flying rings, suspicious ducks, cupcake thieves, and Jake's terrible planning, I think we can survive anything together." Emily smiled through happy tears before saying, "Yes... but only if Jake is never allowed to organize our wedding." Everyone laughed so loudly that birds flew from the nearby trees. Grandma immediately hugged both of them while announcing herself as the official wedding cake inspector. Jake pretended to be offended before joking that he should at least be promoted from Best Man to "Least Reliable Hero." Ryan slipped the ring onto Emily's finger as the sunset painted the lake golden, and both of them knew they would tell this ridiculous story for the rest of their lives. It wasn't the flawless fairy-tale proposal Ryan had imagined, but it was perfectly theirs—filled with laughter, unexpected surprises, unforgettable memories, and a love that only grew stronger every time life refused to follow the plan.
+      </p>
+  `
+},
+
+  
+
+  {
   slug: "The-Couple-Everyone-Ships-1",
 
   series: "The Couple Everyone Ships",
