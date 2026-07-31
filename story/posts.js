@@ -228,12 +228,642 @@ series: "The Machine At The Pharmacy Told A Different Story",
   },
 
   {
-    slug: "Common-Causes-of-Fatigue",
-    title: "The Church Beneath The Cemetery",
+    slug: "Love, Laughter, and Too Much Cake",
+  url: "Love, Laughter, and Too Much Cake.html",
+    title: "Love, Laughter, and Too Much Cake",
     image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One ",
+    excerpt: "Emma had only one mission that Saturday afternoon: attend her cousin's engagement party, smile for a few family photos, eat a slice of cake, and leave before one of her aunties asked the dreaded question.  So... when are you getting married? ",
     content: `
-      <p>Fatigue may result from stress, poor diet or illness.</p>
+      <p>
+      Love, Laughter, and Too Much Cake
+
+Emma had only one mission that Saturday afternoon: attend her cousin's engagement party, smile for a few family photos, eat a slice of cake, and leave before one of her aunties asked the dreaded question.
+
+"So... when are you getting married?"
+
+It sounded simple.
+
+It wasn't.
+
+The party was held in a beautiful garden decorated with white roses, colorful balloons, and enough fairy lights to make the sun feel unnecessary. Music floated through the air while children chased each other around the tables like tiny tornadoes.
+
+Emma had barely stepped inside when Aunt Beatrice spotted her.
+
+"There you are!" she shouted, loud enough for half the guests to turn around. "Still single?"
+
+Emma forced a smile.
+
+"I just got here."
+
+"Exactly. You're already late for marriage."
+
+Emma sighed.
+
+This was going to be a long afternoon.
+
+She escaped toward the dessert table, where an enormous three-tier cake stood proudly like the king of all desserts. Chocolate dripped elegantly down the sides, strawberries sparkled on top, and tiny flowers decorated every layer.
+
+"Now that's true love," Emma whispered.
+
+"Talking to cake again?"
+
+She turned.
+
+Standing beside her was a tall stranger wearing a navy-blue suit and an innocent smile that looked suspiciously guilty.
+
+"I wasn't talking to it."
+
+"It answered you."
+
+"It did not."
+
+"It said you looked hungry."
+
+Emma blinked.
+
+"You speak Cake?"
+
+"Fluently."
+
+She laughed despite herself.
+
+"I'm Daniel."
+
+"Emma."
+
+He bowed dramatically.
+
+"Princess Emma, protector of desserts."
+
+She rolled her eyes.
+
+"You're ridiculous."
+
+"I've been told that's my best quality."
+
+Before Emma could reply, a little boy crashed into Daniel's legs.
+
+"Uncle Daniel!"
+
+"What happened?"
+
+"I accidentally ate six cupcakes."
+
+"That's... impressive."
+
+"My mom says I'm grounded."
+
+"You probably deserve it."
+
+The boy nodded proudly.
+
+"Worth it."
+
+Daniel looked at Emma.
+
+"Runs in the family."
+
+She laughed again.
+
+Maybe this party wasn't so terrible.
+
+---
+
+Later, everyone gathered around for speeches.
+
+Emma found herself standing beside Daniel once more.
+
+"You following me?" she asked.
+
+"No."
+
+"No?"
+
+"I'm following the cake."
+
+She looked at him.
+
+"So I'm just in the way?"
+
+"A pleasant obstacle."
+
+She tried not to smile.
+
+Failed.
+
+The groom began thanking everyone for coming.
+
+It was emotional.
+
+People wiped away tears.
+
+Even Emma's tough uncle sniffled dramatically.
+
+Daniel leaned toward her.
+
+"Do you think they're crying because of love..."
+
+"Yes?"
+
+"...or because someone just announced dessert is delayed another thirty minutes?"
+
+Emma burst into laughter.
+
+Everyone turned.
+
+The groom paused.
+
+Silence spread across the garden.
+
+Daniel slowly raised his hand.
+
+"Sorry. I remembered something funny."
+
+The groom shook his head.
+
+"I'll allow it."
+
+The speeches continued.
+
+Emma whispered, "You're impossible."
+
+"I've heard that today."
+
+---
+
+Finally...
+
+Cake time.
+
+The guests lined up eagerly.
+
+Emma patiently waited for her slice.
+
+Then disaster struck.
+
+A tiny girl spun around wearing fairy wings.
+
+She bumped into the table.
+
+The giant cake wobbled.
+
+Gasps filled the air.
+
+"No..."
+
+"It's falling!"
+
+Daniel reacted instantly.
+
+He lunged forward.
+
+Caught the bottom tier.
+
+The middle tier slid sideways.
+
+Emma grabbed it.
+
+The top tier flew into the air.
+
+Time slowed.
+
+Everyone watched in horror.
+
+Then—
+
+SPLAT.
+
+The top landed perfectly...
+
+...on Daniel's head.
+
+Chocolate frosting covered his hair.
+
+Strawberries decorated his forehead.
+
+One candle remained standing proudly.
+
+The entire garden became silent.
+
+Emma stared.
+
+Daniel stared back.
+
+Then he smiled.
+
+"Good news."
+
+"What?"
+
+"I found the missing icing."
+
+She laughed so hard she nearly fell over.
+
+Soon everyone else joined in.
+
+Even the bride couldn't stop laughing.
+
+A photographer captured the moment forever.
+
+Daniel bowed dramatically.
+
+"I always wanted to wear dessert."
+
+---
+
+After the cake catastrophe, Emma helped Daniel clean up in the kitchen.
+
+He washed frosting from his hair.
+
+She handed him a towel.
+
+"You know..."
+
+"What?"
+
+"You look better without strawberries on your forehead."
+
+"I was starting a fashion trend."
+
+"It wasn't working."
+
+"You wound me."
+
+He placed a hand over his heart dramatically.
+
+She giggled.
+
+"So..."
+
+"So?"
+
+"You laughed at every joke I made today."
+
+"They weren't all funny."
+
+"But you laughed."
+
+"I felt sorry for you."
+
+"Liar."
+
+She smiled.
+
+"Maybe."
+
+He grinned triumphantly.
+
+"I knew it."
+
+---
+
+As evening arrived, music filled the garden again.
+
+Couples began dancing.
+
+Daniel walked toward Emma.
+
+"Would you like to dance?"
+
+"I should warn you."
+
+"About what?"
+
+"I dance like an injured penguin."
+
+"I've danced with worse."
+
+"You have?"
+
+"My uncle."
+
+She laughed.
+
+"Fine."
+
+They stepped onto the dance floor.
+
+For exactly twelve seconds...
+
+Everything went well.
+
+Then Daniel stepped on her foot.
+
+"Ouch!"
+
+"Sorry!"
+
+Emma accidentally elbowed him.
+
+"My nose!"
+
+He spun the wrong direction.
+
+She spun with him.
+
+Both lost balance.
+
+They crashed gently into a flower decoration.
+
+Guests applauded.
+
+Thinking it was part of the performance.
+
+Daniel bowed again.
+
+"We call that modern romance."
+
+Emma couldn't breathe from laughing.
+
+---
+
+They wandered into the garden afterward.
+
+The evening breeze carried the scent of roses.
+
+Fairy lights twinkled above them.
+
+For the first time all day...
+
+Things became quiet.
+
+"I had fun," Emma admitted.
+
+"So did I."
+
+"I almost didn't come."
+
+"Really?"
+
+"My aunties."
+
+He nodded knowingly.
+
+"They ask about marriage?"
+
+"Every five minutes."
+
+"My grandmother does the same."
+
+"What do you tell her?"
+
+"I say I'm waiting for the right woman."
+
+Emma looked away.
+
+"And have you found her?"
+
+Daniel smiled softly.
+
+"I think she laughed at all my terrible jokes."
+
+She felt warmth spread across her cheeks.
+
+"You mean..."
+
+"You."
+
+Before she could answer—
+
+A waiter interrupted.
+
+"More cake?"
+
+Daniel sighed dramatically.
+
+"Even romance can't escape dessert."
+
+Emma laughed.
+
+"Let's share one slice."
+
+"Only one?"
+
+"We've already survived one cake disaster."
+
+"Fair point."
+
+---
+
+They sat together eating chocolate cake beneath the stars.
+
+Daniel accidentally got frosting on his nose.
+
+Emma pointed.
+
+"You've done it again."
+
+"What?"
+
+"You've become dessert."
+
+He tried wiping it away.
+
+Instead, he spread it across his face.
+
+She laughed uncontrollably.
+
+"Oh no."
+
+"What?"
+
+"Now you're worse."
+
+He looked around.
+
+"Emergency."
+
+"What emergency?"
+
+"I require professional frosting removal."
+
+Emma shook her head.
+
+"You are unbelievable."
+
+She reached over and gently wiped the frosting from his nose.
+
+For a moment...
+
+Neither of them spoke.
+
+Their eyes met.
+
+The laughter faded into comfortable silence.
+
+Daniel smiled.
+
+"There."
+
+"There?"
+
+"I've been looking for an excuse to hold your hand."
+
+Instead of letting go...
+
+Emma intertwined her fingers with his.
+
+"I suppose that's acceptable."
+
+"I'll take acceptable."
+
+---
+
+Just then, Aunt Beatrice appeared out of nowhere.
+
+"There you are!"
+
+Emma groaned.
+
+"Here it comes."
+
+Aunt Beatrice looked between them.
+
+"Oh!"
+
+Her eyes widened.
+
+"So this handsome young man..."
+
+Daniel stood politely.
+
+"I'm Daniel."
+
+Aunt Beatrice smiled so widely it looked dangerous.
+
+"Are you dating my niece?"
+
+Emma opened her mouth.
+
+Daniel answered first.
+
+"I certainly hope so."
+
+Emma stared at him.
+
+"You do?"
+
+"I've been hoping since the cake landed on my head."
+
+She laughed.
+
+"I guess we are."
+
+Aunt Beatrice clapped excitedly.
+
+"I knew this party would be successful!"
+
+"You planned this?"
+
+"No."
+
+She winked.
+
+"But I'll happily take the credit."
+
+Then she walked away before either of them could protest.
+
+Daniel whispered, "She scares me."
+
+"She scares everyone."
+
+---
+
+The night slowly came to an end.
+
+Guests began saying goodbye.
+
+Cars pulled away one after another.
+
+Daniel walked Emma to her car.
+
+"I don't want today to end."
+
+"It doesn't have to."
+
+"Oh?"
+
+"How about dinner next Friday?"
+
+"Dinner sounds nice."
+
+"And maybe..."
+
+"What?"
+
+"No flying cakes."
+
+She smiled.
+
+"I can promise nothing."
+
+He laughed.
+
+"Fair enough."
+
+She opened her car door.
+
+Then paused.
+
+"You know..."
+
+"What?"
+
+"I came here expecting awkward questions."
+
+"And?"
+
+"Instead I found someone who made me laugh until my cheeks hurt."
+
+Daniel smiled.
+
+"I came for free cake."
+
+"And?"
+
+"I found something much sweeter."
+
+Emma rolled her eyes.
+
+"That was incredibly cheesy."
+
+"I know."
+
+"I loved it."
+
+She leaned forward and kissed his cheek.
+
+"Goodnight, Cake Man."
+
+He touched the spot where she'd kissed him.
+
+"Goodnight, Princess of Desserts."
+
+As Emma drove away, she looked in the rearview mirror.
+
+Daniel was still standing there, waving with the biggest grin she'd ever seen.
+
+She realized something wonderful.
+
+Sometimes love didn't arrive with fireworks, expensive gifts, or perfectly planned moments.
+
+Sometimes it arrived wearing chocolate frosting, carrying terrible jokes, rescuing falling cakes, and making an ordinary afternoon unforgettable.
+
+Months later, whenever friends asked them how they met, Emma would always smile before saying, "He literally wore a cake to impress me."
+
+Daniel would immediately protest.
+
+"That's not true."
+
+"You had strawberries on your forehead."
+
+"I was saving the cake."
+
+"And my heart."
+
+
+      </p>
+      
       <div class="affiliate-box">
     <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
 
@@ -242,17 +872,681 @@ series: "The Machine At The Pharmacy Told A Different Story",
       <a href="https://example.com" target="_blank">Organic Green Tea</a>
     </div>
   </div>
-      <p>Seek professional medical advice if symptoms persist.</p>
+      <p>
+      Daniel would grin.
+
+"I got both."
+
+They would laugh together every single time.
+
+Because their love story wasn't built on perfection.
+
+It was built on shared laughter, sweet memories, embarrassing moments, and, of course...
+
+Far too much cake.
+
+      </p>
     `
   },
   
     {
-    slug: "best-food-for-healthy-kidney",
-    title: "My Roommate is The Devil's Daughter ",
+    slug: "The Ring That Went Missing",
+    url: "The Ring That Went Missing.html",
+    title: "The Ring That Went Missing",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One",
+    excerpt: "The morning was supposed to be perfect. The sun shone brightly over Maple Street, birds chirped happily, and Mia stood in front of the mirror trying",
     content: `
-      <p>Kidney health is important for removing waste and balancing fluids.</p>
+      <p>
+
+The morning was supposed to be perfect.
+
+The sun shone brightly over Maple Street, birds chirped happily, and Mia stood in front of the mirror trying to decide whether the blue dress or the pink one made her look less nervous.
+
+"Why are you smiling like you won the lottery?" her roommate, Zoe, asked as she walked into the bedroom carrying a bowl of cereal.
+
+Mia hugged a pillow and giggled.
+
+"I have a feeling Ethan is going to propose today."
+
+Zoe almost dropped her spoon.
+
+"Seriously?"
+
+"I mean... he has been acting suspicious all week."
+
+"Suspicious how?"
+
+"He cleaned his apartment."
+
+Zoe gasped dramatically.
+
+"Oh no... that man definitely has a ring."
+
+Both girls burst into laughter.
+
+Meanwhile, on the other side of town, Ethan was staring at a tiny velvet box hidden inside his jacket.
+
+His best friend, Leo, sat beside him in the car.
+
+"You've checked that box twenty-three times."
+
+"I counted twenty-two."
+
+"You checked it again while correcting me."
+
+Ethan sighed.
+
+"I just don't want anything to go wrong."
+
+Leo laughed.
+
+"Relax. You'll take Mia to the lake, kneel down, open the box, she'll cry, you'll cry, strangers will clap, and someone will upload it online."
+
+"Sounds easy."
+
+"It is easy."
+
+At that exact moment, Ethan reached into his pocket.
+
+His smile disappeared.
+
+He froze.
+
+"...Leo."
+
+"What?"
+
+"The ring."
+
+"What about it?"
+
+"It's..."
+
+"What?"
+
+"It's gone."
+
+Leo blinked.
+
+"...What do you mean gone?"
+
+"The box is empty!"
+
+Both men screamed at the same time.
+
+---
+
+Twenty minutes later, Ethan had completely emptied his car.
+
+The seats were upside down.
+
+The floor mats had been removed.
+
+Leo was lying halfway under the dashboard.
+
+"I found a french fry from last year."
+
+"I don't care about the fry!"
+
+"I know, but it's surprisingly fresh."
+
+"LEO!"
+
+"Right. Ring."
+
+They searched everywhere.
+
+Nothing.
+
+Ethan looked like he was about to faint.
+
+"I've lost the engagement ring."
+
+Leo rubbed his chin.
+
+"Okay... don't panic."
+
+"I'm already panicking."
+
+"Then panic quietly."
+
+---
+
+At the jewelry store, the manager listened carefully.
+
+"So... you bought the ring yesterday?"
+
+"Yes."
+
+"You took it home?"
+
+"Yes."
+
+"You placed it inside the box?"
+
+"Yes."
+
+"You didn't wear it?"
+
+"I'm not proposing to myself!"
+
+The manager nodded thoughtfully.
+
+"Fair point."
+
+Security footage showed Ethan leaving happily with the ring.
+
+After that...
+
+Nothing.
+
+The mystery only grew.
+
+---
+
+Meanwhile, Mia sat in a café waiting.
+
+Five minutes became fifteen.
+
+Fifteen became thirty.
+
+Finally Ethan arrived.
+
+His hair looked like he'd been fighting a tornado.
+
+His shirt was wrinkled.
+
+His shoes didn't even match.
+
+Mia smiled.
+
+"Rough morning?"
+
+"You have no idea."
+
+"What happened?"
+
+He forced a smile.
+
+"Nothing."
+
+Leo, who was standing behind him, silently shook his head.
+
+Mia narrowed her eyes.
+
+"You two look guilty."
+
+"We're innocent."
+
+"Very guilty."
+
+"We're... professionally innocent."
+
+She laughed.
+
+"You're terrible liars."
+
+---
+
+They spent the afternoon together.
+
+Normally Ethan joked every five seconds.
+
+Today he kept patting every pocket on his body.
+
+Wallet.
+
+Phone.
+
+Keys.
+
+Pocket.
+
+Other pocket.
+
+Back pocket.
+
+Inside jacket.
+
+Repeat.
+
+Finally Mia couldn't ignore it anymore.
+
+"Are you searching for treasure?"
+
+"No."
+
+"Then why do you keep checking your pockets?"
+
+"I have... anxiety."
+
+"Pocket anxiety?"
+
+"...Yes."
+
+She laughed so hard she nearly spilled her drink.
+
+---
+
+After lunch they walked through the city park.
+
+A little boy ran toward them holding a metal detector.
+
+"Mom! I found another bottle cap!"
+
+His mother smiled.
+
+"Good job!"
+
+Leo suddenly snapped his fingers.
+
+"That's it!"
+
+"What?"
+
+"We need a metal detector!"
+
+Ethan stared.
+
+"You're a genius!"
+
+"I know."
+
+Mia looked confused.
+
+"What exactly are we looking for?"
+
+Both men answered together.
+
+"Nothing!"
+
+She crossed her arms.
+
+"You're definitely hiding something."
+
+---
+
+Within an hour they had rented a metal detector.
+
+People passing by stared as Ethan and Leo scanned every inch of the sidewalk.
+
+Beep.
+
+Bottle cap.
+
+Beep.
+
+Coin.
+
+Beep.
+
+Old spoon.
+
+Leo proudly held it up.
+
+"We're rich!"
+
+"It's a spoon."
+
+"Still useful."
+
+Mia laughed so hard tears rolled down her cheeks.
+
+"You two look like treasure hunters who failed kindergarten."
+
+---
+
+An elderly woman approached.
+
+"What are you boys searching for?"
+
+Leo answered confidently.
+
+"True love."
+
+The woman smiled warmly.
+
+"How romantic."
+
+Ethan whispered,
+
+"It's actually a ring."
+
+The old woman adjusted her glasses.
+
+"Oh."
+
+She looked at Mia.
+
+"Did he lose yours already?"
+
+Mia burst into laughter.
+
+"I don't even have one!"
+
+The old woman sighed.
+
+"Men."
+
+Then she walked away.
+
+---
+
+Hours passed.
+
+No ring.
+
+No clues.
+
+Only tired feet and dozens of bottle caps.
+
+Leo counted them.
+
+"Thirty-four."
+
+"We don't need bottle caps!"
+
+"But we're building a collection."
+
+---
+
+As evening arrived they returned to Ethan's apartment.
+
+Everything had been searched.
+
+Again.
+
+Closet.
+
+Kitchen.
+
+Bathroom.
+
+Laundry basket.
+
+Even the refrigerator.
+
+Mia opened the freezer.
+
+"Why would a ring be here?"
+
+Leo shrugged.
+
+"Cold feet?"
+
+She laughed so loudly the neighbors knocked on the wall.
+
+---
+
+Then something strange happened.
+
+A loud bark echoed through the apartment.
+
+Ethan's golden retriever, Biscuit, came running into the living room carrying a bright red chew toy.
+
+Mia frowned.
+
+"Has that toy always been this heavy?"
+
+Everyone looked.
+
+The toy made a tiny clinking sound.
+
+Ethan slowly squeezed it.
+
+Clink.
+
+Clink.
+
+His eyes widened.
+
+"No way."
+
+Leo grabbed a pair of scissors.
+
+Within seconds the toy was cut open.
+
+Out rolled...
+
+The engagement ring.
+
+Everyone froze.
+
+Biscuit wagged his tail proudly.
+
+Leo screamed.
+
+"The dog stole the proposal!"
+
+Mia laughed so hard she fell onto the couch.
+
+Ethan couldn't believe it.
+
+"You little thief!"
+
+Biscuit barked happily, completely convinced he deserved praise.
+
+Leo knelt before the dog dramatically.
+
+"You almost ended a love story."
+
+Biscuit licked his face.
+
+"I forgive you."
+
+---
+
+The apartment exploded with laughter.
+
+Even Ethan couldn't stop laughing anymore.
+
+"I spent eight hours searching because my dog thought diamonds were chew toys."
+
+Mia wiped tears from her eyes.
+
+"This is officially the funniest day of my life."
+
+Leo nodded.
+
+"I'll be telling this story at your fiftieth anniversary."
+
+---
+
+Night finally arrived.
+
+The original proposal plan had completely failed.
+
+The lake was closed.
+
+The restaurant reservation had expired.
+
+Both of them were exhausted.
+
+Ethan looked at Mia.
+
+"I guess today wasn't exactly perfect."
+
+She smiled softly.
+
+"It was perfect."
+
+"It was?"
+
+"I laughed more today than I have all year."
+
+He smiled.
+
+"Really?"
+
+"Really."
+
+He reached into his pocket.
+
+This time the ring was definitely there.
+
+He slowly knelt on one knee.
+
+Leo immediately grabbed Biscuit.
+
+"No distractions."
+
+The dog barked in protest.
+
+Ethan looked into Mia's eyes.
+
+"I had an amazing speech prepared."
+
+She smiled.
+
+"I figured."
+
+"I memorized it for two weeks."
+
+"What happened?"
+
+"I forgot every single word."
+
+She giggled.
+
+"So... just say what's in your heart."
+
+He took a deep breath.
+
+"Mia..."
+
+"You are my favorite accident."
+
+She laughed.
+
+"You turned ordinary days into adventures."
+
+She smiled through watery eyes.
+
+"You laugh at my terrible jokes."
+
+"They're truly terrible."
+
+"I know."
+
+"You steal my fries."
+
+"They taste better from your plate."
+
+"They don't."
+
+"They absolutely do."
+
+She laughed again.
+
+He continued.
+
+"You make every bad day feel small."
+
+"You make every good day unforgettable."
+
+"And apparently... you're worth searching an entire city for."
+
+She glanced at the ring.
+
+"And surviving a dog robbery."
+
+Everyone laughed.
+
+He gently held out the ring.
+
+"Mia..."
+
+"Will you marry me?"
+
+She didn't answer immediately.
+
+Instead...
+
+She started laughing.
+
+Not because the proposal wasn't romantic.
+
+Because Biscuit had somehow escaped Leo's arms again and was quietly trying to steal the ring a second time.
+
+Leo tackled the dog.
+
+"Not today!"
+
+The room erupted with laughter.
+
+Finally Mia nodded, tears shining in her eyes.
+
+"Yes."
+
+"Yes."
+
+"A thousand times yes."
+
+Ethan slipped the ring onto her finger before Biscuit could change his mind.
+
+It fit perfectly.
+
+Everyone clapped.
+
+Even the neighbors, who had heard the shouting through the walls, knocked three times in celebration.
+
+Leo pretended to wipe away tears.
+
+"I always believed in you."
+
+"You spent most of today eating snacks."
+
+"I believed while eating."
+
+---
+
+Weeks later their engagement party became legendary.
+
+Every guest asked the same question.
+
+"So... how did he propose?"
+
+Before Ethan could answer, Leo jumped onto a chair.
+
+"Ladies and gentlemen..."
+
+"This love story almost ended because a golden retriever committed jewelry theft."
+
+The entire room burst into laughter.
+
+Biscuit barked proudly from beneath the table, wearing a tiny bow tie.
+
+Someone jokingly handed him a plastic toy ring.
+
+He grabbed it and ran.
+
+Half the guests chased after him.
+
+Mia laughed until her cheeks hurt.
+
+Ethan wrapped an arm around her shoulders.
+
+"You know..."
+
+"What?"
+
+"I'm kind of glad everything went wrong."
+
+She looked at him.
+
+"Why?"
+
+"Because if everything had gone according to plan..."
+
+"We'd never have had this story."
+
+She smiled warmly.
+
+"You're right."
+
+
+      </p>
+       
        <div class="affiliate-box">
     <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
 
@@ -261,18 +1555,624 @@ series: "The Machine At The Pharmacy Told A Different Story",
       <a href="https://example.com" target="_blank">Organic Green Tea</a>
     </div>
   </div>
-      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
+      <p>
+      She kissed his cheek.
+
+"Our children are never going to believe this."
+
+Leo shouted from across the room,
+
+"They won't have a choice!"
+
+Everyone laughed again.
+
+And somewhere under the dining table, Biscuit proudly guarded his newest plastic ring, completely convinced he had played the most important role in the greatest proposal Maple Street had ever seen.
+
+Perhaps he had.
+
+      </p>
     `
   },
   
   
     {
-    slug: "best-food-for-healthy-kidney",
-    title: "The Last Qeen Of Horrow Earth ",
+    slug: "Our Honeymoon Started with an Argument",
+    url: "Our Honeymoon Started with an Argument.html",
+    title: "Our Honeymoon Started with an Argument",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One ",
+    excerpt: "If someone had told me that the happiest trip of my life would begin with me threatening to leave my brand-new husband at the airport, I would have laughed. Instead,",
     content: `
-      <p>Kidney health is important for removing waste and balancing fluids.</p>
+      <p>
+
+If someone had told me that the happiest trip of my life would begin with me threatening to leave my brand-new husband at the airport, I would have laughed.
+
+Instead, I was living it.
+
+"This is your fault!" I snapped, dragging my bright pink suitcase across the polished airport floor.
+
+"My fault?" Ethan stared at me in disbelief, carrying two backpacks and somehow still looking annoyingly handsome. "You're the one who packed twelve pairs of shoes for a five-day honeymoon!"
+
+"They're different shoes for different moods!"
+
+He blinked.
+
+"Shoes have moods?"
+
+"They absolutely do."
+
+A nearby couple overheard us and burst into laughter.
+
+Ethan sighed dramatically.
+
+"I married a woman who believes sneakers have emotions."
+
+"And I married a man who thinks two T-shirts are enough for an entire vacation."
+
+"They are if you flip them inside out."
+
+I stopped walking.
+
+"You WHAT?"
+
+"I'm joking!"
+
+"You'd better be."
+
+He quickly held up both hands in surrender.
+
+"I love being alive too much to test that theory."
+
+I couldn't help smiling.
+
+Unfortunately for him, I hid it.
+
+"I'm still angry."
+
+"I know."
+
+"You'll be sleeping on the couch."
+
+"We're staying in a hotel."
+
+"Then you'll sleep on the decorative chair."
+
+"The tiny wooden chair?"
+
+"Exactly."
+
+He looked at the chair through the hotel brochure.
+
+"I don't think it's made for humans."
+
+"It is now."
+
+---
+
+After surviving the airport, the taxi ride, and Ethan's terrible singing, we finally reached the beautiful seaside resort.
+
+Palm trees swayed in the breeze.
+
+The ocean sparkled like diamonds.
+
+The receptionist welcomed us with fresh juice.
+
+Everything was perfect.
+
+Until...
+
+"I'm sorry," the receptionist said politely. "Your reservation is for one king-size bed."
+
+I smiled.
+
+"Perfect."
+
+Ethan smiled too.
+
+"Perfect."
+
+Then she continued.
+
+"Unfortunately, the air conditioner in that room stopped working this morning."
+
+Our smiles disappeared.
+
+"But don't worry," she added cheerfully. "We upgraded you."
+
+"Wonderful!" I said.
+
+"To a room with..."
+
+She checked her computer.
+
+"...two separate single beds."
+
+Silence.
+
+I looked at Ethan.
+
+He looked at me.
+
+Then we both shouted,
+
+"WHAT?"
+
+The receptionist jumped.
+
+"I'm very sorry."
+
+Ethan leaned toward me.
+
+"This is because you insulted your suitcase."
+
+"My suitcase had nothing to do with this."
+
+"You said it was ugly."
+
+"It IS ugly."
+
+"I heard it zip aggressively after that."
+
+I stared at him.
+
+"You think luggage gets revenge?"
+
+"At this point, yes."
+
+---
+
+The room itself was breathtaking.
+
+There was a balcony overlooking the sea.
+
+Rose petals covered the floor.
+
+A giant heart made from towels sat on the bed.
+
+Well...
+
+The beds.
+
+Two tiny beds.
+
+Separated by a wooden table.
+
+I crossed my arms.
+
+"Our honeymoon."
+
+He nodded.
+
+"Our honeymoon."
+
+"We're sleeping like cousins."
+
+He laughed so hard he nearly fell over.
+
+"You are impossible."
+
+"And yet you married me."
+
+"I clearly wasn't thinking straight."
+
+"You cried during your vows."
+
+"I had allergies."
+
+"Inside a church?"
+
+"There was emotional pollen."
+
+---
+
+The next morning we decided to forget about the bed situation and enjoy breakfast.
+
+The buffet was enormous.
+
+Fresh fruit.
+
+Pancakes.
+
+Croissants.
+
+Chocolate pastries.
+
+Ethan's eyes sparkled.
+
+"I've found heaven."
+
+"Please don't embarrass me."
+
+"I would never."
+
+Five minutes later...
+
+He walked away balancing six plates.
+
+Six.
+
+The waiter gasped.
+
+A little boy pointed.
+
+Even the chef came out to see the legend.
+
+"Ethan..."
+
+"What?"
+
+"You look like you're feeding a football team."
+
+"I skipped dessert yesterday."
+
+"That was three days ago."
+
+"I'm making up for lost time."
+
+As he proudly carried the mountain of food toward our table...
+
+His flip-flop slipped.
+
+Everything flew into the air.
+
+Pancakes.
+
+Bacon.
+
+Orange slices.
+
+A sausage performed what looked like a professional gymnastics routine before landing perfectly...
+
+...inside his shirt pocket.
+
+The entire restaurant froze.
+
+Then someone clapped.
+
+Within seconds everyone was laughing.
+
+Even the waiter couldn't stop.
+
+Ethan slowly pulled the sausage out of his pocket.
+
+"I believe this belongs to the buffet."
+
+I laughed so hard tears rolled down my face.
+
+He looked at me.
+
+"You think this is funny?"
+
+"I've never loved you more."
+
+---
+
+Later that afternoon we rented bicycles.
+
+The hotel manager warned us.
+
+"The hill is a little steep."
+
+Ethan smiled confidently.
+
+"We've got this."
+
+We did not.
+
+Halfway up the hill, I was exhausted.
+
+"I can't..."
+
+"You can."
+
+"I can't."
+
+"You can."
+
+"I absolutely cannot."
+
+Then Ethan tried to encourage me by riding with no hands.
+
+"See? Easy!"
+
+Immediately afterward...
+
+He hit a bush.
+
+The bush lost.
+
+Ethan disappeared into it with a loud,
+
+"AAAAAH!"
+
+Birds flew out in panic.
+
+A goat looked offended.
+
+I parked my bicycle and rushed over.
+
+"Are you okay?"
+
+Leaves covered his hair.
+
+A tiny flower sat proudly on his head.
+
+"I've become one with nature."
+
+I laughed again.
+
+"You look beautiful."
+
+"I feel photosynthetic."
+
+---
+
+That evening we walked along the beach.
+
+The sunset painted the sky orange and pink.
+
+For a few peaceful minutes, neither of us spoke.
+
+Finally Ethan reached for my hand.
+
+"I'm sorry."
+
+"For what?"
+
+"For arguing."
+
+"I argued too."
+
+"But I started it."
+
+"I packed too many shoes."
+
+"You definitely packed too many shoes."
+
+"I know."
+
+We smiled.
+
+Then he suddenly stopped walking.
+
+"Oh no."
+
+"What?"
+
+"I forgot something."
+
+"What?"
+
+"The ring."
+
+My heart nearly stopped.
+
+"Our wedding ring?"
+
+He checked every pocket.
+
+Nothing.
+
+He searched his bag.
+
+Nothing.
+
+I panicked.
+
+"Oh my goodness!"
+
+We ran all the way back across the beach.
+
+The hotel staff joined the search.
+
+Guests searched too.
+
+One elderly woman even used a metal detector.
+
+Thirty exhausting minutes later...
+
+The receptionist found it.
+
+Still on Ethan's finger.
+
+He slowly looked down.
+
+"Oh."
+
+Everyone stared.
+
+He smiled nervously.
+
+"I was... testing teamwork?"
+
+The elderly woman smacked his shoulder with her sun hat.
+
+"You nearly gave us heart attacks!"
+
+I laughed until my stomach hurt.
+
+---
+
+The next day we booked a romantic boat ride.
+
+The captain handed Ethan the map.
+
+"Don't touch the steering wheel."
+
+"Of course."
+
+Five minutes later...
+
+Ethan touched the steering wheel.
+
+The boat gently drifted toward a tiny sandbank.
+
+The captain sighed.
+
+"I literally said one thing."
+
+"I was helping."
+
+"You were decorating the sand."
+
+Even I couldn't defend him.
+
+---
+
+On our final night the hotel organized a couples' dance competition.
+
+"I'm not dancing," I whispered.
+
+"You love dancing."
+
+"Not in front of strangers."
+
+"We're already strangers to them."
+
+"That's not comforting."
+
+He pulled me onto the dance floor anyway.
+
+The music started.
+
+At first we stepped on each other's feet.
+
+Then I accidentally elbowed him.
+
+He accidentally spun the wrong direction.
+
+We looked ridiculous.
+
+But we kept laughing.
+
+Soon everyone else stopped trying to dance perfectly too.
+
+The room filled with laughter instead of competition.
+
+When the song ended, the judges announced,
+
+"The winners are..."
+
+We squeezed each other's hands.
+
+"...the couple who reminded everyone that love doesn't have to be perfect."
+
+Everyone cheered.
+
+Our prize?
+
+A tiny chocolate cake.
+
+Ethan whispered,
+
+"I promise not to drop this one."
+
+Three seconds later...
+
+He sneezed.
+
+The cake landed directly on his own face.
+
+The audience exploded with laughter.
+
+I couldn't breathe from laughing so hard.
+
+He wiped chocolate from his nose.
+
+"I planned that."
+
+"Of course you did."
+
+"It increased entertainment value."
+
+"It definitely did."
+
+---
+
+On our last morning we sat on the balcony watching the sunrise.
+
+The ocean stretched endlessly before us.
+
+A gentle breeze carried the sound of waves.
+
+Ethan squeezed my hand.
+
+"You know..."
+
+"What?"
+
+"We started this honeymoon arguing."
+
+"We did."
+
+"And somehow..."
+
+"It became the funniest week of my life."
+
+He smiled.
+
+"I used to think a perfect honeymoon meant everything going according to plan."
+
+"And now?"
+
+"Now I think perfection is laughing through the disasters with the right person."
+
+I rested my head on his shoulder.
+
+"Our room wasn't perfect."
+
+"No."
+
+"The food wasn't perfect."
+
+"No."
+
+"The bicycles definitely weren't perfect."
+
+He laughed.
+
+"Neither was my relationship with that bush."
+
+I giggled.
+
+"But us?"
+
+He looked into my eyes.
+
+"We're perfectly imperfect."
+
+For a moment, everything became quiet.
+
+No arguments.
+
+No accidents.
+
+No flying pancakes.
+
+No runaway bicycles.
+
+Just the two of us, watching the sun rise over the sea.
+
+I smiled as I realized something important.
+
+Our honeymoon hadn't been remembered because everything went right.
+
+It became unforgettable because everything went hilariously wrong—and through every embarrassing moment, every silly argument, and every unexpected disaster, we chose laughter over frustration and love over pride.
+
+As we packed our bags to go home, Ethan looked at me with that same mischievous grin that had stolen my heart the day we met.
+
+"So..."
+
+"What?"
+
+"Ready for another argument?"
+
+I narrowed my eyes.
+
+"About what?"
+
+
+      </p>
+      
        <div class="affiliate-box">
     <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
 
@@ -281,18 +2181,661 @@ series: "The Machine At The Pharmacy Told A Different Story",
       <a href="https://example.com" target="_blank">Organic Green Tea</a>
     </div>
   </div>
-      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
+      <p>
+      "Whether we should come back here next year."
+
+I pretended to think for a moment.
+
+"I suppose we can argue about that."
+
+He laughed, slipped his fingers between mine, and together we walked toward the airport—still teasing, still laughing, and more in love than ever.
+
+After all, every great love story deserves a few ridiculous arguments.
+
+Ours just happened to begin with one.
+      </p>
     `
   },
   
   
     {
-    slug: "best-food-for-healthy-kidney",
-    title: "The Last Daughter Of The Moon Kingdom ",
+    slug: "He Still Makes Me Laugh Every Morning",
+    url: "He Still Makes Me Laugh Every Morning.html",
+    title: "He Still Makes Me Laugh Every Morning ",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
-    excerpt: "Chapter One ",
+    excerpt: "The first sound Mia heard every morning was not her alarm clock. It wasn't the birds outside her window either.",
     content: `
-      <p>Kidney health is important for removing waste and balancing fluids.</p>
+      <p>
+
+The first sound Mia heard every morning was not her alarm clock.
+
+It wasn't the birds outside her window either.
+
+It was laughter.
+
+Not just any laughter—the loud, dramatic, impossible-to-ignore laughter of her husband, Ethan, who somehow found a new reason to laugh before seven o'clock every single day.
+
+Sometimes he laughed because he burned toast.
+
+Sometimes because he accidentally wore two different socks.
+
+And sometimes... just because he remembered something funny that happened three years ago.
+
+That morning was no different.
+
+"Hahaha! Mia! Come here!"
+
+Mia buried her face deeper into the pillow.
+
+"If the kitchen is on fire," she mumbled, "call the firefighters."
+
+"It's much worse!"
+
+She slowly opened one eye.
+
+"Worse than fire?"
+
+"I tried talking to the coffee machine."
+
+She sighed.
+
+"You... what?"
+
+"I thanked it for making coffee."
+
+She rolled over.
+
+"And?"
+
+"It replied."
+
+Mia sat up so fast she nearly fell off the bed.
+
+"It WHAT?"
+
+Ethan burst into another fit of laughter.
+
+"It beeped."
+
+She threw a pillow at him.
+
+"You scared me!"
+
+He caught the pillow dramatically and hugged it.
+
+"You should've seen your face!"
+
+She couldn't help smiling.
+
+Every morning with Ethan started exactly like this.
+
+And somehow...
+
+She never got tired of it.
+
+---
+
+Three years earlier...
+
+Mia had been having the worst day of her life.
+
+She spilled coffee on her white shirt.
+
+Missed her bus.
+
+Dropped her phone.
+
+And stepped into a puddle so deep she questioned every life decision that had brought her there.
+
+Then someone laughed.
+
+Not a mean laugh.
+
+A contagious laugh.
+
+She turned around.
+
+A ridiculously handsome stranger stood nearby holding an umbrella.
+
+"I'm sorry," he said between laughs.
+
+"I'm not laughing at you."
+
+"You look exactly like you're laughing at me."
+
+"I am."
+
+Her eyes narrowed.
+
+"But only because five seconds ago I slipped into the exact same puddle."
+
+He lifted one foot.
+
+His shoe made a loud squishing sound.
+
+"Squeak."
+
+She blinked.
+
+Then...
+
+She laughed.
+
+Really laughed.
+
+The stranger bowed dramatically.
+
+"Mission accomplished."
+
+"What mission?"
+
+"Making the beautiful lady smile."
+
+She folded her arms.
+
+"That's your job?"
+
+"It's my unpaid hobby."
+
+She tried not to smile again.
+
+Failed.
+
+---
+
+Their first date wasn't supposed to happen.
+
+Ethan had offered to replace the coffee she'd spilled.
+
+Mia said yes.
+
+Then he accidentally led her into the wrong café.
+
+Then they discovered it was hosting a speed-dating event.
+
+Before they could leave, an enthusiastic host pushed them toward a table.
+
+"Three minutes! Impress each other!"
+
+Mia whispered, "Should we explain?"
+
+Ethan smiled.
+
+"Too late."
+
+The timer started.
+
+"So..." Mia said.
+
+"So..."
+
+Silence.
+
+More silence.
+
+Then Ethan leaned closer.
+
+"I have an important question."
+
+"What?"
+
+"If animals could vote..."
+
+She blinked.
+
+"...which species would win the election?"
+
+She stared.
+
+"You seriously picked THAT as your first question?"
+
+"It's important."
+
+She laughed so hard she snorted.
+
+He pointed dramatically.
+
+"I made you snort!"
+
+"I did not!"
+
+"You absolutely did."
+
+"I refuse to admit it."
+
+"Oh, I heard it."
+
+She covered her face.
+
+"I've never been so embarrassed."
+
+"I've never been so impressed."
+
+---
+
+Months later...
+
+Their apartment became famous among neighbors.
+
+Not because they argued.
+
+Not because they threw parties.
+
+But because random laughter echoed through the walls almost every evening.
+
+One afternoon Ethan announced,
+
+"I've invented a new game."
+
+Mia frowned.
+
+"I'm already worried."
+
+"It's called..."
+
+He paused dramatically.
+
+"...Guess What's in My Pocket."
+
+"No."
+
+"Come on."
+
+"No."
+
+"You haven't even heard the rules."
+
+"I don't need to."
+
+He grinned.
+
+"Fine."
+
+He reached into his pocket.
+
+Pulled out...
+
+A tiny rubber chicken.
+
+She blinked.
+
+"Why?"
+
+He squeezed it.
+
+"Squeeeeeak!"
+
+She laughed.
+
+He smiled proudly.
+
+"I win."
+
+"There wasn't even a competition!"
+
+"There is now."
+
+---
+
+Another morning...
+
+Mia entered the kitchen wearing one of Ethan's oversized hoodies.
+
+He looked up from making pancakes.
+
+His eyes widened dramatically.
+
+"Excuse me."
+
+"What?"
+
+"You're illegally adorable."
+
+She rolled her eyes.
+
+"I'm calling the fashion police."
+
+"They'll arrest you."
+
+"For what?"
+
+"Stealing my hoodie."
+
+"It's mine now."
+
+"Oh?"
+
+She nodded confidently.
+
+"Possession is nine-tenths of the law."
+
+He smiled.
+
+"Then I guess..."
+
+He wrapped his arms around her waist.
+
+"...I'm stealing it back."
+
+She laughed.
+
+"You can't wear both me and the hoodie."
+
+"Wanna bet?"
+
+---
+
+Ethan had one terrible habit.
+
+Dad jokes.
+
+Endless dad jokes.
+
+"Mia."
+
+"What?"
+
+"What do you call cheese that isn't yours?"
+
+"I don't know."
+
+"Nacho cheese."
+
+She stared.
+
+Silence.
+
+Complete silence.
+
+Then she slowly picked up a spoon.
+
+"What are you doing?"
+
+"I'm considering violence."
+
+He laughed so hard he nearly dropped the orange juice.
+
+---
+
+One Saturday they went grocery shopping.
+
+Simple mission.
+
+Buy vegetables.
+
+Leave.
+
+Instead...
+
+Ethan found the toy aisle.
+
+"Mia."
+
+"No."
+
+"Look."
+
+"No."
+
+"It's a dinosaur."
+
+"I know what dinosaurs are."
+
+"It roars."
+
+He pressed a button.
+
+The dinosaur screamed so loudly that three shoppers jumped.
+
+A little boy laughed.
+
+His grandmother laughed.
+
+Even the cashier laughed.
+
+Mia covered her face.
+
+"I don't know this man."
+
+The cashier smiled.
+
+"Oh, we know."
+
+---
+
+Despite all the jokes...
+
+Life wasn't always perfect.
+
+Bills arrived.
+
+Work became stressful.
+
+Some days they barely had enough energy to cook dinner.
+
+One evening Mia came home exhausted.
+
+She dropped her bag.
+
+"I'm done."
+
+Ethan looked up from the couch.
+
+"Long day?"
+
+She nodded.
+
+"I feel like crying."
+
+Without saying a word...
+
+He disappeared.
+
+Five minutes later he returned wearing a ridiculous superhero cape made from a bedsheet.
+
+"What..."
+
+He struck a heroic pose.
+
+"Fear not!"
+
+She blinked.
+
+"For Captain Laundry is here!"
+
+He held up a basket of freshly folded clothes.
+
+"I have defeated Mount Dirty Socks!"
+
+She laughed through tears.
+
+"You are impossible."
+
+"I know."
+
+"And I love you."
+
+"I know that too."
+
+---
+
+On their anniversary...
+
+Ethan prepared breakfast in bed.
+
+Or...
+
+He tried.
+
+Halfway upstairs...
+
+He tripped.
+
+The tray tilted.
+
+Orange juice splashed.
+
+Toast flew into the air.
+
+A strawberry landed perfectly on Mia's forehead.
+
+She stared at him.
+
+He stared back.
+
+Then...
+
+He whispered,
+
+"...Nailed the presentation?"
+
+She burst into laughter.
+
+"You practiced this speech, didn't you?"
+
+"No."
+
+"You definitely did."
+
+"I panicked."
+
+---
+
+Their friends often asked Mia the same question.
+
+"Doesn't he ever annoy you?"
+
+She smiled.
+
+"Oh, absolutely."
+
+"So why do you always look so happy?"
+
+She looked across the room.
+
+Ethan was trying to teach the family dog how to high-five.
+
+The dog ignored him.
+
+Ethan high-fived himself instead.
+
+Everyone laughed.
+
+Including the dog...
+
+Or at least it sounded like laughter.
+
+Mia smiled.
+
+"Because every annoying thing he does..."
+
+She paused.
+
+"...comes with love."
+
+---
+
+Years passed.
+
+Nothing really changed.
+
+Except...
+
+More gray hairs.
+
+More photographs on the walls.
+
+More inside jokes no one else understood.
+
+Every morning still began the same way.
+
+One day Ethan rushed into the bedroom.
+
+"Mia!"
+
+She smiled without opening her eyes.
+
+"What happened this time?"
+
+"I accidentally made friends with the delivery driver."
+
+"That's nice."
+
+"I invited him to dinner."
+
+She opened one eye.
+
+"You WHAT?"
+
+"He said yes."
+
+She sighed.
+
+"When?"
+
+"...Tonight."
+
+She laughed.
+
+"You really can't go one day without surprising me."
+
+"Nope."
+
+"Promise me something."
+
+"What?"
+
+"Promise you'll never stop making me laugh."
+
+He sat beside her and gently held her hand.
+
+"I can't."
+
+She frowned.
+
+"You can't?"
+
+"I won't."
+
+He kissed her forehead.
+
+"Because laughter is my favorite way of saying 'I love you.'"
+
+Mia smiled.
+
+"And hearing you laugh..."
+
+He smiled back.
+
+"...is still my favorite sound in the world."
+
+Outside, the morning sun slipped through the curtains, filling their little home with warm golden light.
+
+The coffee machine beeped from the kitchen.
+
+Ethan pointed dramatically.
+
+"It said good morning."
+
+Mia laughed so hard she nearly fell out of bed.
+
+"You are unbelievable."
+
+"I've been told."
+
+She slipped her hand into his as they walked toward the kitchen together.
+
+There were no grand palaces, no fairy-tale castles, and no perfect lives waiting for them.
+
+Just a tiny apartment, two mismatched mugs, pancakes that were sometimes burned, laundry that never seemed to end, and a love built on laughter.
+
+It wasn't a perfect love story.
+
+It was better.
+
+
+      </p>
+     
      <div class="affiliate-box">
     <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Organic Green Tea">
 
@@ -301,7 +2844,18 @@ series: "The Machine At The Pharmacy Told A Different Story",
       <a href="https://example.com" target="_blank">Organic Green Tea</a>
     </div>
   </div>
-      <p>Eat fruits, vegetables, and avoid excess processed foods.</p>
+      <p>
+      Because every sunrise brought another joke, another smile, another memory, and another reminder that happiness didn't always arrive wrapped in expensive gifts or dramatic gestures.
+
+Sometimes it arrived wearing mismatched socks, carrying burnt toast, talking to the coffee machine, and laughing so loudly that the neighbors could hear.
+
+And every single morning, as Mia watched Ethan grin at the world as though it had personally told him the funniest joke ever, she realized the greatest truth of all.
+
+The funny stranger she had once met by accident had become the man who still made her laugh every morning.
+
+And she hoped he always would.
+
+      </p>
     `
   },
   
