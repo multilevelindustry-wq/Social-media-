@@ -411,6 +411,9 @@ Leo laughed.
 
 "Relax. You'll take Mia to the lake, kneel down, open the box, she'll cry, you'll cry, strangers will clap, and someone will upload it online."
 
+</p>
+
+<p>
 "Sounds easy."
 
 "It is easy."
@@ -511,7 +514,9 @@ Nothing.
 
 The mystery only grew.
 
----
+---</p>
+
+<p>
 
 Meanwhile, Mia sat in a café waiting.
 
@@ -538,7 +543,9 @@ Mia smiled.
 He forced a smile.
 
 "Nothing."
+</p>
 
+<p>
 Leo, who was standing behind him, silently shook his head.
 
 Mia narrowed her eyes.
@@ -650,7 +657,9 @@ Coin.
 Beep.
 
 Old spoon.
+</p>
 
+<p>
 Leo proudly held it up.
 
 "We're rich!"
@@ -692,7 +701,9 @@ She looked at Mia.
 Mia burst into laughter.
 
 "I don't even have one!"
+</p>
 
+<p>
 The old woman sighed.
 
 "Men."
@@ -819,7 +830,9 @@ Leo nodded.
 
 "I'll be telling this story at your fiftieth anniversary."
 
----
+---</p>
+
+<p>
 
 Night finally arrived.
 
@@ -944,7 +957,9 @@ Leo tackled the dog.
 The room erupted with laughter.
 
 Finally Mia nodded, tears shining in her eyes.
+</p>
 
+<p>
 "Yes."
 
 "Yes."
