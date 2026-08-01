@@ -1,5 +1,4 @@
 const posts = [
-  
 
   {
   slug: "The-Neighbor-Thought-We-Were-Married-1",
@@ -448,6 +447,7 @@ When the fair lights flickered on and fireworks painted the sky with bright colo
 
       <p>
       As they walked home beneath the glowing streetlights, Liam tied the "Funniest Couple" ribbon around Emma's wrist like it was the world's greatest prize, promising that the next time jealousy appeared, he would challenge it with honesty instead of circus-level performances—although he refused to apologize for the balloon hats because "history will appreciate my fashion genius." Emma rolled her eyes, kissed his cheek, and admitted she secretly hoped he would never stop being wonderfully ridiculous. Their laughter echoed through the quiet streets, proving that while jealousy had tried to start a game between them, love had already decided the winner long before anyone else joined the competition.
+     
       `
 },
 
@@ -491,7 +491,8 @@ The stranger cleared his throat dramatically and pointed straight at Emma. She i
 
 <p>
 
-The rest of the morning refused to return to normal. Every customer entering Emma's bookstore had apparently witnessed Liam's unforgettable concert. Teenagers hummed pieces of the ridiculous melody while browsing romance novels. Mrs. Henderson asked whether Emma planned to invite "that handsome singing boy" to dinner. Even the local police officer stopped by pretending to browse mystery books before quietly asking if Liam accepted requests because his wife had a birthday coming up. Emma buried her face behind a stack of novels, wishing Maple Street would collectively lose its memory. Unfortunately, Liam wasn't finished embarrassing her. Every hour he wandered past the bookstore carrying his guitar, waving enthusiastically through the front window as if they had been best friends for years. Once he even held up a handwritten sign that read, "Still Accepting Song Suggestions!" Children followed him around like he was some kind of celebrity. Tourists took photos. Someone started calling him "The Singing Stranger." Emma should have been irritated beyond words, yet every time she accidentally caught him making an elderly couple laugh or helping a child retrieve a kite from a tree, she found herself smiling despite every effort not to. Beneath the ridiculous jokes, exaggerated confidence, and absolutely awful songwriting was someone with an unusually kind heart. She hated that realization almost as much as she hated the fact that she was beginning to look toward the window every few minutes, wondering when Liam Carter would walk by again with another impossibly terrible song and another reason for Maple Street to burst into laughter.</p>
+The rest of the morning refused to return to normal. Every customer entering Emma's bookstore had apparently witnessed Liam's unforgettable concert. Teenagers hummed pieces of the ridiculous melody while browsing romance novels. Mrs. Henderson asked whether Emma planned to invite "that handsome singing boy" to dinner. Even the local police officer stopped by pretending to browse mystery books before quietly asking if Liam accepted requests because his wife had a birthday coming up. Emma buried her face behind a stack of novels, wishing Maple Street would collectively lose its memory. Unfortunately, Liam wasn't finished embarrassing her. Every hour he wandered past the bookstore carrying his guitar, waving enthusiastically through the front window as if they had been best friends for years. Once he even held up a handwritten sign that read, "Still Accepting Song Suggestions!" Children followed him around like he was some kind of celebrity. Tourists took photos. Someone started calling him "The Singing Stranger." Emma should have been irritated beyond words, yet every time she accidentally caught him making an elderly couple laugh or helping a child retrieve a kite from a tree, she found herself smiling despite every effort not to. Beneath the ridiculous jokes, exaggerated confidence, and absolutely awful songwriting was someone with an unusually kind heart. She hated that realization almost as much as she hated the fact that she was beginning to look toward the window every few minutes, wondering when Liam Carter would walk by again with another impossibly terrible song and another reason for Maple Street to burst into laughter.
+</p>
   
 
 <div class="affiliate-box">
@@ -525,6 +526,7 @@ Late that afternoon, dark clouds rolled over Maple Street without warning. The c
 <p>
 
 When they finally reached the corner where their paths separated, the rain had softened into a gentle drizzle. Emma realized she had been smiling almost the entire walk without noticing. Liam looked unusually nervous for the first time all day. He rubbed the back of his neck, stared at the wet pavement, and quietly admitted, "Can I tell you a secret?" Emma nodded. "This morning wasn't an accident." She frowned in confusion. "What do you mean?" Liam smiled sheepishly. "I came to Maple Street because my cousin owns the music shop around the corner. Yesterday he pointed at your bookstore and said, 'The owner never smiles. I bet even the funniest comedian couldn't make her laugh.' I may have accepted that as a personal challenge." Emma couldn't believe what she was hearing. "So...you embarrassed yourself in front of the entire town just to make a complete stranger smile?" Liam laughed softly. "Pretty much." She looked at him for several seconds before shaking her head in disbelief. "You really are crazy." "Probably." "Your songs are awful." "Definitely." "Your rhymes should be illegal." "I've been told that before." Emma couldn't hold back anymore. She burst into genuine laughter, the kind that made her eyes water and her stomach ache. Liam watched her with quiet satisfaction, smiling as though winning that laugh meant more than any standing ovation. As they stood there in the fading rain, neither of them noticed Mrs. Baker secretly taking a photo from across the street. By the following morning, the entire town would have another reason to gossip—but for Emma, something far more important had happened. The melody she had spent all day trying to forget had become attached to the smiling stranger who wrote it, and for the first time in years, she found herself looking forward to tomorrow.
+</p>
 
 `
 },
