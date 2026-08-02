@@ -231,7 +231,7 @@ if(postsContainer){
 
 
 displayPosts(
-getRandomPosts(posts,16)
+getRandomPosts(posts,4000)
 );
 
 
