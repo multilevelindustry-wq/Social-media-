@@ -556,7 +556,7 @@ const random =
 posts
 .filter(p=>p.slug!==currentSlug)
 .sort(()=>0.5-Math.random())
-.slice(0,5);
+.slice(0,15);
 
 
 
