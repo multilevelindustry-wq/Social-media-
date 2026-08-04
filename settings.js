@@ -36,7 +36,15 @@ const coverPreview=document.getElementById("coverPreview");
 const username=document.getElementById("username");
 const displayName=document.getElementById("displayName");
 const bio=document.getElementById("bio");
-const website=document.getElementById("website");
+
+const website = document.getElementById("website");
+const instagram = document.getElementById("instagram");
+const tiktok = document.getElementById("tiktok");
+const youtube = document.getElementById("youtube");
+const facebook = document.getElementById("facebook");
+const twitter = document.getElementById("twitter");
+const telegram = document.getElementById("telegram");
+const whatsapp = document.getElementById("whatsapp");
 
 const bankName=document.getElementById("bankName");
 const accountName=document.getElementById("accountName");
@@ -142,6 +150,27 @@ currentUserData.bio || "";
 
 website.value=
 currentUserData.website || "";
+
+instagram.value =
+currentUserData.instagram || "";
+
+tiktok.value =
+currentUserData.tiktok || "";
+
+youtube.value =
+currentUserData.youtube || "";
+
+facebook.value =
+currentUserData.facebook || "";
+
+twitter.value =
+currentUserData.twitter || "";
+
+telegram.value =
+currentUserData.telegram || "";
+
+whatsapp.value =
+currentUserData.whatsapp || "";
 
 if(withdrawBalance){
 
@@ -304,6 +333,20 @@ bio:bio.value.trim(),
 
 website:website.value.trim(),
 
+instagram: instagram.value.trim(),
+
+tiktok: tiktok.value.trim(),
+
+youtube: youtube.value.trim(),
+
+facebook: facebook.value.trim(),
+
+twitter: twitter.value.trim(),
+
+telegram: telegram.value.trim(),
+
+whatsapp: whatsapp.value.trim(),
+
 photo:photoUrl,
 
 coverPhoto:coverUrl
@@ -324,6 +367,20 @@ currentUserData.displayName = displayName.value.trim();
 currentUserData.bio = bio.value.trim();
 
 currentUserData.website = website.value.trim();
+
+currentUserData.instagram = instagram.value.trim();
+
+currentUserData.tiktok = tiktok.value.trim();
+
+currentUserData.youtube = youtube.value.trim();
+
+currentUserData.facebook = facebook.value.trim();
+
+currentUserData.twitter = twitter.value.trim();
+
+currentUserData.telegram = telegram.value.trim();
+
+currentUserData.whatsapp = whatsapp.value.trim();
 
 alert("Profile updated successfully.");
 
