@@ -73,6 +73,9 @@ document.getElementById("followBtn");
 const messageBtn =
 document.getElementById("messageBtn");
 
+const profileWebsite =
+document.getElementById("profileWebsite");
+
 let currentUser;
 let viewingUserId;
 
@@ -136,6 +139,31 @@ user.username || "Unknown";
 
 profileBio.textContent =
 user.bio || "No bio yet.";
+
+  // Website
+
+if(user.website && user.website.trim() !== ""){
+
+    let url = user.website.trim();
+
+    // Automatically add https:// if missing
+
+    if(
+        !url.startsWith("http://") &&
+        !url.startsWith("https://")
+    ){
+        url = "https://" + url;
+    }
+
+    profileWebsite.href = url;
+    profileWebsite.textContent = url;
+    profileWebsite.style.display = "inline-flex";
+
+}else{
+
+    profileWebsite.style.display = "none";
+
+}
 
 document.getElementById("verifiedBadge").style.display =
 user.verified ? "inline-block" : "none";
