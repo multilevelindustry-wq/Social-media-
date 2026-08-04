@@ -140,30 +140,66 @@ user.username || "Unknown";
 profileBio.textContent =
 user.bio || "No bio yet.";
 
-  // Website
+const links =
+document.getElementById("profileLinks");
 
-if(user.website && user.website.trim() !== ""){
+links.innerHTML="";
 
-    let url = user.website.trim();
+addLink(
+links,
+"Website",
+user.website,
+"fa-solid fa-globe"
+);
 
-    // Automatically add https:// if missing
+addLink(
+links,
+"Instagram",
+user.instagram,
+"fa-brands fa-instagram"
+);
 
-    if(
-        !url.startsWith("http://") &&
-        !url.startsWith("https://")
-    ){
-        url = "https://" + url;
-    }
+addLink(
+links,
+"TikTok",
+user.tiktok,
+"fa-brands fa-tiktok"
+);
 
-    profileWebsite.href = url;
-    profileWebsite.textContent = url;
-    profileWebsite.style.display = "inline-flex";
+addLink(
+links,
+"YouTube",
+user.youtube,
+"fa-brands fa-youtube"
+);
 
-}else{
+addLink(
+links,
+"Facebook",
+user.facebook,
+"fa-brands fa-facebook"
+);
 
-    profileWebsite.style.display = "none";
+addLink(
+links,
+"X",
+user.twitter,
+"fa-brands fa-x-twitter"
+);
 
-}
+addLink(
+links,
+"Telegram",
+user.telegram,
+"fa-brands fa-telegram"
+);
+
+addLink(
+links,
+"WhatsApp",
+user.whatsapp,
+"fa-brands fa-whatsapp"
+);
 
 document.getElementById("verifiedBadge").style.display =
 user.verified ? "inline-block" : "none";
@@ -852,3 +888,76 @@ target.classList.add("active");
 
 });
 
+function addLink(container,label,url,icon){
+
+    if(!url) return;
+
+    let link=url.trim();
+
+    switch(label){
+
+        case "Website":
+            if(!/^https?:\/\//i.test(link)){
+                link="https://"+link;
+            }
+        break;
+
+        case "Instagram":
+            if(!link.includes("instagram.com")){
+                link="https://instagram.com/"+link.replace("@","");
+            }
+        break;
+
+        case "TikTok":
+            if(!link.includes("tiktok.com")){
+                link="https://tiktok.com/@"+link.replace("@","");
+            }
+        break;
+
+        case "YouTube":
+            if(!/^https?:\/\//i.test(link)){
+                link="https://youtube.com/"+link;
+            }
+        break;
+
+        case "Facebook":
+            if(!/^https?:\/\//i.test(link)){
+                link="https://facebook.com/"+link;
+            }
+        break;
+
+        case "X":
+            if(!link.includes("x.com")){
+                link="https://x.com/"+link.replace("@","");
+            }
+        break;
+
+        case "Telegram":
+            link="https://t.me/"+link.replace("@","");
+        break;
+
+        case "WhatsApp":
+            link="https://wa.me/"+link.replace(/\D/g,"");
+        break;
+
+    }
+
+    container.innerHTML+=`
+
+<a
+
+class="socialLink"
+
+href="${link}"
+
+target="_blank">
+
+<i class="${icon}"></i>
+
+${label}
+
+</a>
+
+`;
+
+}
