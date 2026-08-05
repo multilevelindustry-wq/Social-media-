@@ -101,6 +101,22 @@ const MANUAL_ADS=[
 
 {
 
+advertiser:"AliExpress",
+
+avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7JlEFi-UQ7fp-rAlHGQcyBMCPsCEA6tUADicBzSu3qA&s",
+
+image:"https://ae-pic-a1.aliexpress-media.com/kf/S0773f649527743a1aca28b095fbc9963j.jpg",
+
+description:"Handsfree Wireless Headphones Noise Canceling Headphone Earphone P47 headset Bluetooth Head Phone for iPhone Huawei Samsung S22, Price Now: USD 4.66 (Original price: USD 9.91,  53% off).",
+
+button:"Click and Buy Now",
+
+url:"https://s.click.aliexpress.com/e/_c3ZL5xiJ"
+
+},
+
+{
+
 advertiser:"LoveNest Essentials",
 
 avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHKkCQmdKXdvSJQAMh2qoknsxEeG8pBTFI8XiJgOIcIw&s=10",
